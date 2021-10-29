@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   ReactDOM.render(
-    <Root />,
+    // <Root />,
+    <h1>Hello there</h1>,
     root
   )
 })

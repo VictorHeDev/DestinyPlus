@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::Base
   # comment this out later !!!
-  protect_from_forgery with: :exception
+  # protect_from_forgery with: :exception
 
-  # helper_method :current_user, :logged_in?
+  helper_method :current_user, :logged_in?
 
-  private
+  # private
 
   def current_user
     return nil unless session[:session_token]
@@ -15,13 +15,13 @@ class ApplicationController < ActionController::Base
     !!current_user
   end
 
-  def login(user)
+  def login!(user)
     user.reset_session_token!
     session[:session_token] = user.session_token
     @current_user = user
   end
 
-  def logout
+  def logout!
     current_user.reset_session_token!
     session[:session_token] = nil
     @current_user = nil
