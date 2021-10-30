@@ -8,12 +8,15 @@ const App = () => (
   <div>
     <header>
       <h1>Welcome to Destiny+</h1>
-      <GreetingContainer />
+      {/* <GreetingContainer /> */}
     </header>
 
+    <Route exact path="/" component={GreetingContainer} />
     <Route path="/login" component={LoginFormContainer} />
     <Route path="/signup" component={SignupFormContainer} />
   </div>
 )
+
+// decide on whether we want redirect to spash greeting or not
 
 export default App

@@ -9,7 +9,7 @@ export default class SessionForm extends React.Component {
       email: '',
       password: ''
     }
-    console.log(this.props.errors)
+
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
