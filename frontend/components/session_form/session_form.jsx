@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default class SessionForm extends React.Component {
   constructor(props) {
@@ -27,11 +28,24 @@ export default class SessionForm extends React.Component {
   render () {
     const { email, password } = this.state;
     const { formType, errors } = this.props;
+    const errorMessages = errors ? (
+      <ul>
+        { errors.map(error => <li>{ error }</li>) }
+      </ul>
+    ) : (
+      <div></div>
+    )
+
+    const altLink = formType === 'Login' ? (
+      <Link to='/signup'>Sign Up</Link>
+    ) : (
+      <Link to="/login">Login</Link>
+    )
 
     return (
       <div>
         <h1>{  }</h1>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label>Email:
             <input
               type="text"
@@ -46,9 +60,10 @@ export default class SessionForm extends React.Component {
               onChange={this.update('password')}
             />
           </label>
-
+          { errorMessages }
+          { altLink }
+          <button>{formType}</button>
         </form>
-
       </div>
     )
   }
