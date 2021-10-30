@@ -9,7 +9,7 @@ export default class SessionForm extends React.Component {
       email: '',
       password: ''
     }
-
+    console.log(this.props.errors)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
@@ -25,33 +25,58 @@ export default class SessionForm extends React.Component {
     }
   }
 
-  render () {
-    const { email, password } = this.state;
-    const { formType, errors } = this.props;
-    const errorMessages = errors ? (
+  renderErrors() {
+    const { errors } = this.props
+
+    const anyErrorMessages = errors ? (
       <ul>
-        { errors.map(error => <li>{ error }</li>) }
+        { errors.map((error, idx)=> {
+          return (
+          <li key={`error-${idx}`}>
+            { error }
+          </li>
+          )
+      })}
       </ul>
     ) : (
-      <div></div>
+      null
     )
+    return anyErrorMessages
+  }
 
-    const altLink = formType === 'Login' ? (
-      <Link to='/signup'>Sign Up</Link>
-    ) : (
-      <Link to="/login">Login</Link>
-    )
+  render () {
+    const { email, password } = this.state;
+    const { formType, navLink } = this.props;
+    // const errorMessages = errors ? (
+    //   <ul>
+    //     { errors.map(error => <li>{ error }</li>) }
+    //   </ul>
+    // ) : (
+    //   <div></div>
+    // )
+
+    // const altLink = formType === 'Login' ? (
+    //   <Link to='/signup'>Sign Up</Link>
+    // ) : (
+    //   <Link to="/login">Login</Link>
+    // )
 
     return (
       <div>
-        <h1>{  }</h1>
         <form onSubmit={this.handleSubmit}>
+        <h3>{ formType } to Destiny+</h3>
+        <br/>
+          <p>Please { formType } or { navLink} </p>
+          { this.renderErrors() }
+          <br/>
           <label>Email:
             <input
               type="text"
               value={email}
               onChange={this.update('email')}
             />
+
+          <br/>
           </label>
           <label>Password:
             <input
@@ -60,9 +85,10 @@ export default class SessionForm extends React.Component {
               onChange={this.update('password')}
             />
           </label>
-          { errorMessages }
-          { altLink }
-          <button>{formType}</button>
+          {/* { errorMessages }
+          { altLink } */}
+          <br/>
+          <button>{ formType }</button>
         </form>
       </div>
     )
