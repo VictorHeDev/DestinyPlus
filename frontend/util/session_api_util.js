@@ -17,3 +17,5 @@ export const logout = () =>
     method: 'DELETE',
     url: '/api/session',
   });
+
+// placement for Redis or localstorage
