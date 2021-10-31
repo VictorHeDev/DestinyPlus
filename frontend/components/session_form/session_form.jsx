@@ -11,6 +11,7 @@ export default class SessionForm extends React.Component {
     }
 
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.demoUser = this.demoUser.bind(this)
   }
 
   handleSubmit(e) {
@@ -44,6 +45,15 @@ export default class SessionForm extends React.Component {
     return anyErrorMessages
   }
 
+  demoUser() {
+    let demo = {
+      email: 'demo@gmail.com',
+      password: 'password'
+    }
+
+    this.props.processForm(demo)
+  }
+
   render () {
     const { email, password } = this.state;
     const { formType, navLink } = this.props;
@@ -60,6 +70,14 @@ export default class SessionForm extends React.Component {
     // ) : (
     //   <Link to="/login">Login</Link>
     // )
+
+    const demoLogin = (formType === 'Login') ? (
+      <p>Just here to look? a&nbsp;
+          <span onClick={ this.demoUser }>Demo User</span>
+      </p>
+    ) : (
+      null
+    );
 
     return (
       <div>
@@ -90,7 +108,10 @@ export default class SessionForm extends React.Component {
           <br/>
           <button>{ formType }</button>
         </form>
+        { demoLogin }
       </div>
     )
   }
 }
+
+// TODO: maybe make the Demo User a button
