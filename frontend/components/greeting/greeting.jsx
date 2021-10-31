@@ -7,7 +7,7 @@ export default class Greeting extends React.Component {
     const { currentUser, logout } = this.props
     const greeting = currentUser ? (
       <div>
-        <h1>Greetings { currentUser.email }</h1>
+        <h1 className="greeting">Greetings { currentUser.email }</h1>
         <button onClick={() => logout()}>Log Out</button>
       </div>
     ) : (

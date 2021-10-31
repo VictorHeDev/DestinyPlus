@@ -72,7 +72,7 @@ export default class SessionForm extends React.Component {
     // )
 
     const demoLogin = (formType === 'Login') ? (
-      <p>Just here to look? a&nbsp;
+      <p>Just here to look? &nbsp;
           <span onClick={ this.demoUser }>Demo User</span>
       </p>
     ) : (

@@ -14,8 +14,7 @@ class User < ApplicationRecord
   attr_reader :password
 
   validates :email, :password_digest, :session_token, presence: true
-  validates :email, uniqueness: true
-  # validate :valid_email_format?
+  validates_format_of :email, :with => /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   after_initialize :ensure_session_token
@@ -59,7 +58,4 @@ class User < ApplicationRecord
     self.session_token
   end
 
-  def valid_email_format?
-    errors.add(:email, 'is invalid') unless /[a-z][a-z._]*@[a-z]+\.[a-z]{2,4}/.match(email)
-  end
 end
