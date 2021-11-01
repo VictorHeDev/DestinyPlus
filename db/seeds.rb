@@ -34,5 +34,18 @@ u1 = User.create!(
   password: 'creator'
 )
 
+u1p1 = Profile.create!(
+  name: 'wood',
+  user_id: 2
+)
 
+u1p2 = Profile.create!(
+  name: 'wood2',
+  user_id: 2
+)
+
+u1p3 = Profile.create!(
+  name: 'wood3',
+  user_id: 2
+)
 
