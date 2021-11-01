@@ -1,11 +1,10 @@
+// fetchProfiles url also able to get the POJO from /api/users/:id
 export const fetchProfiles = () => {
   return $.ajax({
     method: 'GET',
     url: '/api/profiles',
   });
 };
-
-// fetchProfiles url also able to get the POJO from /api/users/:id
 
 export const fetchProfile = (profileId) => {
   return $.ajax({
