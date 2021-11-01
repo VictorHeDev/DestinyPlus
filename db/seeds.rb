@@ -7,10 +7,26 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Profile.destroy_all
 
 demoUser = User.create!(
   email: 'demo@gmail.com',
   password: 'password'
+)
+
+demoUserProfile1 = Profile.create!(
+  name: 'Pls hire me',
+  user_id: 1
+)
+
+demoUserProfile2 = Profile.create!(
+  name: '<3 Mom',
+  user_id: 1
+)
+
+demoUserProfile1 = Profile.create!(
+  name: 'Vic',
+  user_id: 1
 )
 
 u1 = User.create!(
@@ -18,14 +34,5 @@ u1 = User.create!(
   password: 'creator'
 )
 
-u2 = User.create!(
-  email: 'pasan@gmail.com',
-  password: 'cssGOD'
-)
-
-u3 = User.create!(
-  email: 'alKim@gmail.com',
-  password: 'burrito'
-)
 
 
