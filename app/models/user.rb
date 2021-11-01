@@ -19,6 +19,10 @@ class User < ApplicationRecord
 
   after_initialize :ensure_session_token
 
+  has_many :profiles,
+    dependent: :destroy
+
+
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)
     return nil unless user
