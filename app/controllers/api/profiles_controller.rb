@@ -31,7 +31,7 @@ class Api::ProfilesController < ApplicationController
     @profile = Profile.find_by(id: profile_params[:id])
 
     if @profile.update(profile_params)
-      render: show
+      render :show
     else
       render json: ['Profile did not update'], status: 404
     end
