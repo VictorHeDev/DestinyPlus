@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default class Greeting extends React.Component {
+
+export default class NavBar extends React.Component {
 
   render () {
     const { currentUser, logout } = this.props
@@ -18,7 +19,12 @@ export default class Greeting extends React.Component {
     )
 
     return (
-      greeting
+        <nav className="nav-bar">
+          <img className="navLogo" src={ window.destinyLogoURL } />
+          { greeting }
+        </nav>
+
+
     )
   }
 }

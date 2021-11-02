@@ -1,3 +1,13 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .greeting {
   font-size: 48px;
+}
+
+.navLogo {
+  width: 150px;
 }

@@ -8,10 +8,11 @@ import {
   HashRouter
 } from 'react-router-dom';
 
-import GreetingContainer from './greeting/greeting_container'
+import { AuthRoute, ProtectedRoute } from '../util/route_util'
+import NavBarContainer from './navbar/navbar'
 import SignupFormContainer from './session_form/signup_form_container'
 import LoginFormContainer from './session_form/login_form_container'
-import { AuthRoute, ProtectedRoute } from '../util/route_util'
+import Splash from './splash/splash'
 
 const App = () => (
   <div>
@@ -19,17 +20,19 @@ const App = () => (
       <Link to="/" className="header-link">
         <h1>Welcome to Destiny+</h1>
       </Link>
-      <GreetingContainer />
+      <NavBarContainer />
     </header>
 
+
+    <Splash />
     <AuthRoute exact path="/login" component={LoginFormContainer} />
     <AuthRoute exact path="/signup" component={SignupFormContainer} />
 
     {/* <ProtectedRoute exact path="/browse" /> */}
+    {/* <Route exact path="/" component={NavBarContainer} /> */}
 
-    {/* {/* <Route exact path="/" component={GreetingContainer} /> */}
-    {/* <Route path="/login" component={LoginFormContainer} />
-    <Route path="/signup" component={SignupFormContainer} />  */}
+
+
   </div>
 )
 
