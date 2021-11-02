@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 100px);
   width: auto;
   display: flex;
   flex-direction: column;
@@ -21,20 +21,24 @@
     text-align: center;
     width: 30%;
     padding: 20px 40px;
+    border-radius: 5px;
     margin: 1rem;
   }
 
   p {
     margin: 1em;
   }
+
+  .media-bundle {
+    width: 70%;
+  }
+
+  .media-bundle2 {
+    width: 50%;
+  }
 }
 
-.splash-media-bundle {
-  width: 60%;
-}
-
-.splash-home-img {
-  position: relative;
-  width: 100%;
-  z-index: -10;
+.splash-the-way-you-want {
+  display: flex;
+  justify-content: space-evenly;
 }
