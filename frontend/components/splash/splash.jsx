@@ -2,14 +2,13 @@ import React from 'react'
 
 export default function Splash() {
   return (
-    <div>
+    <div className="splash-content">
       <section className="splash-main-content">
         {/* <img className="splash-home-img" src={ window.splashHomeURL } /> */}
         <img className="media-bundle" src={ window.mediaBundleURL } />
         <button>GET THE DESTINY BUNDLE</button>
         <p>Stream now. Terms Apply</p>
         <img className="media-bundle2" src={ window.mediaBundleURL2 } />
-
         <p>Sign up for Destiny+ only.</p>
       </section>
 
@@ -32,9 +31,25 @@ export default function Splash() {
             </li>
           </ul>
         </div>
+      </section>
+
+      <section className="splash-side-content">
+        <img className="media-bundle-small" src={ window.mediaBundleURL } />
+        <aside>
+          <p>Get The Destiny Bundle to stream the best movies, shows, and sports with Destiny+, Holo, and ASPN+. Terms Apply. Learn more about The Destiny Bundle</p>
+          <button>GET THE DESTINY BUNDLE</button>
+        </aside>
+      </section>
+
+      <section className="favorite-devices">
+        <h3>Available on your favorite devices</h3>
 
       </section>
 
+      <section className="FAQ">
+        <h3>Frequently Asked Questions</h3>
+
+      </section>
     </div>
   )
 }
