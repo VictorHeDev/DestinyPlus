@@ -43,6 +43,20 @@ export default function Splash() {
 
       <section className="favorite-devices">
         <h3>Available on your favorite devices</h3>
+        <aside>
+          <div>
+            <h5>TV</h5>
+          </div>
+          <div>
+            <h5>Computer</h5>
+          </div>
+          <div>
+            <h5>Mobile & Tablet</h5>
+          </div>
+          <div>
+            <h5>Game Consoles</h5>
+          </div>
+        </aside>
 
       </section>
 
