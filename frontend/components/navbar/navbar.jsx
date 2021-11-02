@@ -7,16 +7,15 @@ export default class NavBar extends React.Component {
 
   render () {
     const { currentUser, logout } = this.props
-    // debugger
-    const greeting = currentUser ? (
-      <div>
+    const account = currentUser ? (
+      <div className="account">
         <h1 className="greeting">Greetings { currentUser.email }</h1>
-        <button onClick={() => logout()}>Log Out</button>
+        <button className="logout" onClick={() => logout()}>Log Out</button>
       </div>
     ) : (
-      <div>
-        <Link to="/signup">Sign Up</Link>
-        <Link to="/login">Login</Link>
+      <div className="account">
+        <Link className="signup" to="/signup">Sign Up</Link>
+        <Link className="login" to="/login">Login</Link>
       </div>
     )
 
@@ -27,7 +26,7 @@ export default class NavBar extends React.Component {
             <NavBarLinks />
           </div>
 
-          { greeting }
+          { account }
         </nav>
 
 
