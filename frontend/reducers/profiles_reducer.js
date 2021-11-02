@@ -19,7 +19,7 @@ const ProfilesReducer = (oldState = {}, action) => {
       delete nextState[action.profileId];
       return nextState;
     default:
-      oldState;
+      return oldState;
   }
 };
 

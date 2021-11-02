@@ -1,5 +1,4 @@
 import * as ProfileApiUtil from '../util/profile_api_util';
-
 // constants
 export const RECEIVE_ALL_PROFILES = 'RECEIVE_ALL_PROFILES';
 export const RECEIVE_PROFILE = 'RECEIVE_PROFILE';
@@ -53,7 +52,7 @@ export const updateProfile = (profile) => (dispatch) => {
 };
 
 export const deleteProfile = (profileId) => (dispatch) => {
-  return ProfileApiUtil.removeProfile(profileId).then((profileId) =>
+  return ProfileApiUtil.deleteProfile(profileId).then((profileId) =>
     dispatch(removeProfile(profileId))
   );
 };
