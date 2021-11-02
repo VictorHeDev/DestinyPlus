@@ -1,5 +1,40 @@
+.splash-main-content {
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.35057773109243695) 0%,
+      rgba(0, 0, 0, 0.7483368347338936) 90%
+    ),
+    image-url('splash-home-image');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background-color: #0163e4;
+    text-align: center;
+    width: 30%;
+    padding: 20px 40px;
+    margin: 1rem;
+  }
+
+  p {
+    margin: 1em;
+  }
+}
+
+.splash-media-bundle {
+  width: 60%;
+}
+
 .splash-home-img {
   position: relative;
-  // width: 100%;
+  width: 100%;
   z-index: -10;
 }
