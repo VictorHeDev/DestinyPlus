@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import NavBarLinks from './navbar_links'
 
 
 export default class NavBar extends React.Component {
@@ -21,7 +22,11 @@ export default class NavBar extends React.Component {
 
     return (
         <nav className="nav-bar">
-          <img className="navLogo" src={ window.destinyLogoURL } />
+          <div className="main-nav">
+            <img className="navLogo" src={ window.destinyLogoURL } />
+            <NavBarLinks />
+          </div>
+
           { greeting }
         </nav>
 

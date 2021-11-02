@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 150px;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    padding: 2rem;
+
+    span {
+      padding: 1rem;
+    }
+  }
+}
+
+.greeting {
+  font-size: 18px;
+}
