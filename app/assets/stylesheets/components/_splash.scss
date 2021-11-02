@@ -41,4 +41,19 @@
 .splash-the-way-you-want {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 100px;
+
+  .watch-details {
+    padding: 30px;
+
+    h2 {
+      font-size: 36px;
+      padding: 30px;
+    }
+
+    ul > li {
+      list-style-type: circle;
+      padding: 5px;
+    }
+  }
 }

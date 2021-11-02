@@ -14,7 +14,7 @@ export default function Splash() {
       </section>
 
       <section className="splash-the-way-you-want">
-        
+        <img className="way-you-want-img" src={ window.wayYouWantURL } />
         <div className="watch-details">
           <h2>Watch the way you want</h2>
           <ul>

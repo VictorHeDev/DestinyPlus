@@ -6,6 +6,7 @@ export default class NavBar extends React.Component {
 
   render () {
     const { currentUser, logout } = this.props
+    // debugger
     const greeting = currentUser ? (
       <div>
         <h1 className="greeting">Greetings { currentUser.email }</h1>

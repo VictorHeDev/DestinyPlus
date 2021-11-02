@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 import { AuthRoute, ProtectedRoute } from '../util/route_util'
-import NavBarContainer from './navbar/navbar'
+import NavBarContainer from './navbar/navbar_container'
 import SignupFormContainer from './session_form/signup_form_container'
 import LoginFormContainer from './session_form/login_form_container'
 import Splash from './splash/splash'
