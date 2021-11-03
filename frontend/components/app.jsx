@@ -15,16 +15,17 @@ import SignupFormContainer from './session_form/signup_form_container'
 import LoginFormContainer from './session_form/login_form_container'
 import Splash from './splash/splash'
 import Footer from './footer/footer';
+import ProfilesContainer from './profiles/profiles_container'
 
 const App = () => (
   <div>
       {/* <Link to="/" className="header-link">
         <h1>Welcome to Destiny+</h1>
       </Link> */}
-    {/* <header>
-      <NavBarContainer />
+    <header>
+      {/* <NavBarContainer /> */}
     </header>
-    <Splash /> */}
+    {/* <Splash /> */}
     {/* look into switch statement */}
     {/* moved NavBarContainer into Splash */}
 
@@ -32,7 +33,7 @@ const App = () => (
       <AuthRoute exact path="/" component={Splash} />
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
-      {/* <ProtectedRoute path="/profiles" /> */}
+      <ProtectedRoute path="/profiles" component={ ProfilesContainer }/>
     </Switch>
 
     {/* <ProtectedRoute exact path="/browse" /> */}
