@@ -17,6 +17,7 @@ export default class Profiles extends Component {
 
     return (
       <div className="profiles-container">
+        <img className="profiles-logo" src={ window.destinyLogoURL }/>
         <h3>Who's watching?</h3>
 
         <section className="all-profiles">
@@ -25,7 +26,12 @@ export default class Profiles extends Component {
           {
             profiles.map(profile => {
               return (
-                <li key={ profile.id }>{ profile.name }</li>
+                <li key={ profile.id }>
+                  <div>
+                    {/* image */}
+                  </div>
+                  <span>{ profile.name }</span>
+                </li>
               )
             })
           }
