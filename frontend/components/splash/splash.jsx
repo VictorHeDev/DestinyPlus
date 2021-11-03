@@ -1,8 +1,13 @@
 import React from 'react'
+import NavBarContainer from '../navbar/navbar_container'
 
 export default function Splash() {
   return (
     <div className="splash-container">
+      <header>
+        <NavBarContainer />
+      </header>
+
       <section className="splash-main-content">
         {/* <img className="splash-home-img" src={ window.splashHomeURL } /> */}
         <img className="media-bundle" src={ window.mediaBundleURL } />

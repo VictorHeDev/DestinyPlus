@@ -84,34 +84,40 @@ export default class SessionForm extends React.Component {
     );
 
     return (
-      <div>
+      <div className="session-form-container">
         <form onSubmit={this.handleSubmit}>
-        <h3>{ formType } to Destiny+</h3>
+        <img src={window.destinyLogoURL} alt="destiny plus logo" />
+        <h3>{ formType } with your email</h3>
         <br/>
-          <p>Please { formType } or { navLink} </p>
           { this.renderErrors() }
-          <br/>
-          <label>Email:
-            <input
-              type="text"
-              value={email}
-              onChange={this.update('email')}
-            />
+          <div className="credentials">
+            <div className="email-container">
+              <label className="email" >
+                <input
+                  type="text"
+                  value={email}
+                  onChange={this.update('email')}
+                  placeholder="Email"
+                  />
+              </label>
+            </div>
 
-          <br/>
-          </label>
-          <label>Password:
-            <input
-              type="password"
-              value={password}
-              onChange={this.update('password')}
-            />
-          </label>
+            <div className="password-container">
+              <label className="password">
+                <input
+                  type="password"
+                  value={password}
+                  onChange={this.update('password')}
+                  placeholder="Password"
+                  />
+              </label>
+            </div>
+          </div>
           {/* { errorMessages }
           { altLink } */}
-          <br/>
           <button>{ formType }</button>
         </form>
+        <p>Please { formType } or { navLink } </p>
         { demoLogin }
       </div>
     )

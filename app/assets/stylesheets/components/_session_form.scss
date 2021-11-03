@@ -1,0 +1,62 @@
+.session-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  img {
+    width: 25%;
+  }
+
+  .credentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .email-container,
+  .password-container {
+    height: 50px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #31343e;
+  }
+
+  input {
+    height: 75%;
+    width: 75%;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: rgb(150, 150, 150);
+    }
+  }
+
+  button {
+    background-color: #0163e4;
+    text-align: center;
+    width: 30%;
+    padding: 20px 5px;
+    border-radius: 5px;
+  }
+}

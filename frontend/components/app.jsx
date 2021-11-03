@@ -10,6 +10,7 @@ import {
 
 import { AuthRoute, ProtectedRoute } from '../util/route_util'
 import NavBarContainer from './navbar/navbar_container'
+
 import SignupFormContainer from './session_form/signup_form_container'
 import LoginFormContainer from './session_form/login_form_container'
 import Splash from './splash/splash'
@@ -17,21 +18,23 @@ import Footer from './footer/footer';
 
 const App = () => (
   <div>
-    <header>
       {/* <Link to="/" className="header-link">
         <h1>Welcome to Destiny+</h1>
       </Link> */}
+    {/* <header>
       <NavBarContainer />
     </header>
+    <Splash /> */}
+    {/* look into switch statement */}
+    {/* moved NavBarContainer into Splash */}
 
-
-    <Splash />
-    <AuthRoute exact path="/login" component={LoginFormContainer} />
-    <AuthRoute exact path="/signup" component={SignupFormContainer} />
+    <Switch>
+      <AuthRoute exact path="/" component={Splash} />
+      <AuthRoute exact path="/login" component={LoginFormContainer} />
+      <AuthRoute exact path="/signup" component={SignupFormContainer} />
+    </Switch>
 
     {/* <ProtectedRoute exact path="/browse" /> */}
-    {/* <Route exact path="/" component={NavBarContainer} /> */}
-
 
     <Footer />
   </div>
