@@ -13,13 +13,14 @@ import NavBarContainer from './navbar/navbar_container'
 import SignupFormContainer from './session_form/signup_form_container'
 import LoginFormContainer from './session_form/login_form_container'
 import Splash from './splash/splash'
+import Footer from './footer/footer';
 
 const App = () => (
   <div>
     <header>
-      <Link to="/" className="header-link">
+      {/* <Link to="/" className="header-link">
         <h1>Welcome to Destiny+</h1>
-      </Link>
+      </Link> */}
       <NavBarContainer />
     </header>
 
@@ -32,7 +33,7 @@ const App = () => (
     {/* <Route exact path="/" component={NavBarContainer} /> */}
 
 
-
+    <Footer />
   </div>
 )
 
