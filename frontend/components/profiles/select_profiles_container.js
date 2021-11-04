@@ -1,7 +1,11 @@
 import { connect } from 'react-redux';
-import { requestProfile, requestProfiles } from '../../actions/profile_actions';
+import {
+  requestProfile,
+  requestProfiles,
+  reformatProfiles,
+} from '../../actions/profile_actions';
 import { withRouter } from 'react-router';
-import Profiles from './profiles';
+import SelectProfiles from './select_profiles';
 
 const mSTP = (state, ownProps) => {
   return {
@@ -13,7 +17,8 @@ const mDTP = (dispatch, ownProps) => {
   return {
     requestProfiles: () => dispatch(requestProfiles()),
     requestProfile: (profileId) => dispatch(requestProfile(profileId)),
+    reformatProfiles: (profileId) => dispatch(reformatProfiles(profileId)),
   };
 };
 
-export default withRouter(connect(mSTP, mDTP)(Profiles));
+export default withRouter(connect(mSTP, mDTP)(SelectProfiles));

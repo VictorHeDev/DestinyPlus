@@ -1,14 +1,25 @@
 import React, { Component } from 'react'
 import { Link, Redirect } from 'react-router-dom';
-export default class Profiles extends Component {
+
+export default class SelectProfiles extends Component {
   constructor(props) {
     super(props)
     this.state;
 
+    this.handleClickProfile = this.handleClickProfile.bind(this)
   }
 
   componentDidMount() {
     this.props.requestProfiles()
+  }
+
+  handleClickProfile(e, profileId) {
+    e.preventDefault()
+
+    // this.props.requestProfile(profileId)
+    this.props.reformatProfiles(this.props.profiles[profileId])
+    this.props.history.push('/browse')
+
   }
 
 
@@ -17,6 +28,7 @@ export default class Profiles extends Component {
 
     return (
       <div className="profiles-container">
+        <button>Edit</button>
         <img className="profiles-logo" src={ window.destinyLogoURL }/>
         <h3>Who's watching?</h3>
 
@@ -27,7 +39,7 @@ export default class Profiles extends Component {
             profiles.map(profile => {
               return (
                 <li key={ profile.id }>
-                  <div>
+                  <div onClick={ (e) => this.handleClickProfile(e, profile.id) }>
                     {/* image */}
                   </div>
                   <span>{ profile.name }</span>

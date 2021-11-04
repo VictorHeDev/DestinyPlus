@@ -15,7 +15,7 @@ import SignupFormContainer from './session_form/signup_form_container'
 import LoginFormContainer from './session_form/login_form_container'
 import Splash from './splash/splash'
 import Footer from './footer/footer';
-import ProfilesContainer from './profiles/profiles_container'
+import ProfilesContainer from './profiles/select_profiles_container'
 
 const App = () => (
   <div>
@@ -34,6 +34,7 @@ const App = () => (
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
       <ProtectedRoute path="/profiles" component={ ProfilesContainer }/>
+      {/* <ProtectedRoute path="/browse" component={  }/> */}
     </Switch>
 
     {/* <ProtectedRoute exact path="/browse" /> */}

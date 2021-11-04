@@ -3,6 +3,7 @@ import * as ProfileApiUtil from '../util/profile_api_util';
 export const RECEIVE_ALL_PROFILES = 'RECEIVE_ALL_PROFILES';
 export const RECEIVE_PROFILE = 'RECEIVE_PROFILE';
 export const REMOVE_PROFILE = 'REMOVE_PROFILE';
+export const REFORMAT_PROFILE = 'REFORMAT_PROFILE';
 
 // action creators
 const receiveProfiles = (profiles) => {
@@ -24,6 +25,17 @@ const removeProfile = (profileId) => {
     type: REMOVE_PROFILE,
     profileId,
   };
+};
+
+const reformatProfile = (profileId) => {
+  return {
+    type: REFORMAT_PROFILE,
+    profileId,
+  };
+};
+
+export const reformatProfiles = (profileId) => (dispatch) => {
+  dispatch(reformatProfile(profileId));
 };
 
 // thunk action creators

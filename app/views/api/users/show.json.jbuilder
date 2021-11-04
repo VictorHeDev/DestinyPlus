@@ -7,8 +7,16 @@ json.profiles do
     json.set! profile.id do
       json.id profile.id
       json.name profile.name
+      json.profile ""
     end
   end
+
+  # watchlist
 end
+
+# genre
+
+# video
+
 
 # add list later
