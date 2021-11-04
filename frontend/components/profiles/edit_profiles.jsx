@@ -18,6 +18,11 @@ export default class EditProfiles extends Component {
     this.props.history.push('/profiles')
   }
 
+  handleClickProfile(e, profileId) {
+    e.preventDefault()
+    this.props.history.push(`/profiles/${profileId}`)
+  }
+
   render() {
     const { profiles } = this.props;
 
