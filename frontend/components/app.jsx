@@ -16,6 +16,7 @@ import LoginFormContainer from './session_form/login_form_container'
 import Splash from './splash/splash'
 import Footer from './footer/footer';
 import ProfilesContainer from './profiles/select_profiles_container'
+import EditProfilesContainer from './profiles/edit_profiles_container'
 
 const App = () => (
   <div>
@@ -33,7 +34,10 @@ const App = () => (
       <AuthRoute exact path="/" component={Splash} />
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
-      <ProtectedRoute path="/profiles" component={ ProfilesContainer }/>
+      <ProtectedRoute exact path="/profiles" component={ ProfilesContainer }/>
+      <ProtectedRoute path="/profiles/edit" component={ EditProfilesContainer }/>
+
+      {/* <ProtectedRoute path="/profiles/:reportId/edit" component={ EditProfileFormContainer }/> */}
       {/* <ProtectedRoute path="/browse" component={  }/> */}
     </Switch>
 

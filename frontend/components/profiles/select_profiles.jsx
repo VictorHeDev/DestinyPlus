@@ -4,31 +4,40 @@ import { Link, Redirect } from 'react-router-dom';
 export default class SelectProfiles extends Component {
   constructor(props) {
     super(props)
-    this.state;
 
     this.handleClickProfile = this.handleClickProfile.bind(this)
   }
 
   componentDidMount() {
     this.props.requestProfiles()
+    // debugger
+  }
+
+  handleEditClick(e) {
+    e.preventDefault()
+    this.props.history.push('/profiles/edit')
   }
 
   handleClickProfile(e, profileId) {
     e.preventDefault()
 
-    // this.props.requestProfile(profileId)
-    this.props.reformatProfiles(this.props.profiles[profileId])
+    this.props.requestProfile(profileId)
+    // this.props.reformatProfiles(this.props.profiles[profileId])
     this.props.history.push('/browse')
-
   }
+
+  // Profile(props) {
+  //   return <li>{ props.value }</li>
+  // }
 
 
   render() {
     const { profiles } = this.props;
+    // debugger
 
     return (
       <div className="profiles-container">
-        <button>Edit</button>
+        <button onClick={ (e) => this.handleEditClick(e) }>Edit</button>
         <img className="profiles-logo" src={ window.destinyLogoURL }/>
         <h3>Who's watching?</h3>
 

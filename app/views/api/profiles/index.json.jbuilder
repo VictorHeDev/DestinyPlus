@@ -6,7 +6,7 @@
 
 @profiles.each do |profile|
   json.set! profile.id do
-    json.name profile.name
     json.id profile.id
+    json.name profile.name
   end
 end
