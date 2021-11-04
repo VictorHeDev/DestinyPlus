@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  year: 1
+  runtime: MyString
+  type: 
+
+two:
+  title: MyString
+  description: MyText
+  year: 1
+  runtime: MyString
+  type: 
