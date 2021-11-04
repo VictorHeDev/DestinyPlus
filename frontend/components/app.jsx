@@ -18,6 +18,7 @@ import Footer from './footer/footer';
 import ProfilesContainer from './profiles/select_profiles_container'
 import EditProfilesContainer from './profiles/edit_profiles_container'
 import EditProfileFormContainer from './profiles/edit_profile_form_container'
+import CreateProfileFormContainer from './profiles/create_profile_form_container'
 
 const App = () => (
   <div>
@@ -38,6 +39,8 @@ const App = () => (
       <ProtectedRoute exact path="/profiles" component={ ProfilesContainer }/>
       <ProtectedRoute exact path="/profiles/edit" component={ EditProfilesContainer }/>
       <ProtectedRoute path="/profiles/:profileId/edit" component={ EditProfileFormContainer } />
+      <ProtectedRoute path="/profiles/new" component={ CreateProfileFormContainer } />
+
 
       {/* <ProtectedRoute path="/browse" component={  }/> */}
     </Switch>

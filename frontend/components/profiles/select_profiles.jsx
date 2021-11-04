@@ -26,6 +26,10 @@ export default class SelectProfiles extends Component {
     this.props.history.push('/browse')
   }
 
+  handleNewProfileClick(e) {
+    e.preventDefault()
+    this.props.history.push('/profiles/new')
+  }
   // Profile(props) {
   //   return <li>{ props.value }</li>
   // }
@@ -38,6 +42,7 @@ export default class SelectProfiles extends Component {
     return (
       <div className="profiles-container">
         <button onClick={ (e) => this.handleEditClick(e) }>Edit</button>
+        <button onClick={ (e) => this.handleNewProfileClick(e) }>New Profile</button>
         <img className="profiles-logo" src={ window.destinyLogoURL }/>
         <h3>Who's watching?</h3>
 

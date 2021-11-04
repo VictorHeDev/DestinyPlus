@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ProfileForm from './profile_form';
-import { requestProfile, updateProfile } from '../../actions/profile_actions';
+import {
+  requestProfile,
+  updateProfile,
+  deleteProfile,
+} from '../../actions/profile_actions';
+import EditProfileForm from './edit_profiles_form';
 
-export default class EditProfileForm extends Component {
+const mSTP = (state, ownProps) => {
+  return {
+    profile: state.entities.profiles[ownProps.match.params.profileId],
+    // profile: state.entities.profiles.id,
+    formType: 'Update Profile',
+  };
+};
 
-  componentDidMount() {
-    this.props.requestProfile(this.props.match.params.profileId)
-  }
+const mDTP = (dispatch) => {
+  return {
+    action: (profile) => dispatch(updateProfile(profile)),
+    requestProfile: (profileId) => dispatch(requestProfile(profileId)),
+    deleteProfile: (profileId) => dispatch(deleteProfile(profileId)),
+  };
+};
 
-  render() {
-    return <div></div>;
-  }
-}
+export default connect(mSTP, mDTP)(EditProfileForm);

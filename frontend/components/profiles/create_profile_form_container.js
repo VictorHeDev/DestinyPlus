@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router-dom;';
+import { Link, withRouter } from 'react-router-dom';
 import { createProfile } from '../../actions/profile_actions';
-import ProfileForm from './profile_form';
+import CreateProfileForm from './create_profile';
 import React from 'react';
 
 const mSTP = (state, ownProps) => {
@@ -19,4 +19,4 @@ const mDTP = (dispatch) => {
   };
 };
 
-export default connect(mSTP, mDTP)(ProfileForm);
+export default connect(mSTP, mDTP)(CreateProfileForm);

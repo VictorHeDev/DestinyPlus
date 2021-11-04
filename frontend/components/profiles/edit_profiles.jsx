@@ -20,7 +20,7 @@ export default class EditProfiles extends Component {
 
   handleClickProfile(e, profileId) {
     e.preventDefault()
-    this.props.history.push(`/profiles/${profileId}`)
+    this.props.history.push(`/profiles/${profileId}/edit`)
   }
 
   render() {

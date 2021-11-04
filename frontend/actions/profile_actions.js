@@ -46,9 +46,9 @@ export const requestProfiles = () => (dispatch) => {
 };
 
 export const requestProfile = (profileId) => (dispatch) => {
-  return ProfileApiUtil.fetchProfile(profileId).then((profile) =>
-    dispatch(receiveProfile(profile))
-  );
+  return ProfileApiUtil.fetchProfile(profileId).then((profile) => {
+    dispatch(receiveProfile(profile));
+  });
 };
 
 export const createProfile = (profile) => (dispatch) => {
@@ -64,7 +64,7 @@ export const updateProfile = (profile) => (dispatch) => {
 };
 
 export const deleteProfile = (profileId) => (dispatch) => {
-  return ProfileApiUtil.deleteProfile(profileId).then((profileId) =>
+  return ProfileApiUtil.deleteProfile(profileId).then(() =>
     dispatch(removeProfile(profileId))
   );
 };

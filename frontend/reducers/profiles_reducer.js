@@ -2,7 +2,7 @@ import {
   RECEIVE_ALL_PROFILES,
   RECEIVE_PROFILE,
   REMOVE_PROFILE,
-  REFORMAT_PROFILE
+  REFORMAT_PROFILE,
 } from '../actions/profile_actions';
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 // create list
@@ -20,12 +20,13 @@ const ProfilesReducer = (oldState = {}, action) => {
     case RECEIVE_PROFILE:
       // debugger;
       // nextState[action.profile.id] = action.profile;
-      return action.profile;
+      return { ...oldState, [action.profile.id]: action.profile };
+    // return action.profile;
     case REMOVE_PROFILE:
       delete nextState[action.profileId];
       return nextState;
     case REFORMAT_PROFILE:
-      return nextState[action.profileId]
+      return nextState[action.profileId];
     default:
       return oldState;
   }

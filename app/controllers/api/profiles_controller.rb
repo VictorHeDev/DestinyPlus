@@ -28,7 +28,7 @@ class Api::ProfilesController < ApplicationController
   end
 
   def update
-    @profile = Profile.find_by(id: profile_params[:id])
+    @profile = Profile.find(params[:id])
 
     if @profile.update(profile_params)
       render :show
@@ -38,11 +38,11 @@ class Api::ProfilesController < ApplicationController
   end
 
   def destroy
-    @profile = Profile.find_by(id: profile_params[:id])
+    @profile = Profile.find(params[:id])
 
     if (@profile && current_user.profiles.length > 1)
       @profile.destroy
-      render :show
+      # render :show
     else
       render json: ['Profile cannot be deleted']
     end
@@ -53,5 +53,5 @@ class Api::ProfilesController < ApplicationController
   def profile_params
     params.require(:profile).permit(:name)
   end
-
+  # added :id to the profile params
 end
