@@ -20,7 +20,7 @@ const ProfilesReducer = (oldState = {}, action) => {
     case RECEIVE_PROFILE:
       // debugger;
       // nextState[action.profile.id] = action.profile;
-      return { ...oldState, [action.profile.id]: action.profile };
+      return { ...nextState, [action.profile.id]: action.profile };
     // return action.profile;
     case REMOVE_PROFILE:
       delete nextState[action.profileId];
