@@ -8,7 +8,7 @@ const genresReducer = (oldState = {}, action) => {
     case RECEIVE_GENRES:
       return action.genres;
     case RECEIVE_GENRE:
-      // return action.genre
+      // return nextState[action.genre.id] = action.genre
       return { ...nextState, [action.genre.id]: action.genre };
     default:
       return oldState;
