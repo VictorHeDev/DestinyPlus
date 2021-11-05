@@ -22,8 +22,8 @@ export const requestVideos = () => (dispatch) => {
   );
 };
 
-export const requestVideo = (videoId = (dispatch) => {
+export const requestVideo = (videoId) => (dispatch) => {
   return VideoApiUtil.fetchVideo(videoId).then((video) =>
     dispatch(receiveVideo(video))
   );
-});
+};

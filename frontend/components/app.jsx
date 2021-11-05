@@ -19,6 +19,7 @@ import ProfilesContainer from './profiles/select_profiles_container'
 import EditProfilesContainer from './profiles/edit_profiles_container'
 import EditProfileFormContainer from './profiles/edit_profile_form_container'
 import CreateProfileFormContainer from './profiles/create_profile_form_container'
+import BrowseContainer from './browse/browse_container'
 
 const App = () => (
   <div>
@@ -41,6 +42,7 @@ const App = () => (
       <ProtectedRoute path="/profiles/:profileId/edit" component={ EditProfileFormContainer } />
       <ProtectedRoute path="/profiles/new" component={ CreateProfileFormContainer } />
       <ProtectedRoute path="/profiles/new" component={ CreateProfileFormContainer } />
+      <ProtectedRoute path="/browse" component={ BrowseContainer } />
 
 
       {/* <ProtectedRoute path="/browse" component={  }/> */}
