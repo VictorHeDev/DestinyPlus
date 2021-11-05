@@ -2,6 +2,6 @@
   json.set! genre.id do
     json.id genre.id
     json.name genre.name
-    # json.videoIds genre.videos.pluck(:id)
+    json.videoIds genre.videos.pluck(:id)
   end
 end
