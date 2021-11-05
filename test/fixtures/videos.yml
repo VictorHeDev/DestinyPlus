@@ -7,7 +7,7 @@
 #  description :text             not null
 #  year        :integer          not null
 #  runtime     :string           not null
-#  type        :string           not null
+#  mediatype   :string           not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
