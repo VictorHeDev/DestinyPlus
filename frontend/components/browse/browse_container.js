@@ -7,7 +7,6 @@ const mSTP = (state, ownProps) => {
   return {
     genres: Object.values(state.entities.genres),
     videos: state.entities.videos,
-    // videos: Object.values(state.entities.videos),
   };
 };
 

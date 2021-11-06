@@ -5,12 +5,7 @@ export const selectGenre = (genres, genreId) => {
 
 // export an array of all videos within a particular genre
 export const selectVideosFromGenre = (genre, videos) => {
-  // debugger;
   const selectedVideos = genre.videoIds.map((videoId) => {
-    // debugger;
-    // for some reason, videos is starting at index 0
-    // look at debugger
-    // return videos[videoId - 1];
     return videos[videoId];
   });
 
