@@ -14,8 +14,7 @@ export default class Browse extends Component {
 
   render() {
     const { genres, videos } = this.props
-    // debugger
-
+    
     return (
       <div className="browse-container">
         <header>

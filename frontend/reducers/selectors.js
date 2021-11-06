@@ -10,8 +10,8 @@ export const selectVideosFromGenre = (genre, videos) => {
     // debugger;
     // for some reason, videos is starting at index 0
     // look at debugger
-    return videos[videoId - 1];
-    // return videos[videoId];
+    // return videos[videoId - 1];
+    return videos[videoId];
   });
 
   return selectedVideos;

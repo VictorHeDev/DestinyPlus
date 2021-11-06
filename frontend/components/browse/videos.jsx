@@ -9,11 +9,12 @@ export default class Videos extends Component {
     // this one does work
     const selectedVideos = selectVideosFromGenre(genre, videos)
 
+
     // this one does not work
     // const selectedVideos = selectVideosFromGenre(genre, this.state.entities.videos)
 
     return (
-      <div>
+      <div className="genre-item">
         {selectedVideos.map((video, idx) => {
             return (
             <Video
