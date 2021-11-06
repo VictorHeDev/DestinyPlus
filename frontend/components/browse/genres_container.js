@@ -1,25 +1,33 @@
-import React, { Component } from 'react';
-import Video from './video';
-// fix the import later
+// import { connect } from 'react-redux';
+// import Genre from './genres';
+// import { selectVideosFromGenre } from '../../reducers/selectors';
 
-export default class Genres extends Component {
-  constructor(props) {
-    super(props);
-  }
+// // undefined value
+// const mSTP = (state, ownProps) => {
+//   const selectedVideos = selectVideosFromGenre(
+//     state.entities.genres.videoIds,
+//     state.entities.videos
+//   );
+//   return {
+//     videos: selectedVideos,
+//   };
+// };
 
-  render() {
-    const { genre, videos } = this.props;
-    return (
-      <div className='genre-container'>
-        <div class='genre-name'>
-          <h3>{genre.name}</h3>
-        </div>
-        <div className='genre-item'>
-          {videos.map((video, idx) => {
-            return <Video video={video} key={idx} />;
-          })}
-        </div>
-      </div>
-    );
-  }
-}
+// const mDTP = (dispatch) => ({});
+
+// export default connect(mSTP, mDTP)(Genre);
+
+import { connect } from 'react-redux';
+import Genres from './genres';
+
+const mSTP = (state, ownProps) => {
+  return {
+    genres: Object.values(state.entities.genres),
+  };
+};
+
+// const mDTP = dispatch => ({
+//   requestGenres: () => dispatch(requestGenres())
+// })
+
+export default connect(mSTP, null)(Genres);

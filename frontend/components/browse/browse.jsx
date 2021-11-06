@@ -34,12 +34,8 @@ export default class Browse extends Component {
                 />
               )
             })
-
-
           }
         </div>
-
-
       </div>
     )
   }
