@@ -6,11 +6,17 @@ export default class Video extends Component {
   }
 
   render() {
+
     const { video } = this.props
-    return (
-      <div className="video-container">
-        <p>{video.title}</p>
-      </div>
-    )
+
+    if (video) {
+      return (
+        <div className="video-container">
+          <p>{video.title}</p>
+        </div>
+      )
+    } else {
+      return null
+    }
   }
 }

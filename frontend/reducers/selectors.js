@@ -1,15 +1,21 @@
 // not really sure what this is going to do for now
-export const selectVideoId = (genre, videoId) => {
-  return genre[videoId] || { videoIds: [] };
+export const selectGenre = (genres, genreId) => {
+  return genres[genreId] || { genreId: [] };
 };
 
 // export an array of all videos within a particular genre
-export const selectVideosFromGenre = (videoIds, videos) => {
-  const selectedVideos = videoIds.map((videoId) => {
-    return videos[videoId];
+export const selectVideosFromGenre = (genre, videos) => {
+  // debugger;
+  const selectedVideos = genre.videoIds.map((videoId) => {
+    // debugger;
+    // for some reason, videos is starting at index 0
+    // look at debugger
+    return videos[videoId - 1];
   });
+
   return selectedVideos;
 };
+
 
 // export an array of all movies/tv shows in a particular genre
 // use Object.values

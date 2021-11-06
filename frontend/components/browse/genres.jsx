@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Video from './video';
+import GenreContainer from './genre_container'
 // fix the import later
 
 export default class Genres extends Component {
@@ -8,19 +8,22 @@ export default class Genres extends Component {
   }
 
   render() {
-    const { genre, videos } = this.props;
-    
+    const { genres, videos } = this.props;
+
     return (
-      <div className='genre-container'>
-        <div className='genre-name'>
-          <h3>{genre.name}</h3>
+      <div className="all-genres-container">
+          {
+            genres.map(genre => {
+              return (
+                <GenreContainer
+                  key={genre.id}
+                  genre={genre}
+                  videos={videos}
+                />
+              )
+            })
+          }
         </div>
-        <div className='genre-item'>
-          {videos.map((video, idx) => {
-            return <Video video={video} key={idx} />;
-          })}
-        </div>
-      </div>
     );
   }
 }

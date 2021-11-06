@@ -23,19 +23,11 @@ export default class Browse extends Component {
         </header>
         {/* <Carousel /> */}
 
-        <div className="all-genres-container">
-          {
-            genres.map(genre => {
-              return (
-                <GenresContainer
-                  key={genre.id}
-                  genre={genre}
-                  videos={videos}
-                />
-              )
-            })
-          }
-        </div>
+        <GenresContainer
+          genres={genres}
+          videos={videos}
+        />
+
       </div>
     )
   }
