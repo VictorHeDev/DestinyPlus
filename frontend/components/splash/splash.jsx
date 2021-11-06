@@ -40,6 +40,12 @@ export default function Splash() {
           </div>
         </section>
 
+        <section className="splash-favorite-stories">
+          <h3>Destiny+ has your favorite stories</h3>
+          <h5>An unprecedented collection of the world's most beloved movies and TV series.</h5>
+          <img className="favorite-shows-image" src={ window.favoriteShowsURL } />
+        </section>
+
         <section className="splash-side-content">
           <img className="media-bundle-small" src={ window.mediaBundleURL } />
           <aside>
@@ -50,6 +56,7 @@ export default function Splash() {
 
         <section className="favorite-devices">
           <h3>Available on your favorite devices</h3>
+
           <aside>
             <div>
               <h5>TV</h5>
