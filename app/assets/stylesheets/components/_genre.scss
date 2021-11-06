@@ -1,4 +1,18 @@
+.all-genres-container {
+  // margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
 .genre-container {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+}
+
+.genre-item {
   display: flex;
   flex-wrap: wrap;
 }

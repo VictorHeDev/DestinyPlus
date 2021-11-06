@@ -8,7 +8,7 @@ export default class Genres extends Component {
   render() {
     const { genre, videos } = this.props
     return (
-      <div>
+      <div className="genre-container">
         <p>{ genre }</p>
       </div>
     )

@@ -4,6 +4,7 @@ import { requestVideo, requestVideos } from '../../actions/video_actions';
 import Browse from './browse';
 
 const mSTP = (state, ownProps) => {
+
   return {
     genres: Object.values(state.entities.genres),
     videos: Object.values(state.entities.videos),
