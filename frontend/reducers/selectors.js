@@ -11,11 +11,11 @@ export const selectVideosFromGenre = (genre, videos) => {
     // for some reason, videos is starting at index 0
     // look at debugger
     return videos[videoId - 1];
+    // return videos[videoId];
   });
 
   return selectedVideos;
 };
-
 
 // export an array of all movies/tv shows in a particular genre
 // use Object.values

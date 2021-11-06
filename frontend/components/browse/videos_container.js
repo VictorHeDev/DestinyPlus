@@ -1,17 +1,15 @@
-import { connect } from 'react-redux'
-import Videos from './videos'
-import {
-  selectVideosFromGenre,
-  selectGenre }
-from '../../reducers/selectors'
+import { connect } from 'react-redux';
+import Videos from './videos';
+import { selectVideosFromGenre } from '../../reducers/selectors';
 
 const mSTP = (state, ownProps) => {
-  const videos =
+  // debugger;
+  const videos = selectVideosFromGenre(ownProps.genre, state.entities.videos);
   return {
+    videos: videos,
+  };
+};
 
-  }
-}
+const mDTP = (dispatch) => ({});
 
-const mDTP
-
-export const connect(mSTP, mDTP)(Videos)
+export default connect(mSTP, mDTP)(Videos);

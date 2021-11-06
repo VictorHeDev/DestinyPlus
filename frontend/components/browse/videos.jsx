@@ -6,7 +6,10 @@ export default class Videos extends Component {
   render() {
     const { genre, videos } = this.props
     // debugger
+    // this one does work
     const selectedVideos = selectVideosFromGenre(genre, videos)
+
+    // this one does not work
     // const selectedVideos = selectVideosFromGenre(genre, this.state.entities.videos)
 
     return (

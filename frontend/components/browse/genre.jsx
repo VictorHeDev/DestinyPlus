@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Videos from './videos'
+// import Videos from './videos_container'
 export default class Genre extends Component {
   constructor(props) {
     super(props)
