@@ -19,6 +19,7 @@ export default class EditProfileForm extends Component {
   }
 
   handleSubmit() {
+    // debugger
     // console.log(this.state)
     // debugger
     this.props.action(this.state)

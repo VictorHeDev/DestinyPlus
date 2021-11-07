@@ -8,5 +8,6 @@
   json.set! profile.id do
     json.id profile.id
     json.name profile.name
+    json.avatar profile.avatar
   end
 end

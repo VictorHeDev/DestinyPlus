@@ -37,10 +37,11 @@ export default class EditProfiles extends Component {
 
           {
             profiles.map(profile => {
+              // debugger
               return (
                 <li key={ profile.id }>
                   <div onClick={ (e) => this.handleClickProfile(e, profile.id) }>
-                    {/* image */}
+                    <img src={ profile.avatar } alt="" />
                   </div>
                   <span>{ profile.name }</span>
                 </li>
