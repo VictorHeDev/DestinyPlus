@@ -17,7 +17,7 @@ export default class CreateProfileForm extends Component {
   handleSubmit(e) {
     e.preventDefault()
     this.props.action(this.state)
-    this.props.history.push('/profiles')
+      .then(() => this.props.history.push('/profiles'))
   }
 
   handleCancelClick(e) {
