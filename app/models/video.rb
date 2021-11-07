@@ -14,7 +14,9 @@
 class Video < ApplicationRecord
   validates :title, :description, :year, :runtime, :mediatype, presence: true
 
-  has_many_attached :images
+  has_one_attached :thumbnail
+
+  # has_one_attached :background
   # has_one_attached :video
 
   has_many :video_genres,

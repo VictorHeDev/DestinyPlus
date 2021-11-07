@@ -2,6 +2,9 @@ import React from 'react'
 import NavBarContainer from '../navbar/navbar_container'
 
 export default function Splash() {
+  let banana = "avatar_1"
+
+
   return (
     <div className="splash-container">
       <header>

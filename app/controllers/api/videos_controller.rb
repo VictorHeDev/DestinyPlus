@@ -1,6 +1,7 @@
 class Api::VideosController < ApplicationController
   def index
-    @videos = Video.all.includes(:genres)
+    # @videos = Video.all.includes(:genres)
+    @videos = Video.with_attached_thumbnail.all.includes(:genres)
     render :index
   end
 
