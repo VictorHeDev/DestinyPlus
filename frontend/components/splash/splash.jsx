@@ -1,9 +1,13 @@
 import React from 'react'
 import NavBarContainer from '../navbar/navbar_container'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTv } from '@fortawesome/free-solid-svg-icons'
+import { faLaptop } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGamepad } from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Splash() {
-  let banana = "avatar_1"
-
 
   return (
     <div className="splash-container">
@@ -62,16 +66,45 @@ export default function Splash() {
 
           <aside>
             <div>
+              <FontAwesomeIcon icon={ faTv } size="6x" />
               <h5>TV</h5>
+              <ul>
+                <li>Amazon Fire TV</li>
+                <li>Android TV devices</li>
+                <li>AppleTV</li>
+                <li>Chromecast</li>
+                <li>LG TV</li>
+                <li>Roku</li>
+                <li>Samsung</li>
+                <li>Xfinity X1 & Flex</li>
+              </ul>
             </div>
             <div>
+              <FontAwesomeIcon icon={ faLaptop } size="6x" />
               <h5>Computer</h5>
+              <ul>
+                <li>Chrome OS</li>
+                <li>MacOS</li>
+                <li>Windows PC</li>
+              </ul>
             </div>
             <div>
+              <FontAwesomeIcon icon={ faMobileAlt } size="6x" />
               <h5>Mobile & Tablet</h5>
+              <ul><li>Amazon Fire Tablets</li>
+              <li>Android Phones & Tablets</li>
+              <li>iPhone and iPad</li></ul>
             </div>
             <div>
+              <FontAwesomeIcon icon={ faGamepad } size="6x" />
               <h5>Game Consoles</h5>
+              <ul>
+                <li>PS4</li>
+                <li>PS5</li>
+                <li>Xbox One</li>
+                <li>Xbox Series X</li>
+                <li>Xbox Series S</li>
+              </ul>
             </div>
           </aside>
 
