@@ -7,6 +7,7 @@
 #  user_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  avatar     :text             default("https://github.com/VictorHeDev/DestinyPlus/blob/main/app/assets/images/avatars/profile_1.jpeg?raw=true")
 #
 class Profile < ApplicationRecord
   validates :name, presence: true, uniqueness: true

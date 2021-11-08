@@ -1,9 +1,13 @@
 import React from 'react'
 import NavBarContainer from '../navbar/navbar_container'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTv } from '@fortawesome/free-solid-svg-icons'
+import { faLaptop } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGamepad } from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Splash() {
-  let banana = "avatar_1"
-
 
   return (
     <div className="splash-container">
@@ -12,12 +16,11 @@ export default function Splash() {
       </header>
 
       <section className="splash-main-content">
-        {/* <img className="splash-home-img" src={ window.splashHomeURL } /> */}
         <img className="media-bundle" src={ window.mediaBundleURL } />
         <button>GET THE DESTINY BUNDLE</button>
-        <p>Stream now. Terms Apply</p>
+        <p className="splash-stream"><span className="splash-banana">Stream now.</span> <span className="splash-terms">Terms Apply</span></p>
         <img className="media-bundle2" src={ window.mediaBundleURL2 } />
-        <p>Sign up for Destiny+ only.</p>
+        <p className="splash-sign-up">Sign up for Destiny+ only.</p>
       </section>
 
       <div className="splash-extra-content">
@@ -45,7 +48,7 @@ export default function Splash() {
 
         <section className="splash-favorite-stories">
           <h3>Destiny+ has your favorite stories</h3>
-          <h5>An unprecedented collection of the world's most beloved movies and TV series.</h5>
+          <p>An unprecedented collection of the world's most beloved movies and TV series.</p>
           <img className="favorite-shows-image" src={ window.favoriteShowsURL } />
         </section>
 
@@ -61,20 +64,48 @@ export default function Splash() {
           <h3>Available on your favorite devices</h3>
 
           <aside>
-            <div>
+            <div className="splash-devices">
+              <FontAwesomeIcon className="devices-icon" icon={ faTv } size="6x" />
               <h5>TV</h5>
+              <ul>
+                <li>Amazon Fire TV</li>
+                <li>Android TV devices</li>
+                <li>AppleTV</li>
+                <li>Chromecast</li>
+                <li>LG TV</li>
+                <li>Roku</li>
+                <li>Samsung</li>
+                <li>Xfinity X1 & Flex</li>
+              </ul>
             </div>
-            <div>
+            <div className="splash-devices">
+              <FontAwesomeIcon className="devices-icon" icon={ faLaptop } size="6x" />
               <h5>Computer</h5>
+              <ul>
+                <li>Chrome OS</li>
+                <li>MacOS</li>
+                <li>Windows PC</li>
+              </ul>
             </div>
-            <div>
+            <div className="splash-devices">
+              <FontAwesomeIcon className="devices-icon" icon={ faMobileAlt } size="6x" />
               <h5>Mobile & Tablet</h5>
+              <ul><li>Amazon Fire Tablets</li>
+              <li>Android Phones & Tablets</li>
+              <li>iPhone and iPad</li></ul>
             </div>
-            <div>
+            <div className="splash-devices">
+              <FontAwesomeIcon className="devices-icon" icon={ faGamepad } size="6x" />
               <h5>Game Consoles</h5>
+              <ul>
+                <li>PS4</li>
+                <li>PS5</li>
+                <li>Xbox One</li>
+                <li>Xbox Series X</li>
+                <li>Xbox Series S</li>
+              </ul>
             </div>
           </aside>
-
         </section>
 
         <section className="FAQ">

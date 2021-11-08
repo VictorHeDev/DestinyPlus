@@ -16,6 +16,7 @@ export default class SessionForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault()
+    // debugger
     const user = { ...this.state }
     this.props.processForm(user).then(() => this.props.history.push('/profiles'))
   }
@@ -77,7 +78,10 @@ export default class SessionForm extends React.Component {
 
     const demoLogin = (formType === 'Login') ? (
       <p>Just here to look? &nbsp;
-          <span onClick={ this.demoUser }>Demo User</span>
+          <span
+            className="demo-user"
+            onClick={ this.demoUser }>Demo User
+          </span>
       </p>
     ) : (
       null

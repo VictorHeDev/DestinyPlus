@@ -12,7 +12,7 @@ export default class Genre extends Component {
     return (
       < div className='genre-container'>
         <div className='genre-name'>
-          <h3>{genre.name}</h3>
+          <h5>{genre.name}</h5>
         </div>
         <Videos
           genre={genre}

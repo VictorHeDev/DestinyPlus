@@ -23,7 +23,8 @@ class Api::ProfilesController < ApplicationController
     if @profile.save
       render :show
     else
-      render json: ['Profile not saved'], status: 404
+      # render json: ['Profile not saved'], status: 404
+      render json: @profile.errors.full_messages, status: 404
     end
   end
 
@@ -32,6 +33,7 @@ class Api::ProfilesController < ApplicationController
 
     if @profile.update(profile_params)
       render :show
+      puts("banana")
     else
       render json: ['Profile did not update'], status: 404
     end
@@ -51,7 +53,7 @@ class Api::ProfilesController < ApplicationController
 
   private
   def profile_params
-    params.require(:profile).permit(:name)
+    params.require(:profile).permit(:name, :avatar)
   end
   # added :id to the profile params
 end

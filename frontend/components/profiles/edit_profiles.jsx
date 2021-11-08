@@ -27,29 +27,37 @@ export default class EditProfiles extends Component {
     const { profiles } = this.props;
 
     return (
-      <div className="profiles-container">
-        <button onClick={ (e) => this.handleClickDone(e) }>Done</button>
-        <img className="profiles-logo" src={ window.destinyLogoURL }/>
-        <h3>Manage Profiles</h3>
+      <div className="main-profiles-container">
+        <header>
+          <nav>
+            <img className="profiles-logo" src={ window.destinyLogoURL }/>
+            <button onClick={ (e) => this.handleClickDone(e) }>Done</button>
+          </nav>
+        </header>
 
-        <section className="all-profiles">
-          <ul className="profiles-list">
+        <div className="profiles-container">
+          <h3>Manage Profiles</h3>
 
-          {
-            profiles.map(profile => {
-              return (
-                <li key={ profile.id }>
-                  <div onClick={ (e) => this.handleClickProfile(e, profile.id) }>
-                    {/* image */}
-                  </div>
-                  <span>{ profile.name }</span>
-                </li>
-              )
-            })
-          }
+          <section className="all-profiles">
+            <ul className="profiles-list">
 
-          </ul>
-        </section>
+            {
+              profiles.map(profile => {
+                return (
+                  <li key={ profile.id }>
+                    <div onClick={ (e) => this.handleClickProfile(e, profile.id) }>
+                      <img src={ profile.avatar } alt="" />
+                    </div>
+                    <span>{ profile.name }</span>
+                  </li>
+                )
+              })
+            }
+
+            </ul>
+          </section>
+        </div>
+
       </div>
     )
   }
