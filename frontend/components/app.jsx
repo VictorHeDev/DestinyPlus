@@ -20,6 +20,7 @@ import EditProfilesContainer from './profiles/edit_profiles_container'
 import EditProfileFormContainer from './profiles/edit_profile_form_container'
 import CreateProfileFormContainer from './profiles/create_profile_form_container'
 import BrowseContainer from './browse/browse_container'
+// import VideoDescriptionContainer from './video_description/video_description_container'
 
 const App = () => (
   <div>
@@ -43,7 +44,7 @@ const App = () => (
       <ProtectedRoute path="/profiles/new" component={ CreateProfileFormContainer } />
       <ProtectedRoute path="/profiles/new" component={ CreateProfileFormContainer } />
       <ProtectedRoute exact path="/browse" component={ BrowseContainer } />
-      <ProtectedRoute path="/browse/:videoId" component={ BrowseContainer } />
+      {/* <ProtectedRoute path="/browse/:videoId" component={ VideoDescriptionContainer } /> */}
 
 
       {/* <ProtectedRoute path="/browse" component={  }/> */}

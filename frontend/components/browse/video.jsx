@@ -25,8 +25,8 @@ export default class Video extends Component {
         onClick={ (e) => this.handleVideoClick(e) }
         className="video-container"
         >
-          {/* <p>{video.title}</p> */}
-          <img src={video.thumbnailUrl} alt="video thumbnail" />
+          <p>{video.title}</p>
+          {/* <img src={video.thumbnailUrl} alt="video thumbnail" /> */}
         </div>
       )
     } else {
