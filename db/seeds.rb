@@ -8,7 +8,6 @@
 
 require 'open-uri'
 
-
 User.destroy_all
 Profile.destroy_all
 Genre.destroy_all
