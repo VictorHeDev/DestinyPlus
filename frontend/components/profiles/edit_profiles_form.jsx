@@ -43,7 +43,7 @@ export default class EditProfileForm extends Component {
 
     return (
       <div className="main-profile-form-container">
-        <h1>{ formType }</h1>
+        <h3>{ formType }</h3>
 
         <div className="sub-profile-form-container">
 

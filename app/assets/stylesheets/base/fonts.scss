@@ -2,9 +2,34 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  h1 {
+  }
+
+  h3 {
+    font-size: 40px;
+    padding: 1.5rem 0.5rem;
+  }
+
+  h5 {
+    font-size: 24px;
+    padding: 1rem 0.5rem;
+  }
+
+  li {
+    font-size: 18px;
+    color: #c0c0c0;
+    padding: 0.5rem;
+    line-height: 2rem;
+    height: auto;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: $color-grey;
+  }
 }
 
 /* Disney+ uses "Avenir" font
   - Other notable similar fonts are: Eau, Nunito
-
 */
