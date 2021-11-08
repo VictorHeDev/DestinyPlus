@@ -22,8 +22,8 @@ export default class Video extends Component {
         onClick={ () => this.handleRerouteOnClick() }
         className="video-container"
         >
-          <p>{video.title}</p>
-          {/* <img src={video.thumbnailUrl} alt="video thumbnail" /> */}
+          {/* <p>{video.title}</p> */}
+          <img src={video.thumbnailUrl} alt="video thumbnail" />
         </div>
       )
     } else {
