@@ -17,7 +17,7 @@ body {
 
   li {
     font-size: 18px;
-    color: #c0c0c0;
+    color: $color-light-grey;
     padding: 0.5rem;
     line-height: 2rem;
     height: auto;
@@ -26,7 +26,7 @@ body {
   p {
     font-size: 18px;
     line-height: 1.5rem;
-    color: $color-grey;
+    color: $color-light-grey;
   }
 }
 

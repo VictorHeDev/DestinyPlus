@@ -26,10 +26,11 @@
     font-size: 12px;
 
     .splash-banana {
-      color: $color-light-grey;
+      // color: $color-light-grey;
     }
 
     .splash-terms {
+      color: $color-light-grey;
       text-decoration: underline;
     }
   }
@@ -39,12 +40,16 @@
   }
 
   .media-bundle {
-    width: 70%;
+    width: 60%;
+    height: auto;
+    // border: 1px solid red;
   }
 
   .media-bundle2 {
+    height: auto;
     width: 50%;
     padding: 1rem;
+    // border: 1px solid blue;
   }
 }
 

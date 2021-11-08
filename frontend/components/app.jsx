@@ -42,7 +42,8 @@ const App = () => (
       <ProtectedRoute path="/profiles/:profileId/edit" component={ EditProfileFormContainer } />
       <ProtectedRoute path="/profiles/new" component={ CreateProfileFormContainer } />
       <ProtectedRoute path="/profiles/new" component={ CreateProfileFormContainer } />
-      <ProtectedRoute path="/browse" component={ BrowseContainer } />
+      <ProtectedRoute exact path="/browse" component={ BrowseContainer } />
+      <ProtectedRoute path="/browse/:videoId" component={ BrowseContainer } />
 
 
       {/* <ProtectedRoute path="/browse" component={  }/> */}
