@@ -12,13 +12,12 @@
 class Profile < ApplicationRecord
   validates :name, presence: true, uniqueness: true
 
-  # ... has_one relationship?\
-  # has_one :watchlist
-  # has_many :watchlists,
-  #   primary_key: :id,
-  #   foreign_key: :profile_id,
-  #   class_name: :Watchlsts,
-  #   dependent: :destroy
+  # check this
+  has_one :watchlist,
+    primary_key: :id,
+    foreign_key: :profile_id,
+    class_name: :Watchlst,
+    dependent: :destroy
 
 
   belongs_to :user,
