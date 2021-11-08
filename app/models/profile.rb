@@ -10,7 +10,7 @@
 #  avatar     :text             default("https://github.com/VictorHeDev/DestinyPlus/blob/main/app/assets/images/avatars/profile_1.jpeg?raw=true")
 #
 class Profile < ApplicationRecord
-  validates :name, :avatar, presence: true, uniqueness: true
+  validates :name, presence: true, uniqueness: true
 
   # ... has_one relationship?\
   # has_one :watchlist

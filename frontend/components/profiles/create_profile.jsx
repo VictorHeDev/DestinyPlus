@@ -18,7 +18,8 @@ export default class CreateProfileForm extends Component {
     debugger
     e.preventDefault()
     this.props.action(this.state)
-    this.props.history.push('/profiles')
+      .then(() => this.props.history.push('/profiles'),
+      res => console.log(res))
   }
 
   handleCancelClick(e) {
@@ -31,20 +32,33 @@ export default class CreateProfileForm extends Component {
 
     return (
       <div className="main-profile-form-container">
-        <form onSubmit={ this.handleSubmit }>
-          <h3>{ formType }</h3>
-          <label>Name
-            <input
-              type="text"
-              value={ name }
-              onChange={ this.update('name') }
-              // placeholder={ name } use a componentDidMount?
-            />
-          </label>
-          <button>Create Profile</button>
-          <button>{ formType }</button>
-        </form>
-        <button onClick={ this.handleCancelClick }>Cancel</button>
+        <div className="sub-profile-form-container">
+          <section className="choose-avatar">
+            <h3>Choose your Avatar!</h3>
+          </section>
+          
+          <section className="profile-form">
+            <div className="profile-form-container">
+              <form onSubmit={ this.handleSubmit }>
+                <h3>{ formType }</h3>
+                <label>Name
+                  <input
+                    type="text"
+                    value={ name }
+                    onChange={ this.update('name') }
+                    // placeholder={ name } use a componentDidMount?
+                  />
+                </label>
+                <button>Create Profile</button>
+                <button>{ formType }</button>
+              </form>
+
+            </div>
+            <button onClick={ this.handleCancelClick }>Cancel</button>
+
+          </section>
+
+        </div>
       </div>
     )
   }
