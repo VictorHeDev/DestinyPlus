@@ -21,7 +21,7 @@ export default class EditProfileForm extends Component {
   handleSubmit() {
     this.props.action(this.state)
     this.props.history.push('/profiles')
-    debugger
+    // debugger
   }
 
   handleDeleteClick() {

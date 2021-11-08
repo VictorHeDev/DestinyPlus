@@ -4,7 +4,7 @@ import { selectVideosFromGenre } from '../../reducers/selectors';
 
 const mSTP = (state, ownProps) => {
   const videos = selectVideosFromGenre(ownProps.genre, state.entities.videos);
-  debugger;
+  // debugger;
   return {
     videos: videos,
   };
