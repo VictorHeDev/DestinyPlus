@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NavBarContainer from '../navbar/navbar_container'
 
 export default class VideoDescription extends Component {
 
@@ -12,6 +13,9 @@ export default class VideoDescription extends Component {
 
     return (
       <div>
+        <header>
+          <NavBarContainer />
+        </header>
         <h1>{ title }</h1>
         <div className="video-description">
           <p>{ description }</p>
