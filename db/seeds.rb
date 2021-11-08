@@ -13,12 +13,14 @@ Profile.destroy_all
 Genre.destroy_all
 VideoGenre.destroy_all
 Video.destroy_all
+Watchlist.destroy_all
 
 ActiveRecord::Base.connection.reset_pk_sequence!("users")
 ActiveRecord::Base.connection.reset_pk_sequence!("profiles")
 ActiveRecord::Base.connection.reset_pk_sequence!("genres")
 ActiveRecord::Base.connection.reset_pk_sequence!("video_genres")
 ActiveRecord::Base.connection.reset_pk_sequence!("videos")
+ActiveRecord::Base.connection.reset_pk_sequence!("watchlists")
 
 # USERS
 demoUser = User.create!(
@@ -529,6 +531,9 @@ VideoGenre.create!(
 
 
 
-
+# demoWatchlist1 = Watchlist.create!(
+#   profile_id: demoUser.id,
+#   video_id: american_dragon.id
+# )
 
 

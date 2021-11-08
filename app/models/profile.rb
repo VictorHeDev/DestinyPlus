@@ -12,17 +12,19 @@
 class Profile < ApplicationRecord
   validates :name, presence: true, uniqueness: true
 
+  belongs_to :user,
+  primary_key: :id,
+  foreign_key: :user_id,
+  class_name: :User
+
   # check this
-  has_one :watchlist,
-    primary_key: :id,
+  has_many :watchlists,
+    primary_id: :id,
     foreign_key: :profile_id,
-    class_name: :Watchlst,
     dependent: :destroy
 
-
-  belongs_to :user,
-    primary_key: :id,
-    foreign_key: :user_id,
-    class_name: :User
+  has_many: :videos,
+    through: :watchlists,
+    source: :video
 
 end

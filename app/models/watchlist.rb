@@ -15,7 +15,7 @@ class Watchlist < ApplicationRecord
     foreign_key: :profile_id,
     class_name: :Profile
 
-  has_many :videos,
+  belongs_to :video,
     primary_key: :id,
     foreign_key: :video_id,
     class_name: :Video
