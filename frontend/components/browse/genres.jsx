@@ -9,6 +9,7 @@ export default class Genres extends Component {
 
   render() {
     const { genres, videos } = this.props;
+    // debugger
 
     return (
       <div className="all-genres-container">

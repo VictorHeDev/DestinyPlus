@@ -1,23 +1,28 @@
 import React, { Component } from 'react'
-import { selectVideosFromGenre } from '../../reducers/selectors'
-import Video from './video'
-
+// import { selectVideosFromGenre } from '../../reducers/selectors'
+import VideoContainer from './video_container'
 export default class Videos extends Component {
+  constructor(props) {
+    super(props)
+
+    // this.rerouteToVideoDescriptionPage = this.rerouteToVideoDescriptionPage.bind(this)
+  }
+
+  // rerouteToVideoDescriptionPage() {
+    // debugger
+    // this.props.history.push(`/browse/${video.id}`)
+  // }
+
   render() {
     const { genre, videos } = this.props
-    // debugger
-    // this one does work
-    const selectedVideos = selectVideosFromGenre(genre, videos)
-
-
-    // this one does not work
-    // const selectedVideos = selectVideosFromGenre(genre, this.state.entities.videos)
+    // const selectedVideos = selectVideosFromGenre(genre, videos)
 
     return (
       <div className="genre-item">
-        {selectedVideos.map((video, idx) => {
+        {videos.map((video, idx) => {
             return (
-            <Video
+            <VideoContainer
+              // reroute = {  this.rerouteToVideoDescriptionPage(video.id) }
               video={video}
               key={idx}
               genre={genre}

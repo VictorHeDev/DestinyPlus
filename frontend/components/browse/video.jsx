@@ -4,25 +4,22 @@ export default class Video extends Component {
   constructor(props) {
     super(props)
 
-    this.handleVideoClick = this.handleVideoClick.bind(this)
   }
 
-  handleVideoClick(e) {
+  handleRerouteOnClick() {
     const { video } = this.props
     // debugger
-
-    e.preventDefault()
     this.props.history.push(`/browse/${video.id}`)
   }
 
   render() {
-
-    const { video } = this.props
+    const { video, reroute } = this.props
 
     if (video) {
+      // debugger
       return (
         <div
-        onClick={ (e) => this.handleVideoClick(e) }
+        onClick={ () => this.handleRerouteOnClick() }
         className="video-container"
         >
           <p>{video.title}</p>

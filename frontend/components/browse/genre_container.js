@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import Genre from './genre';
 import { selectedVideos } from '../../reducers/selectors';
+import { withRouter } from 'react-router';
 
 const mSTP = (state, ownProps) => {
   return {
@@ -10,4 +11,4 @@ const mSTP = (state, ownProps) => {
 
 const mDTP = (dispatch) => ({});
 
-export default connect(mSTP, mDTP)(Genre);
+export default withRouter(connect(mSTP, mDTP)(Genre));

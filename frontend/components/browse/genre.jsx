@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import Videos from './videos'
-// import Videos from './videos_container'
+// import Videos from './videos'
+import VideosContainer from './videos_container'
 export default class Genre extends Component {
   constructor(props) {
     super(props)
   }
 
   render() {
+    // debugger
     const { genre, videos } = this.props
 
     return (
@@ -14,7 +15,7 @@ export default class Genre extends Component {
         <div className='genre-name'>
           <h5>{genre.name}</h5>
         </div>
-        <Videos
+        <VideosContainer
           genre={genre}
           videos={videos}
         />

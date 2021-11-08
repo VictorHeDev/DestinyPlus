@@ -1,5 +1,5 @@
 // import { connect } from 'react-redux';
-// import Genre from './genres';
+import Genre from './genres';
 // import { selectVideosFromGenre } from '../../reducers/selectors';
 
 // // undefined value
@@ -19,8 +19,10 @@
 
 import { connect } from 'react-redux';
 import Genres from './genres';
+import { withRouter } from 'react-router';
 
 const mSTP = (state, ownProps) => {
+  // debugger;
   return {
     genres: Object.values(state.entities.genres),
   };
@@ -30,4 +32,4 @@ const mSTP = (state, ownProps) => {
 //   requestGenres: () => dispatch(requestGenres())
 // })
 
-export default connect(mSTP, null)(Genres);
+export default withRouter(connect(mSTP, null)(Genres));
