@@ -3,7 +3,6 @@ import { requestProfile, requestProfiles } from '../../actions/profile_actions';
 import EditProfiles from './edit_profiles';
 
 const mSTP = (state, ownProps) => {
-  // debugger
   return {
     profiles: Object.values(state.entities.profiles),
   };

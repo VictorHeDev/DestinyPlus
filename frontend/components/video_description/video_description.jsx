@@ -8,7 +8,6 @@ export default class VideoDescription extends Component {
   componentDidMount() {
     // this.props.requestVideo(this.props.video)
     this.props.requestVideo(this.props.match.params.videoId)
-    // debugger
   }
 
   render() {

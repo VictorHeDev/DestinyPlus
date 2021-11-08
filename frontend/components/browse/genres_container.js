@@ -22,7 +22,6 @@ import Genres from './genres';
 import { withRouter } from 'react-router';
 
 const mSTP = (state, ownProps) => {
-  // debugger;
   return {
     genres: Object.values(state.entities.genres),
   };

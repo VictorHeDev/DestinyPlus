@@ -8,7 +8,6 @@ export default class Video extends Component {
 
   handleRerouteOnClick() {
     const { video } = this.props
-    // debugger
     this.props.history.push(`/browse/${video.id}`)
   }
 
@@ -16,7 +15,6 @@ export default class Video extends Component {
     const { video, reroute } = this.props
 
     if (video) {
-      // debugger
       return (
         <div
         onClick={ () => this.handleRerouteOnClick() }

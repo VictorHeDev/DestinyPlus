@@ -7,7 +7,6 @@ export default class Genre extends Component {
   }
 
   render() {
-    // debugger
     const { genre, videos } = this.props
 
     return (

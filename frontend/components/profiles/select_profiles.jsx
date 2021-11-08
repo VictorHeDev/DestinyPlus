@@ -13,7 +13,6 @@ export default class SelectProfiles extends Component {
 
   componentDidMount() {
     this.props.requestProfiles()
-    // debugger
   }
 
   handleEditClick(e) {
@@ -40,7 +39,6 @@ export default class SelectProfiles extends Component {
 
   render() {
     const { profiles } = this.props;
-    // debugger
 
     return (
       <div className="main-profiles-container">

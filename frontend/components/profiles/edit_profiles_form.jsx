@@ -21,7 +21,6 @@ export default class EditProfileForm extends Component {
   handleSubmit() {
     this.props.action(this.state)
     this.props.history.push('/profiles')
-    // debugger
   }
 
   handleDeleteClick() {
@@ -33,9 +32,7 @@ export default class EditProfileForm extends Component {
     e.preventDefault()
     let imageSource = e.currentTarget.src
     return this.setState({ avatar: imageSource })
-    // debugger
-    console.log(imageSource)
-    // console.log("hi i'm vic")
+
   }
 
   render() {

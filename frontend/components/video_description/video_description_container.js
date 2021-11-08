@@ -5,7 +5,6 @@ import VideoDescription from './video_description';
 import React from 'react';
 
 const mSTP = (state, ownProps) => {
-  // debugger;
   return {
     video: state.entities.videos[ownProps.match.params.videoId],
   };

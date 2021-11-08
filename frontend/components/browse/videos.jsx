@@ -9,7 +9,6 @@ export default class Videos extends Component {
   }
 
   // rerouteToVideoDescriptionPage() {
-    // debugger
     // this.props.history.push(`/browse/${video.id}`)
   // }
 
