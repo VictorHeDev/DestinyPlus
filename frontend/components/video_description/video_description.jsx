@@ -11,9 +11,12 @@ export default class VideoDescription extends Component {
   }
 
   render() {
+    if (!this.props.video) return null
+    const { title, description, year, runtime, mediatype } = this.props
     return (
       <div>
         Hello there!
+        { this.props.video.title }
       </div>
     )
   }
