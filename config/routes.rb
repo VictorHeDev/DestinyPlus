@@ -8,7 +8,9 @@ Rails.application.routes.draw do
     resources :profiles, only: [:index, :show, :create, :update, :destroy]
     resources :genres, only: [:index, :show]
     resources :videos, only: [:index, :show]
-    resources :watchlists, only: [:show, :update, :destroy]
+    resources :watchlists, only: [:index, :show, :create, :destroy]
   end
 
 end
+
+

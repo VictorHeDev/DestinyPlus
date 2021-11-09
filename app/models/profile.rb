@@ -18,7 +18,8 @@ class Profile < ApplicationRecord
   class_name: :User
 
   # check this
-  has_one :watchlist,
+  # has_one :watchlist
+  has_many :watchlists,
     primary_key: :id,
     foreign_key: :profile_id,
     dependent: :destroy
