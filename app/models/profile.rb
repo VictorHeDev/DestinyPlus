@@ -18,13 +18,13 @@ class Profile < ApplicationRecord
   class_name: :User
 
   # check this
-  has_many :watchlists,
-    primary_id: :id,
+  has_one :watchlist,
+    primary_key: :id,
     foreign_key: :profile_id,
     dependent: :destroy
 
-  has_many: :videos,
-    through: :watchlists,
+  has_many :videos,
+    through: :watchlist,
     source: :video
 
 end

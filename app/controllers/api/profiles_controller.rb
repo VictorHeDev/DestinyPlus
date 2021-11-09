@@ -33,7 +33,6 @@ class Api::ProfilesController < ApplicationController
 
     if @profile.update(profile_params)
       render :show
-      puts("banana")
     else
       render json: ['Profile did not update'], status: 404
     end

@@ -28,11 +28,9 @@ class Video < ApplicationRecord
     through: :video_genres,
     source: :genre
 
-  has_many: :watchlists,
+  has_many :watchlist_items,
     primary_key: :id,
     foreign_key: :video_id,
     class_name: :Watchlist
-
-
 
 end
