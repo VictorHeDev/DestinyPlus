@@ -97,7 +97,7 @@ export default class SessionForm extends React.Component {
             <div className="email-container">
               <label className="email" >
                 <input
-                  type="text"
+                  type="email"
                   value={email}
                   onChange={this.update('email')}
                   placeholder="Email"

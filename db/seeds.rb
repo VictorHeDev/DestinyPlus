@@ -552,5 +552,3 @@ u1Watchlist3 = Watchlist.create!(
   video_id: goofy.id
 )
 
-
-
