@@ -21,6 +21,7 @@ const sessionReducer = (oldState = _nullUser, action) => {
       return _nullUser;
     case RECEIVE_CURRENT_PROFILE:
       nextState.currentProfile = action.profileId;
+      return nextState;
     default:
       return oldState;
   }

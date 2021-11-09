@@ -3,6 +3,7 @@ import {
   requestProfile,
   requestProfiles,
   reformatProfiles,
+  receiveCurrentProfile,
 } from '../../actions/profile_actions';
 import { withRouter } from 'react-router';
 import SelectProfiles from './select_profiles';
@@ -18,6 +19,8 @@ const mDTP = (dispatch, ownProps) => {
     requestProfiles: () => dispatch(requestProfiles()),
     requestProfile: (profileId) => dispatch(requestProfile(profileId)),
     reformatProfiles: (profileId) => dispatch(reformatProfiles(profileId)),
+    receiveCurrentProfile: (profileId) =>
+      dispatch(receiveCurrentProfile(profileId)),
   };
 };
 

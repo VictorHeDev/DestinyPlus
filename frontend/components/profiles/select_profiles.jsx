@@ -24,6 +24,7 @@ export default class SelectProfiles extends Component {
     e.preventDefault()
 
     this.props.requestProfile(profileId)
+    this.props.receiveCurrentProfile(profileId)
     // this.props.reformatProfiles(this.props.profiles[profileId])
     this.props.history.push('/browse')
   }

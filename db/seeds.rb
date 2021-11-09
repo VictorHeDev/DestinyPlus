@@ -508,6 +508,154 @@ VideoGenre.create!(
 safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/safh.jpg')
 safh.thumbnail.attach(io: safh_thumbnail, filename: 'safh.jpg')
 
+# COWBOY BEBOP
+bebop = Video.create!(
+  title: "Cowboy Bebop",
+  description: "Spike Spiegel is a bounty hunter in the far future with an easy going attitude and some deadly skill at martial arts. Together with his partners, Jet Black, and later Faye Valentine as well, they go from job to job across the galaxy looking for the high priced fugitives to bag.",
+  year: "1998",
+  runtime: "1 season",
+  mediatype: "tv"
+)
+
+VideoGenre.create!(
+  video_id: bebop.id,
+  genre_id: anime.id
+)
+# bebop_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/bebop.jpg')
+# bebop.thumbnail.attach(io: bebop_thumbnail, filename: 'safh.jpg')
+
+# SPIRITED AWAY
+spirited_away = Video.create!(
+  title: "Spirited Away",
+  description: "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+  year: "2001",
+  runtime: "125 mins",
+  mediatype: "movie"
+)
+
+VideoGenre.create!(
+  video_id: spirited_away.id,
+  genre_id: anime.id
+)
+# spirited_away_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/spirited_away.jpg')
+# spirited_away.thumbnail.attach(io: spirited_away_thumbnail, filename: 'safh.jpg')
+
+# PRINCESS MONONOKE
+mononoke = Video.create!(
+  title: "Princess Mononoke",
+  description: "While protecting his village from rampaging boar-god/demon, a confident young warrior, Ashitaka, is stricken by a deadly curse. To save his life, he must journey to the forests of the west. Once there, he's embroiled in a fierce campaign that humans were waging on the forest. The ambitious Lady Eboshi and her loyal clan use their guns against the gods of the forest and a brave young woman, Princess Mononoke, who was raised by a wolf-god. Ashitaka sees the good in both sides and tries to stem the flood of blood. This is met by animosity by both sides as they each see him as supporting the enemy.",
+  year: "1997",
+  runtime: "134 mins",
+  mediatype: "movie"
+)
+
+VideoGenre.create!(
+  video_id: mononoke.id,
+  genre_id: anime.id
+)
+# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/mononoke.jpg')
+# mononoke.thumbnail.attach(io: safh_thumbnail, filename: 'mononoke.jpg')
+
+# YOUR NAME
+your_name = Video.create!(
+  title: "Your Name",
+  description: "Mitsuha is the daughter of the mayor of a small mountain town. She's a straightforward high school girl who lives with her sister and her grandmother and has no qualms about letting it be known that she's uninterested in Shinto rituals or helping her father's electoral campaign. Instead she dreams of leaving the boring town and trying her luck in Tokyo. Taki is a high school boy in Tokyo who works part-time in an Italian restaurant and aspires to become an architect or an artist. Every night he has a strange dream where he becomes...a high school girl in a small mountain town.",
+  year: "2016",
+  runtime: "106 mins",
+  mediatype: "movie"
+)
+
+VideoGenre.create!(
+  video_id: your_name.id,
+  genre_id: anime.id
+)
+# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/your_name.jpg')
+# your_name.thumbnail.attach(io: safh_thumbnail, filename: 'your_name.jpg')
+
+# FULLMETAL ALCHEMIST
+fma = Video.create!(
+  title: "Fullmetal Alchemist: Brotherhood",
+  description: "Two brothers lose their mother to an incurable disease. With the power of 'alchemy', they use taboo knowledge to resurrect her. The process fails, and as a toll for using this type of alchemy, the older brother, Edward Elric loses his left leg while the younger brother, Alphonse Elric loses his entire body. To save his brother, Edward sacrifices his right arm and is able to affix his brother's soul to a suit of armor. With the help of a family friend, Edward receives metal limbs - 'automail' - to replace his lost ones. With that, Edward vows to search for the Philosopher's Stone to return the brothers to their original bodies, even if it means becoming a 'State Alchemist', one who uses his/her alchemy for the military.",
+  year: "2009",
+  runtime: "2 seasons",
+  mediatype: "tv"
+)
+
+VideoGenre.create!(
+  video_id: fma.id,
+  genre_id: anime.id
+)
+# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/fma.jpg')
+# fma.thumbnail.attach(io: safh_thumbnail, filename: 'fma.jpg')
+
+# ONE PIECE
+op = Video.create!(
+  title: "One Piece",
+  description: "There once lived a pirate named Gol D. Roger. He obtained wealth, fame, and power to earn the title of Pirate King. When he was captured and about to be executed, he revealed that his treasure called One Piece was hidden somewhere at the Grand Line. This made all people set out to search and uncover the One Piece treasure, but no one ever found the location of Gol D. Roger's treasure, and the Grand Line was too dangerous a place to overcome. Twenty-two years after Gol D. Roger's death, a boy named Monkey D. Luffy decided to become a pirate and search for Gol D. Roger's treasure to become the next Pirate King.",
+  year: "1999",
+  runtime: "40 seasons",
+  mediatype: "tv"
+)
+
+VideoGenre.create!(
+  video_id: op.id,
+  genre_id: anime.id
+)
+# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/op.jpg')
+# op.thumbnail.attach(io: safh_thumbnail, filename: 'op.jpg')
+
+# NARUTO SHIPPUDEN
+shippuden = Video.create!(
+  title: "Naruto Shippuden",
+  description: "Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.",
+  year: "2007",
+  runtime: "10 seasons",
+  mediatype: "tv"
+)
+
+VideoGenre.create!(
+  video_id: shippuden.id,
+  genre_id: anime.id
+)
+# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shippuden.jpg')
+# shippuden.thumbnail.attach(io: safh_thumbnail, filename: 'shippuden.jpg')
+
+# MY HERO ACADEMIA
+mha = Video.create!(
+  title: "My Hero Academia",
+  description: "In a world populated with superhumans, the superhero-loving Izuku Midoriya is without power. However, after the Quirkless dreamer Izuku inherits the powers of the world's best superhero, All Might, his hopes of becoming the top hero are now possible. Once enrolled in the high school for heroes, U.A., Izuku soon discovers being a hero is much more complicated than it appears.",
+  year: "2016",
+  runtime: "6 seasons",
+  mediatype: "tv"
+)
+
+VideoGenre.create!(
+  video_id: mha.id,
+  genre_id: anime.id
+)
+# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/mha.jpg')
+# mha.thumbnail.attach(io: safh_thumbnail, filename: 'mha.jpg')
+
+# DEMON SLAYER
+demon_slayer = Video.create!(
+  title: "Demon Slayer",
+  description: "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
+  year: "2019",
+  runtime: "2 seasons",
+  mediatype: "tv"
+)
+
+VideoGenre.create!(
+  video_id: demon_slayer.id,
+  genre_id: anime.id
+)
+# demon_slayer_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/demon_slayer.jpg')
+# demon_slayer.thumbnail.attach(io: demon_slayer_thumbnail, filename: 'demon_slayer.jpg')
+
+
+
+
+
 
 # WATCHLIST
 demoUserWatchlist1 = Watchlist.create!(
