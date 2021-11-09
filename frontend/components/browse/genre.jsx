@@ -11,9 +11,8 @@ export default class Genre extends Component {
 
     return (
       < div className='genre-container'>
-        <div className='genre-name'>
-          <h5>{genre.name}</h5>
-        </div>
+        <h5>{genre.name}</h5>
+
         <VideosContainer
           genre={genre}
           videos={videos}

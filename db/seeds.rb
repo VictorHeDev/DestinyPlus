@@ -510,29 +510,29 @@ safh.thumbnail.attach(io: safh_thumbnail, filename: 'safh.jpg')
 
 
 # WATCHLIST
-demoWatchlist1 = Watchlist.create!(
-  profile_id: demoUser.id,
+demoUserWatchlist1 = Watchlist.create!(
+  profile_id: demoUserProfile1.id,
   video_id: american_dragon.id
 )
-demoWatchlist2 = Watchlist.create!(
-  profile_id: demoUser.id,
+demoUserWatchlist2 = Watchlist.create!(
+  profile_id: demoUserProfile1.id,
   video_id: cosmos.id
 )
-demoWatchlist3 = Watchlist.create!(
-  profile_id: demoUser.id,
+demoUserWatchlist3 = Watchlist.create!(
+  profile_id: demoUserProfile1.id,
   video_id: avengers.id
 )
 
 u1Watchlist1 = Watchlist.create!(
-  profile_id: u1.id,
+  profile_id: u1p1.id,
   video_id: bh6.id
 )
 u1Watchlist2 = Watchlist.create!(
-  profile_id: u1.id,
+  profile_id: u1p1.id,
   video_id: suitelife.id
 )
 u1Watchlist3 = Watchlist.create!(
-  profile_id: u1.id,
+  profile_id: u1p1.id,
   video_id: goofy.id
 )
 
