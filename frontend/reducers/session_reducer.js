@@ -2,9 +2,11 @@ import {
   RECEIVE_CURRENT_USER,
   LOGOUT_CURRENT_USER,
 } from '../actions/session_actions';
+import { RECEIVE_CURRENT_PROFILE } from '../actions/profile_actions';
 
 const _nullUser = Object.freeze({
   id: null,
+  currentProfile: null,
 });
 
 const sessionReducer = (oldState = _nullUser, action) => {
@@ -17,6 +19,8 @@ const sessionReducer = (oldState = _nullUser, action) => {
       return nextState;
     case LOGOUT_CURRENT_USER:
       return _nullUser;
+    case RECEIVE_CURRENT_PROFILE:
+      nextState.currentProfile = action.profileId;
     default:
       return oldState;
   }

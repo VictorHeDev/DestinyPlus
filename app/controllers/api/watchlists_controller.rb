@@ -30,12 +30,13 @@ class Api::WatchlistsController < ApplicationController
   def destroy
     @watchlist = Watchlist.find(params[:id])
     # @watchlist = Watchlist.find_by(video_id: watchlist_params[:video_id], profile_id: watchlist_params[:profile_id])
+    # @watchlist = current_profile.watchlists.find_by(video_id: params[:id])
 
     if @watchlist
       @watchlist.destroy
       # render :index
     else
-      render json: ['Watchlist cannot be deleted']
+      render json: ['Watchlist cannot be deleted'], status: 422
     end
   end
 

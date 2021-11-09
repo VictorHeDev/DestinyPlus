@@ -457,24 +457,8 @@ VideoGenre.create!(
   video_id: parts_unknown.id,
   genre_id: education.id
 )
-# isle_of_dogs_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/isle-of-dogs.jpeg')
-# parts_unknown.thumbnail.attach(io: isle_of_dogs_thumbnail, filename: 'isle-of-dogs.jepg')
-
-# ANTHONY BOURDAIN: PARTS UNKNOWN
-parts_unknown = Video.create!(
-  title: "Anthony Bourdain: Parts Unknown",
-  description: "Anthony Bourdain visits countries, delving into their political issues as well as indigenous food and culture.",
-  year: "2013",
-  runtime: "12 seasons",
-  mediatype: "tv"
-)
-
-VideoGenre.create!(
-  video_id: parts_unknown.id,
-  genre_id: education.id
-)
-# isle_of_dogs_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/isle-of-dogs.jpeg')
-# parts_unknown.thumbnail.attach(io: isle_of_dogs_thumbnail, filename: 'isle-of-dogs.jepg')
+parts_unknown_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/parts-unknown.jpg')
+parts_unknown.thumbnail.attach(io: parts_unknown_thumbnail, filename: 'parts-unknown.jpg')
 
 # JIRO DREAMS OF SUSHI
 jiro = Video.create!(
@@ -489,8 +473,8 @@ VideoGenre.create!(
   video_id: jiro.id,
   genre_id: education.id
 )
-# isle_of_dogs_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/isle-of-dogs.jpeg')
-# jiro.thumbnail.attach(io: isle_of_dogs_thumbnail, filename: 'isle-of-dogs.jepg')
+jiro_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/jiro.jpg')
+jiro.thumbnail.attach(io: jiro_thumbnail, filename: 'jiro.jpg')
 
 # THE LAST DANCE
 last_dance = Video.create!(
@@ -505,8 +489,8 @@ VideoGenre.create!(
   video_id: last_dance.id,
   genre_id: education.id
 )
-# isle_of_dogs_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/isle-of-dogs.jpeg')
-# jiro.thumbnail.attach(io: isle_of_dogs_thumbnail, filename: 'isle-of-dogs.jepg')
+last_dance_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/last-dance.jpg')
+last_dance.thumbnail.attach(io: last_dance_thumbnail, filename: 'last-dance-jpg')
 
 # SALT ACID FAT HEAT
 safh = Video.create!(
@@ -521,8 +505,8 @@ VideoGenre.create!(
   video_id: safh.id,
   genre_id: education.id
 )
-# isle_of_dogs_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/isle-of-dogs.jpeg')
-# jiro.thumbnail.attach(io: isle_of_dogs_thumbnail, filename: 'isle-of-dogs.jepg')
+safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/safh.jpg')
+safh.thumbnail.attach(io: safh_thumbnail, filename: 'safh.jpg')
 
 
 # WATCHLIST

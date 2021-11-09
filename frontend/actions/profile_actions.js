@@ -5,6 +5,7 @@ export const RECEIVE_ALL_PROFILES = 'RECEIVE_ALL_PROFILES';
 export const RECEIVE_PROFILE = 'RECEIVE_PROFILE';
 export const REMOVE_PROFILE = 'REMOVE_PROFILE';
 export const REFORMAT_PROFILE = 'REFORMAT_PROFILE';
+export const RECEIVE_CURRENT_PROFILE = 'RECEIVE_CURRENT_PROFILE';
 
 // action creators
 const receiveProfiles = (profiles) => {
@@ -24,6 +25,14 @@ const receiveProfile = (profile) => {
 const removeProfile = (profileId) => {
   return {
     type: REMOVE_PROFILE,
+    profileId,
+  };
+};
+
+// might have to change this later
+export const receiveCurrentProfile = (profileId) => {
+  return {
+    type: RECEIVE_CURRENT_PROFILE,
     profileId,
   };
 };
