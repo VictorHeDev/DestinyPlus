@@ -18,8 +18,8 @@ const ProfilesReducer = (oldState = {}, action) => {
       return action.profiles;
     case RECEIVE_PROFILE:
       // nextState[action.profile.id] = action.profile;
+      // return action.profile;
       return { ...nextState, [action.profile.id]: action.profile };
-    // return action.profile;
     case REMOVE_PROFILE:
       delete nextState[action.profileId];
       return nextState;
