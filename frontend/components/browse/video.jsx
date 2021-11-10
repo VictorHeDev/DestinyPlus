@@ -15,14 +15,14 @@ export default class Video extends Component {
     const { video, reroute } = this.props
 
     if (video) {
-      // const placeholder = video.thumbnailUrl ? <img src={ video.thumbnailUrl } /> : <p>{ video.title }</p>
+      const placeholder = video.thumbnailUrl ? <img src={ video.thumbnailUrl } /> : <p>{ video.title }</p>
       return (
         <div
         onClick={ () => this.handleRerouteOnClick() }
         className="video-container"
         >
-          {/* { placeholder } */}
-          <p>{video.title}</p>
+          { placeholder }
+          {/* <p>{video.title}</p> */}
           {/* <img src={video.thumbnailUrl} alt="video thumbnail" /> */}
         </div>
       )

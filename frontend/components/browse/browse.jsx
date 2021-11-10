@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NavBarContainer from '../navbar/navbar_container'
 import GenresContainer from './genres_container'
+import Carousel from './carousel'
 export default class Browse extends Component {
   constructor(props) {
     super(props)
@@ -22,8 +23,8 @@ export default class Browse extends Component {
     return (
       <div className="browse-container">
         <NavBarContainer />
-        {/* <Carousel /> */}
         <div className="main-browse-content">
+        <Carousel />
           <GenresContainer
             genres={genres}
             videos={videos}

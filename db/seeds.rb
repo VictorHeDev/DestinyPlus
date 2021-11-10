@@ -35,17 +35,17 @@ u1 = User.create!(
 
 # PROFILES
 demoUserProfile1 = Profile.create!(
-  name: 'Demo1',
+  name: 'DemoUser',
   user_id: 1
 )
 
 demoUserProfile2 = Profile.create!(
-  name: '<3 Mom',
+  name: 'Stella',
   user_id: 1
 )
 
 demoUserProfile1 = Profile.create!(
-  name: 'Hello!',
+  name: 'Jon!',
   user_id: 1
 )
 
