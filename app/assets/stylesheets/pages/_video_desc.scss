@@ -3,8 +3,16 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .video-desc-main-content {
-  padding-top: 80px;
+  position: absolute;
+  height: 70%;
+  width: 60%;
+  padding-top: 400px;
+}
+
+.video-info {
+  padding: 50px;
 }

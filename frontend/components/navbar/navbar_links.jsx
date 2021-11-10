@@ -6,6 +6,7 @@ import { faHouseUser,
   faFilm,
   faTv
 } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 
 export default function NavBarLinks() {
@@ -13,7 +14,11 @@ export default function NavBarLinks() {
   return (
     <div className="navbar-links">
       <ul>
-        <li><FontAwesomeIcon icon={ faHouseUser } size="lg" className="nav-icon" />HOME</li>
+        <li>
+          <Link to="/browse">
+            <FontAwesomeIcon icon={ faHouseUser } size="lg" className="nav-icon" />HOME
+          </Link>
+          </li>
         <li><FontAwesomeIcon icon={ faSearch } size="lg" className="nav-icon" /> SEARCH</li>
         <li><FontAwesomeIcon icon={ faPlus } size="lg" className="nav-icon" /> WATCHLIST</li>
         <li><FontAwesomeIcon icon={ faFilm } size="lg" className="nav-icon" /> MOVIES</li>

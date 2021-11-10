@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import NavBarContainer from '../navbar/navbar_container'
-
+import { Link } from 'react-router-dom'
 export default class VideoDescription extends Component {
 
   componentDidMount() {
@@ -23,21 +23,22 @@ export default class VideoDescription extends Component {
         </header>
         <div className="video-desc-main-content">
           {/* <img src={ backgroundUrl } alt="" /> */}
-          <h1>{ title }</h1>
-          <div className="video-description">
+          {/* <h1>{ title }</h1> */}
+          {/* <div className="video-description">
             <p>{ description }</p>
-          </div>
+          </div> */}
           <div className="video-info" >
-            <div>
-              Year Released: { year }
-            </div>
-            <div>
-              Total Runtime: { runtime }
-            </div>
-            <div>
-              Type: { mediatype.toUpperCase() }
-            </div>
-        </div>
+            <ul>
+              <li>
+                <p>
+                  { description }
+                </p>
+              </li>
+              <li>Year Released: { year }</li>
+              <li>Total Runtime: { runtime }</li>
+              <li>Type: { mediatype.toUpperCase() }</li>
+            </ul>
+          </div>
         </div>
       </div>
     )
