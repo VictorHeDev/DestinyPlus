@@ -5,9 +5,10 @@ nav {
 }
 
 .nav-bar {
-  background-color: black;
+  background-color: #0d0e15;
   position: fixed;
-  top: 0;
+  // top: 0;
+  height: 80px;
 }
 
 .main-nav {
@@ -18,7 +19,6 @@ nav {
     width: 120px;
     padding: 5px 10px;
   }
-
 }
 
 .navbar-links {
@@ -42,6 +42,7 @@ nav {
 .account {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 2rem;
   font-size: 16px;
 }
@@ -54,6 +55,43 @@ nav {
   border: 1px solid white;
 }
 
+.account-info {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  padding: 12px 20px;
+  width: 300px;
+
+  &:hover {
+    // background-color: black;
+    background-color: black;
+    border: 1px solid $color-grey;
+    // padding: 12px 30px 12px 60px;
+    border-radius: 3px;
+    transition: all 3 ease-in;
+    transition: max-height 3s ease-in;
+  }
+}
+
+.greeting-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.account-menu {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    padding: 5px 15px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
 .signup {
   padding: 1rem;
 }

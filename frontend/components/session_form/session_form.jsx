@@ -61,13 +61,6 @@ export default class SessionForm extends React.Component {
   render () {
     const { email, password } = this.state;
     const { formType, navLink } = this.props;
-    // const errorMessages = errors ? (
-    //   <ul>
-    //     { errors.map(error => <li>{ error }</li>) }
-    //   </ul>
-    // ) : (
-    //   <div></div>
-    // )
 
     // const altLink = formType === 'Login' ? (
     //   <Link to='/signup'>Sign Up</Link>
@@ -89,7 +82,9 @@ export default class SessionForm extends React.Component {
     return (
       <div className="session-form-container">
         <form onSubmit={this.handleSubmit}>
-        <img src={window.destinyLogoURL} alt="destiny plus logo" />
+        <Link to="/">
+          <img src={window.destinyLogoURL} alt="destiny plus logo" />
+        </Link>
         <h3>{ formType } with your email</h3>
         <br/>
           { this.renderErrors() }

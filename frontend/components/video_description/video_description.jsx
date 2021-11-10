@@ -12,24 +12,26 @@ export default class VideoDescription extends Component {
     const { title, description, year, runtime, mediatype } = this.props.video
 
     return (
-      <div>
+      <div className="video-desc-container">
         <header>
           <NavBarContainer />
         </header>
-        <h1>{ title }</h1>
-        <div className="video-description">
-          <p>{ description }</p>
+        <div className="video-desc-main-content">
+          <h1>{ title }</h1>
+          <div className="video-description">
+            <p>{ description }</p>
+          </div>
+          <div className="video-info" >
+            <div>
+              Year Released: { year }
+            </div>
+            <div>
+              Total Runtime: { runtime }
+            </div>
+            <div>
+              Type: { mediatype.toUpperCase() }
+            </div>
         </div>
-        <div className="video-info" >
-          <div>
-            Year Released: { year }
-          </div>
-          <div>
-            Total Runtime: { runtime }
-          </div>
-          <div>
-            Type: { mediatype.toUpperCase() }
-          </div>
         </div>
       </div>
     )

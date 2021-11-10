@@ -21,16 +21,14 @@ export default class Browse extends Component {
 
     return (
       <div className="browse-container">
-        <header>
-          <NavBarContainer />
-        </header>
+        <NavBarContainer />
         {/* <Carousel /> */}
-
-        <GenresContainer
-          genres={genres}
-          videos={videos}
-        />
-
+        <div className="main-browse-content">
+          <GenresContainer
+            genres={genres}
+            videos={videos}
+          />
+        </div>
       </div>
     )
   }

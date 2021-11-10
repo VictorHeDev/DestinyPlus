@@ -7,18 +7,21 @@ export default class NavBar extends React.Component {
 
   render () {
     return (
-      <nav className="nav-bar">
-        <div className="main-nav">
-          <Link to="/browse">
-            <img
-              className="navLogo"
-              src={ window.destinyLogoURL }
-            />
-          </Link>
-          <NavBarLinks />
-        </div>
+      <header>
+        <nav className="nav-bar">
+          <div className="main-nav">
+            <Link to="/browse">
+              <img
+                className="navLogo"
+                src={ window.destinyLogoURL }
+              />
+            </Link>
+            <NavBarLinks />
+          </div>
+        </nav>
         <AccountContainer currentUser={ this.props.currentUser }/>
-      </nav>
+
+      </header>
     )
   }
 }
