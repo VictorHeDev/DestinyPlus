@@ -21,22 +21,6 @@
     width: 25%;
   }
 
-  .credentials {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .email-container,
-  .password-container {
-    height: 50px;
-    width: 300px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: #31343e;
-  }
-
   input {
     height: 75%;
     width: 75%;
@@ -59,8 +43,24 @@
     padding: 20px 5px;
     border-radius: 5px;
   }
+}
 
-  .demo-user {
-    cursor: pointer;
-  }
+.demo-user {
+  cursor: pointer;
+}
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-container,
+.password-container {
+  height: 50px;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #31343e;
 }

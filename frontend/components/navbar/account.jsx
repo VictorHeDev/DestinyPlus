@@ -8,7 +8,7 @@ export default class Account extends Component {
   }
 
   render() {
-    if (!this.props.currentProfile) return null;
+    // if (!this.props.currentProfile) return null;
 
     const { currentUser, logout, currentProfile } = this.props
     const account = currentUser ? (

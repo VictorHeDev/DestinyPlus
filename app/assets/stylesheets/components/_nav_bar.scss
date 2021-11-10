@@ -19,17 +19,18 @@ nav {
     padding: 5px 10px;
   }
 
-  .navbar-links {
-    padding: 0px 10px;
+}
 
-    ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.navbar-links {
+  padding: 0px 10px;
 
-      li {
-        color: white;
-      }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      color: white;
     }
   }
 }

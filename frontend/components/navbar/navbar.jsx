@@ -11,7 +11,6 @@ export default class NavBar extends React.Component {
         <div className="main-nav">
           <Link to="/browse">
             <img
-              // onClick={ () => this.handleLogoClick }
               className="navLogo"
               src={ window.destinyLogoURL }
             />
