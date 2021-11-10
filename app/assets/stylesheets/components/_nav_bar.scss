@@ -4,22 +4,38 @@ nav {
   align-items: center;
 }
 
+.nav-bar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
 
   img {
-    width: 150px;
-    padding: 1rem;
+    width: 120px;
+    padding: 5px 10px;
   }
 
   .navbar-links {
-    padding: 2rem;
+    padding: 0px 10px;
 
-    span {
-      padding: 1rem;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        color: white;
+      }
     }
   }
+}
+
+.nav-icon {
+  padding: 0px 5px;
 }
 
 .account {
