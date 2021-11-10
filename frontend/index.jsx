@@ -36,3 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
     root
   )
 })
+
+// add current profile to preloaded state using local storage
