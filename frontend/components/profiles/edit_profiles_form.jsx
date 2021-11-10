@@ -32,7 +32,6 @@ export default class EditProfileForm extends Component {
     e.preventDefault()
     let imageSource = e.currentTarget.src
     return this.setState({ avatar: imageSource })
-
   }
 
   render() {
@@ -67,6 +66,7 @@ export default class EditProfileForm extends Component {
               </div>
               <div className="avatar-container">
                 <img
+                  onClick={ (e) => this.handleProfileClick(e) }
                   src="https://github.com/VictorHeDev/DestinyPlus/blob/main/app/assets/images/avatars/profile_4.jpeg?raw=true"
                   alt="elsa-avatar" />
               </div>
@@ -129,9 +129,7 @@ export default class EditProfileForm extends Component {
             <div className="profile-form-container">
               <form onSubmit={ this.handleSubmit }>
                 <label>
-                  <h3>
-                    Set Nickname
-                  </h3>
+                  <h3>Set Nickname</h3>
                   <input
                     type="text"
                     value={ this.state.name }
