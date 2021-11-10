@@ -14,7 +14,7 @@ export default class Account extends Component {
     const account = currentUser ? (
       <div className="account">
         <button className="logout" onClick={() => logout()}>Log Out</button>
-        
+
         <h1 className="greeting">Greetings { currentProfile.name }</h1>
         <img
           src={currentProfile.avatar}

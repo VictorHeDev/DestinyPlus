@@ -2,11 +2,13 @@ import { connect } from 'react-redux';
 import { requestGenres } from '../../actions/genre_actions';
 import { requestVideo, requestVideos } from '../../actions/video_actions';
 import Browse from './browse';
+import { withRouter } from 'react-router';
 
 const mSTP = (state, ownProps) => {
   return {
     genres: Object.values(state.entities.genres),
     videos: state.entities.videos,
+    currentProfile: state.session.currentProfile,
   };
 };
 
@@ -17,4 +19,4 @@ const mDTP = (dispatch) => ({
   requestVideo: (videoId) => dispatch(requestVideo(videoId)),
 });
 
-export default connect(mSTP, mDTP)(Browse);
+export default withRouter(connect(mSTP, mDTP)(Browse));

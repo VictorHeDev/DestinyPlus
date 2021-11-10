@@ -10,11 +10,15 @@ export default class Browse extends Component {
   componentDidMount() {
     this.props.requestGenres()
     this.props.requestVideos()
+
+    if (!this.props.currentProfile) {
+      this.props.history.push('/profiles')
+    }
   }
 
   render() {
     const { genres, videos } = this.props
-    
+
     return (
       <div className="browse-container">
         <header>
