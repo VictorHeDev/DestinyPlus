@@ -9,14 +9,20 @@ export default class VideoDescription extends Component {
 
   render() {
     if (!this.props.video) return null
-    const { title, description, year, runtime, mediatype } = this.props.video
+    const { title, description, year, runtime, mediatype, backgroundUrl } = this.props.video
 
     return (
-      <div className="video-desc-container">
+      <div
+        className="video-desc-container"
+        style={{
+          backgroundImage: `url(${backgroundUrl})`
+        }}
+      >
         <header>
           <NavBarContainer />
         </header>
         <div className="video-desc-main-content">
+          {/* <img src={ backgroundUrl } alt="" /> */}
           <h1>{ title }</h1>
           <div className="video-description">
             <p>{ description }</p>
