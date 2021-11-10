@@ -1,3 +1,79 @@
+.splash-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  transition: background 0.5s ease;
+}
+
+.splash-nav-active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  transition: background 0.5s ease;
+}
+
+.splash-logo-hidden {
+  width: 150px;
+  padding: 5px 20px;
+  margin-left: 10px;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.splash-logo-active {
+  width: 150px;
+  padding: 5px 20px;
+  margin-left: 10px;
+  transition: all 0.35s ease;
+}
+
+.signup-hidden {
+  padding: 10px 15px;
+  background-color: $color-blue;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: default;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.signup-active {
+  padding: 10px 15px;
+  background-color: $color-blue;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.35s ease;
+
+  &:hover {
+    background-color: $color-light-blue;
+  }
+}
+
+.login {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: black;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 18px;
+  opacity: 0.6;
+
+  &:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    opacity: 1;
+    transition: all 0.35s ease;
+  }
+}
+
 .splash-main-content {
   background-image: radial-gradient(
       circle,
@@ -9,7 +85,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   width: auto;
   display: flex;
   flex-direction: column;

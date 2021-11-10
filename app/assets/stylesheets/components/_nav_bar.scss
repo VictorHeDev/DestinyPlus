@@ -1,3 +1,5 @@
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -27,16 +29,23 @@ nav {
   align-items: center;
   padding: 0 2rem;
   font-size: 16px;
+}
 
-  .signup {
-    padding: 1rem;
-  }
+.active-profile-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
 
-  .login {
-    padding: 1rem;
-  }
+.signup {
+  padding: 1rem;
+}
 
-  .logout {
-    padding: 1rem;
-  }
+.login {
+  padding: 1rem;
+}
+
+.logout {
+  padding: 1rem;
 }

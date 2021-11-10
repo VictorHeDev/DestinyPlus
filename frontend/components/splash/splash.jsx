@@ -1,19 +1,18 @@
-import React from 'react'
-import NavBarContainer from '../navbar/navbar_container'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTv } from '@fortawesome/free-solid-svg-icons'
 import { faLaptop } from '@fortawesome/free-solid-svg-icons'
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGamepad } from '@fortawesome/free-solid-svg-icons'
+import { Link, NavLink } from 'react-router-dom'
+import SplashNavbar from './splash_navbar'
+
 
 
 export default function Splash() {
-
   return (
     <div className="splash-container">
-      <header>
-        <NavBarContainer />
-      </header>
+      <SplashNavbar />
 
       <section className="splash-main-content">
         <img className="media-bundle" src={ window.mediaBundleURL } />

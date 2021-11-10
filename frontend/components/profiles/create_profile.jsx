@@ -8,6 +8,7 @@ export default class CreateProfileForm extends Component {
     this.state = this.props.profile
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleCancelClick = this.handleCancelClick.bind(this)
+    this.handleProfileClick = this.handleProfileClick.bind(this)
   }
 
   update(field) {
