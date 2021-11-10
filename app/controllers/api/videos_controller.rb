@@ -8,7 +8,7 @@ class Api::VideosController < ApplicationController
   end
 
   def show
-    @video = Video.find(params[:id])
+    @video = Video.with_attached_background.find(params[:id])
     render :show
   end
 
