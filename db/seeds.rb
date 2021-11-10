@@ -107,6 +107,8 @@ VideoGenre.create!(
 american_dragon_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/jake-long.jpeg')
 american_dragon.thumbnail.attach(io: american_dragon_thumbnail, filename: 'jake-long.jpeg')
 
+american_dragon_bg = open('')
+
 # COSMOS
 cosmos = Video.create!(
   title: "Cosmos",
@@ -521,8 +523,8 @@ VideoGenre.create!(
   video_id: bebop.id,
   genre_id: anime.id
 )
-# bebop_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/bebop.jpg')
-# bebop.thumbnail.attach(io: bebop_thumbnail, filename: 'safh.jpg')
+bebop_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/cowboy-bebop.jpg')
+bebop.thumbnail.attach(io: bebop_thumbnail, filename: 'cowboy-bebop.jpg')
 
 # SPIRITED AWAY
 spirited_away = Video.create!(
@@ -537,8 +539,8 @@ VideoGenre.create!(
   video_id: spirited_away.id,
   genre_id: anime.id
 )
-# spirited_away_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/spirited_away.jpg')
-# spirited_away.thumbnail.attach(io: spirited_away_thumbnail, filename: 'safh.jpg')
+spirited_away_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/spirited-away.jpg')
+spirited_away.thumbnail.attach(io: spirited_away_thumbnail, filename: 'spirited-away.jpg')
 
 # PRINCESS MONONOKE
 mononoke = Video.create!(
@@ -553,8 +555,8 @@ VideoGenre.create!(
   video_id: mononoke.id,
   genre_id: anime.id
 )
-# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/mononoke.jpg')
-# mononoke.thumbnail.attach(io: safh_thumbnail, filename: 'mononoke.jpg')
+mononoke_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/princess-mononoke.jpg')
+mononoke.thumbnail.attach(io: mononoke_thumbnail, filename: 'princess-mononoke.jpg')
 
 # YOUR NAME
 your_name = Video.create!(
@@ -569,8 +571,8 @@ VideoGenre.create!(
   video_id: your_name.id,
   genre_id: anime.id
 )
-# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/your_name.jpg')
-# your_name.thumbnail.attach(io: safh_thumbnail, filename: 'your_name.jpg')
+your_name_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/your-name.jpg')
+your_name.thumbnail.attach(io: your_name_thumbnail, filename: 'your-name.jpg')
 
 # FULLMETAL ALCHEMIST
 fma = Video.create!(
@@ -585,8 +587,8 @@ VideoGenre.create!(
   video_id: fma.id,
   genre_id: anime.id
 )
-# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/fma.jpg')
-# fma.thumbnail.attach(io: safh_thumbnail, filename: 'fma.jpg')
+fma_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/fma.jpg')
+fma.thumbnail.attach(io: fma_thumbnail, filename: 'fma.jpg')
 
 # ONE PIECE
 op = Video.create!(
@@ -601,8 +603,8 @@ VideoGenre.create!(
   video_id: op.id,
   genre_id: anime.id
 )
-# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/op.jpg')
-# op.thumbnail.attach(io: safh_thumbnail, filename: 'op.jpg')
+op_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/op.jpg')
+op.thumbnail.attach(io: op_thumbnail, filename: 'op.jpg')
 
 # NARUTO SHIPPUDEN
 shippuden = Video.create!(
@@ -617,8 +619,8 @@ VideoGenre.create!(
   video_id: shippuden.id,
   genre_id: anime.id
 )
-# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shippuden.jpg')
-# shippuden.thumbnail.attach(io: safh_thumbnail, filename: 'shippuden.jpg')
+shippuden_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shippuden.jpg')
+shippuden.thumbnail.attach(io: shippuden_thumbnail, filename: 'shippuden.jpg')
 
 # MY HERO ACADEMIA
 mha = Video.create!(
@@ -633,8 +635,8 @@ VideoGenre.create!(
   video_id: mha.id,
   genre_id: anime.id
 )
-# safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/mha.jpg')
-# mha.thumbnail.attach(io: safh_thumbnail, filename: 'mha.jpg')
+mha_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/mha.jpg')
+mha.thumbnail.attach(io: mha_thumbnail, filename: 'mha.jpg')
 
 # DEMON SLAYER
 demon_slayer = Video.create!(
@@ -649,10 +651,8 @@ VideoGenre.create!(
   video_id: demon_slayer.id,
   genre_id: anime.id
 )
-# demon_slayer_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/demon_slayer.jpg')
-# demon_slayer.thumbnail.attach(io: demon_slayer_thumbnail, filename: 'demon_slayer.jpg')
-
-
+demon_slayer_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/demon-slayer.jpg')
+demon_slayer.thumbnail.attach(io: demon_slayer_thumbnail, filename: 'demon-slayer.jpg')
 
 
 
