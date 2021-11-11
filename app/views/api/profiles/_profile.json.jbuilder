@@ -1,6 +1,12 @@
 json.extract! profile, :id, :name, :avatar
 
-# may want to add an identifier for picture here ... like :color perhaps or :profile_number
+# video_ids = []
+# profile.videos.each do |video|
+#   video_ids.push(video.id)
+# end
+# json.watchlist_video_ids video_ids
+
+json.watch_video_ids profile.videos.map { |video| video.id }
 
 # watchlist_video_ids -> [video1, video2 video3] within watchlist
 # use the through association between profiles has many videos

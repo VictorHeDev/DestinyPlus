@@ -75,11 +75,11 @@ anime = Genre.create!(name: "Anime")
 animation = Genre.create!(name: "Animation")
 
 # BONUS GENRES
-classic = Genre.create!(name: "Classic")
 
-romance = Genre.create!(name: "Romance")
-quirky = Genre.create!(name: "Quirky")
-reality = Genre.create!(name: "Reality")
+classic = Genre.create!(name: "Classic")
+# romance = Genre.create!(name: "Romance")
+# quirky = Genre.create!(name: "Quirky")
+# reality = Genre.create!(name: "Reality")
 
 # VIDEOS
 # AMERICAN DRAGON JAKE LONG
@@ -178,6 +178,12 @@ VideoGenre.create!(
   video_id: bh6.id,
   genre_id: family.id
 )
+VideoGenre.create!(
+  video_id: bh6.id,
+  genre_id: comedy.id
+)
+
+
 
 bh6_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/bh6.jpeg')
 bh6.thumbnail.attach(io: bh6_thumbnail, filename: 'bh6.jpeg')
@@ -230,6 +236,11 @@ VideoGenre.create!(
   video_id: goofy.id,
   genre_id: classic.id
 )
+VideoGenre.create!(
+  video_id: goofy.id,
+  genre_id: comedy.id
+)
+
 
 goofy_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/goofy-movie.jpeg')
 goofy.thumbnail.attach(io: goofy_thumbnail, filename: 'goofy-movie.jpeg')
@@ -257,6 +268,10 @@ VideoGenre.create!(
 VideoGenre.create!(
   video_id: rava.id,
   genre_id: animation.id
+)
+VideoGenre.create!(
+  video_id: rava.id,
+  genre_id: comedy.id
 )
 rava_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/rava.jpeg')
 rava.thumbnail.attach(io: rava_thumbnail, filename: 'rava.jpeg')
@@ -326,6 +341,10 @@ VideoGenre.create!(
 VideoGenre.create!(
   video_id: liloandstitch.id,
   genre_id: animation.id
+)
+VideoGenre.create!(
+  video_id: liloandstitch.id,
+  genre_id: comedy.id
 )
 liloandstitch_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/lilo-and-stitch.jpeg')
 liloandstitch.thumbnail.attach(io: liloandstitch_thumbnail, filename: 'lilo-and-stitch.jpeg')
@@ -488,6 +507,10 @@ VideoGenre.create!(
   video_id: isle_of_dogs.id,
   genre_id: animation.id
 )
+VideoGenre.create!(
+  video_id: isle_of_dogs.id,
+  genre_id: comedy.id
+)
 isle_of_dogs_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/isle-of-dogs.jpeg')
 isle_of_dogs.thumbnail.attach(io: isle_of_dogs_thumbnail, filename: 'isle-of-dogs.jepg')
 
@@ -507,6 +530,10 @@ parts_unknown = Video.create!(
 VideoGenre.create!(
   video_id: parts_unknown.id,
   genre_id: education.id
+)
+VideoGenre.create!(
+  video_id: parts_unknown.id,
+  genre_id: family.id
 )
 parts_unknown_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/parts-unknown.jpg')
 parts_unknown.thumbnail.attach(io: parts_unknown_thumbnail, filename: 'parts-unknown.jpg')

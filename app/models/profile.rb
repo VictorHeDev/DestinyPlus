@@ -25,7 +25,7 @@ class Profile < ApplicationRecord
     dependent: :destroy
 
   has_many :videos,
-    through: :watchlist,
+    through: :watchlists,
     source: :video
 
 end

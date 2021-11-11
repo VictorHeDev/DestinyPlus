@@ -15,10 +15,10 @@ const receiveProfiles = (profiles) => {
   };
 };
 
-const receiveProfile = (res) => {
+const receiveProfile = (payload) => {
   return {
     type: RECEIVE_PROFILE,
-    res,
+    payload,
   };
 };
 
@@ -29,7 +29,6 @@ const removeProfile = (profileId) => {
   };
 };
 
-// might have to change this later
 export const receiveCurrentProfile = (profileId) => {
   return {
     type: RECEIVE_CURRENT_PROFILE,
@@ -72,6 +71,7 @@ export const createProfile = (profile) => (dispatch) => {
 //     dispatch(receiveProfile(profile))
 //   );
 // };
+
 export const updateProfile = (profile) => (dispatch) => {
   return ProfileApiUtil.updateProfile(profile).then((res) =>
     dispatch(receiveProfile(res))
