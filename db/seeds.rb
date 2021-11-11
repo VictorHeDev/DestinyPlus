@@ -137,7 +137,7 @@ cosmos_bg = open('https://destinyplus-seeds.s3.amazonaws.com/cosmos_bg.jpg')
 cosmos.background.attach(io: cosmos_bg, filename: 'cosmos_bg.jpg')
 
 cosmos_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/cosmos.mp4')
-cosmos.file.attach(io: comos_file, filename: 'cosmos.mp4')
+cosmos.file.attach(io: cosmos_file, filename: 'cosmos.mp4')
 
 # AVENGERS
 avengers = Video.create!(
@@ -167,6 +167,9 @@ avengers.thumbnail.attach(io: avengers_thumbnail, filename: 'avengers.jpeg')
 avengers_bg = open('https://destinyplus-seeds.s3.amazonaws.com/avengers_bg.jpg')
 avengers.background.attach(io: avengers_bg, filename: 'avengers_bg.jpg')
 
+avengers_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/avengers.mp4')
+avengers.file.attach(io: avengers_file, filename: 'avengers.mp4')
+
 
 bh6 = Video.create!(
   title: "Big Hero 6",
@@ -189,13 +192,14 @@ VideoGenre.create!(
   genre_id: comedy.id
 )
 
-
-
 bh6_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/bh6.jpeg')
 bh6.thumbnail.attach(io: bh6_thumbnail, filename: 'bh6.jpeg')
 
 bg6_bg = open('https://destinyplus-seeds.s3.amazonaws.com/bh6_bg.jpg')
 bh6.background.attach(io: bg6_bg, filename: 'bg6_bg.jpg')
+
+bh6_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/bh6.mp4')
+bh6.file.attach(io: bh6_file, filename: 'bh6.mp4')
 
 # THE SUITE LIFE OF ZACK AND CODY
 suitelife = Video.create!(
@@ -225,6 +229,9 @@ suitelife.thumbnail.attach(io: suitelife_thumbnail, filename: 'suite-life.jpeg')
 suitelife_bg = open('https://destinyplus-seeds.s3.amazonaws.com/suitelife_bg.jpg')
 suitelife.background.attach(io: suitelife_bg, filename: 'suitelife_bg.jpg')
 
+suitelife_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/suitelife.mp4')
+suitelife.file.attach(io: suitelife_file, filename: 'suitelife.mp4')
+
 # A GOOFY MOVIE
 goofy = Video.create!(
   title: "A Goofy Movie",
@@ -247,16 +254,19 @@ VideoGenre.create!(
   genre_id: comedy.id
 )
 
-
 goofy_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/goofy-movie.jpeg')
 goofy.thumbnail.attach(io: goofy_thumbnail, filename: 'goofy-movie.jpeg')
 
 goofy_bg = open('https://destinyplus-seeds.s3.amazonaws.com/goofy_bg.jpg')
 goofy.background.attach(io: goofy_bg, filename: 'goofy_bg.jpg')
 
-# RAVA AND THE LAST DRAGON
+goofy_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/goofy.mp4')
+goofy.file.attach(io: goofy_file, filename: 'goofy.mp4')
+
+# RAYA AND THE LAST DRAGON
+# TODO: FIX RAVA -> RAYA SPELLING ON AWS
 rava = Video.create!(
-  title: "Rava and The Last Dragon",
+  title: "Raya and The Last Dragon",
   description: "Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. However, when sinister monsters known as the Druun threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, those same monsters have returned, and it's up to a lone warrior to track down the last dragon and stop the Druun for good.",
   year: "2021",
   runtime: "107 minutes",
@@ -264,26 +274,29 @@ rava = Video.create!(
 )
 
 VideoGenre.create!(
-  video_id: rava.id,
+  video_id: raya.id,
   genre_id: family.id
 )
 VideoGenre.create!(
-  video_id: rava.id,
+  video_id: raya.id,
   genre_id: fantasy.id
 )
 VideoGenre.create!(
-  video_id: rava.id,
+  video_id: raya.id,
   genre_id: animation.id
 )
 VideoGenre.create!(
-  video_id: rava.id,
+  video_id: raya.id,
   genre_id: comedy.id
 )
-rava_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/rava.jpeg')
-rava.thumbnail.attach(io: rava_thumbnail, filename: 'rava.jpeg')
+raya_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/rava.jpeg')
+raya.thumbnail.attach(io: raya_thumbnail, filename: 'rava.jpeg')
 
-rava_bg = open('https://destinyplus-seeds.s3.amazonaws.com/rava_bg.jpg')
-rava.background.attach(io: rava_bg, filename: 'rava_bg.jpg')
+raya_bg = open('https://destinyplus-seeds.s3.amazonaws.com/rava_bg.jpg')
+raya.background.attach(io: raya_bg, filename: 'rava_bg.jpg')
+
+raya_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/raya.mp4')
+raya.file.attach(io: raya_file, filename: 'raya.mp4')
 
 # FREE SOLO
 freesolo = Video.create!(
@@ -303,6 +316,9 @@ freesolo.thumbnail.attach(io: freesolo_thumbnail, filename: 'free-solo.jpeg')
 
 freesolo_bg = open('https://destinyplus-seeds.s3.amazonaws.com/freesolo_bg.jpg')
 freesolo.background.attach(io: freesolo_bg, filename: 'freesolo_bg.jpg')
+
+freesolo_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/freesolo.mp4')
+freesolo.file.attach(io: freesolo_file, filename: 'freesolo.mp4')
 
 # WENDY WU
 wendywu = Video.create!(
@@ -326,6 +342,9 @@ wendywu.thumbnail.attach(io: wendywu_thumbnail, filename: 'wendy-wu.jpeg')
 
 wendywu_bg = open('https://destinyplus-seeds.s3.amazonaws.com/wendywu_bg.jpg')
 wendywu.background.attach(io: wendywu_bg, filename: 'wendywu_bg.jpg')
+
+wendywu_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/wendywu.mp4')
+wendywu.file.attach(io: wendywu_file, filename: 'wendywu.mp4')
 
 # LILO & STITCH THE MOVIE
 liloandstitch = Video.create!(
@@ -358,6 +377,9 @@ liloandstitch.thumbnail.attach(io: liloandstitch_thumbnail, filename: 'lilo-and-
 liloandstitch_bg = open('https://destinyplus-seeds.s3.amazonaws.com/liloandstitch_bg.jpg')
 liloandstitch.background.attach(io: liloandstitch_bg, filename: 'liloandstitch_bg.jpg')
 
+liloandstitch_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/liloandstitch.mp4')
+liloandstitch.file.attach(io: liloandstitch_file, filename: 'liloandstitch.mp4')
+
 # WOLFGANG
 wolfgang = Video.create!(
   title: "Wolfgang",
@@ -376,6 +398,9 @@ wolfgang.thumbnail.attach(io: wolfgang_thumbnail, filename: 'wolfgang.jpeg')
 
 wolfgang_bg = open('https://destinyplus-seeds.s3.amazonaws.com/wolfgang_bg.jpg')
 wolfgang.background.attach(io: wolfgang_bg, filename: 'wolfgang_bg.jpg')
+
+wolfgang_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/wolfgang.mp4')
+wolfgang.file.attach(io: wolfgang_file, filename: 'wolfgang.mp4')
 
 # THE MANDALORIAN
 mandalorian = Video.create!(
@@ -404,6 +429,9 @@ mandalorian.thumbnail.attach(io: mandalorian_thumbnail, filename: 'mandalorian.j
 mandalorian_bg = open('https://destinyplus-seeds.s3.amazonaws.com/mandalorian_bg.jpg')
 mandalorian.background.attach(io: mandalorian_bg, filename: 'mandalorian_bg.jpg')
 
+mandalorian_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/mandalorian.mp4')
+mandalorian.file.attach(io: mandalorian_file, filename: 'mandalorian.mp4')
+
 # BRAIN GAMES
 braingames = Video.create!(
   title: "Brain Games",
@@ -422,6 +450,9 @@ braingames.thumbnail.attach(io: braingames_thumbnail, filename: 'mandalorian.jpe
 
 braingames_bg = open('https://destinyplus-seeds.s3.amazonaws.com/braingames_bg.jpg')
 braingames.background.attach(io: braingames_bg, filename: 'braingames_bg.jpg')
+
+braingames_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/braingames.mp4')
+braingames.file.attach(io: braingames_file, filename: 'braingames.mp4')
 
 # THE SIMPSONS
 simpsons = Video.create!(
@@ -450,6 +481,9 @@ simpsons.thumbnail.attach(io: simpsons_thumbnail, filename: 'simpsons.jpg')
 simpsons_bg = open('https://destinyplus-seeds.s3.amazonaws.com/simpsons_bg.jpg')
 simpsons.background.attach(io: simpsons_bg, filename: 'simpsons_bg.jpg')
 
+simpsons_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/simpsons.mp4')
+simpsons.file.attach(io: simpsons_file, filename: 'simpsons.mp4')
+
 # JOHNNY KAPAHALA
 johnny_kapahala = Video.create!(
   title: "Johnny Kapahala Back on Board",
@@ -473,6 +507,9 @@ johnny_kapahala.thumbnail.attach(io: johnny_kapahala_thumbnail, filename: 'johnn
 johnny_kapahala_bg = open('https://destinyplus-seeds.s3.amazonaws.com/johnny_kapahala_bg.jpg')
 johnny_kapahala.background.attach(io: johnny_kapahala_bg, filename: 'johnny_kapahala_bg.jpg')
 
+johnny_kapahala_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/johnny_tsunami.mp4')
+johnny_kapahala.file.attach(io: johnny_kapahala_file, filename: 'johnny_tsunami.mp4')
+
 # SHANGCHI AND THE LEGEND OF THE TEN RINGS
 shangchi = Video.create!(
   title: "Shang Chi and the Legend of the Ten Rings",
@@ -495,6 +532,9 @@ shangchi.thumbnail.attach(io: shangchi_thumbnail, filename: 'shang-chi.jepg')
 
 shangchi_bg = open('https://destinyplus-seeds.s3.amazonaws.com/shangchi_bg.jpg')
 shangchi.background.attach(io: shangchi_bg, filename: 'shangchi_bg.jpg')
+
+shangchi_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/shangchi.mp4')
+shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # ISLE OF DOGS
 isle_of_dogs = Video.create!(
@@ -523,6 +563,9 @@ isle_of_dogs.thumbnail.attach(io: isle_of_dogs_thumbnail, filename: 'isle-of-dog
 isle_of_dogs_bg = open('https://destinyplus-seeds.s3.amazonaws.com/isle_of_dogs_bg.jpg')
 isle_of_dogs.background.attach(io: isle_of_dogs_bg, filename: 'isle_of_dogs_bg.jpg')
 
+isle_of_dogs_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/isle-of-dogs.mp4')
+isle_of_dogs.file.attach(io: isle_of_dogs_file, filename: 'isle-of-dogs.mp4')
+
 
 # ANTHONY BOURDAIN: PARTS UNKNOWN
 parts_unknown = Video.create!(
@@ -544,6 +587,9 @@ VideoGenre.create!(
 parts_unknown_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/parts-unknown.jpg')
 parts_unknown.thumbnail.attach(io: parts_unknown_thumbnail, filename: 'parts-unknown.jpg')
 
+parts_unknown_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/parts-unknown.mp4')
+parts_unknown.file.attach(io: parts_unknown_file, filename: 'parts-unknown.mp4')
+
 # JIRO DREAMS OF SUSHI
 jiro = Video.create!(
   title: "Jiro Dreams of Sushi",
@@ -559,6 +605,9 @@ VideoGenre.create!(
 )
 jiro_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/jiro.jpg')
 jiro.thumbnail.attach(io: jiro_thumbnail, filename: 'jiro.jpg')
+
+joro_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/jiro.mp4')
+jiro.file.attach(io: joro_file, filename: 'jiro.mp4')
 
 # THE LAST DANCE
 last_dance = Video.create!(
@@ -576,7 +625,11 @@ VideoGenre.create!(
 last_dance_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/last-dance.jpg')
 last_dance.thumbnail.attach(io: last_dance_thumbnail, filename: 'last-dance-jpg')
 
+last_dance_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/last-dance.mp4')
+last_dance.file.attach(io: last_dance_file, filename: 'last-dance.mp4')
+
 # SALT ACID FAT HEAT
+# TODO: ADD SAFH VIDEO
 safh = Video.create!(
   title: "Salt Acid Fat Heat",
   description: "Docuseries, based on the award-winning book by Samin Nosrat, explores the essence of cooking and the vital ingredients at the heart of a great dish.",
@@ -591,6 +644,9 @@ VideoGenre.create!(
 )
 safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/safh.jpg')
 safh.thumbnail.attach(io: safh_thumbnail, filename: 'safh.jpg')
+
+safh_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/safh.mp4')
+safh.file.attach(io: safh_file, filename: 'safh.mp4')
 
 # COWBOY BEBOP
 bebop = Video.create!(
@@ -608,6 +664,9 @@ VideoGenre.create!(
 bebop_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/cowboy-bebop.jpg')
 bebop.thumbnail.attach(io: bebop_thumbnail, filename: 'cowboy-bebop.jpg')
 
+bebop_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/bebop.mp4')
+bebop.file.attach(io: bebop_file, filename: 'bebop.mp4')
+
 # SPIRITED AWAY
 spirited_away = Video.create!(
   title: "Spirited Away",
@@ -623,6 +682,9 @@ VideoGenre.create!(
 )
 spirited_away_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/spirited-away.jpg')
 spirited_away.thumbnail.attach(io: spirited_away_thumbnail, filename: 'spirited-away.jpg')
+
+spirited_away_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/spirited-away.mp4')
+spirited_away.file.attach(io: spirited_away_file, filename: 'spirited-away.mp4')
 
 # PRINCESS MONONOKE
 mononoke = Video.create!(
@@ -640,6 +702,9 @@ VideoGenre.create!(
 mononoke_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/princess-mononoke.jpg')
 mononoke.thumbnail.attach(io: mononoke_thumbnail, filename: 'princess-mononoke.jpg')
 
+mononoke_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/mononoke.mp4')
+mononoke.file.attach(io: mononoke_file, filename: 'mononoke.mp4')
+
 # YOUR NAME
 your_name = Video.create!(
   title: "Your Name",
@@ -655,6 +720,9 @@ VideoGenre.create!(
 )
 your_name_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/your-name.jpg')
 your_name.thumbnail.attach(io: your_name_thumbnail, filename: 'your-name.jpg')
+
+your_name = open('https://destinyplus-seeds.s3.amazonaws.com/videos/your-name.mp4')
+your_name.file.attach(io: your_name, filename: 'your-name.mp4')
 
 # FULLMETAL ALCHEMIST
 fma = Video.create!(
@@ -672,6 +740,9 @@ VideoGenre.create!(
 fma_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/fma.jpg')
 fma.thumbnail.attach(io: fma_thumbnail, filename: 'fma.jpg')
 
+fma_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/fma.mp4')
+fma.file.attach(io: fma_file, filename: 'fma.mp4')
+
 # ONE PIECE
 op = Video.create!(
   title: "One Piece",
@@ -687,6 +758,9 @@ VideoGenre.create!(
 )
 op_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/op.jpg')
 op.thumbnail.attach(io: op_thumbnail, filename: 'op.jpg')
+
+op_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/op.mp4')
+op.file.attach(io: op_file, filename: 'op.mp4')
 
 # NARUTO SHIPPUDEN
 shippuden = Video.create!(
@@ -704,6 +778,9 @@ VideoGenre.create!(
 shippuden_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shippuden.jpg')
 shippuden.thumbnail.attach(io: shippuden_thumbnail, filename: 'shippuden.jpg')
 
+shippuden_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/shippuden.mp4')
+shippuden.file.attach(io: shippuden_file, filename: 'shippuden.mp4')
+
 # MY HERO ACADEMIA
 mha = Video.create!(
   title: "My Hero Academia",
@@ -719,6 +796,9 @@ VideoGenre.create!(
 )
 mha_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/mha.jpg')
 mha.thumbnail.attach(io: mha_thumbnail, filename: 'mha.jpg')
+
+mha_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/mha.mp4')
+mha.file.attach(io: mha_file, filename: 'mha.mp4')
 
 # DEMON SLAYER
 demon_slayer = Video.create!(
@@ -736,7 +816,8 @@ VideoGenre.create!(
 demon_slayer_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/demon-slayer.jpg')
 demon_slayer.thumbnail.attach(io: demon_slayer_thumbnail, filename: 'demon-slayer.jpg')
 
-
+demon_slayer_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/demon-slayer.mp4')
+demon_slayer.file.attach(io: demon_slayer_file, filename: 'demon-slayer.mp4')
 
 
 # WATCHLIST
