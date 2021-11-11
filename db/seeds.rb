@@ -110,6 +110,9 @@ american_dragon.thumbnail.attach(io: american_dragon_thumbnail, filename: 'jake-
 american_dragon_bg = open('https://destinyplus-seeds.s3.amazonaws.com/american_dragon_bg.jpg')
 american_dragon.background.attach(io: american_dragon_bg, filename: 'american_dragon_bg.jpg')
 
+american_dragon_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/american-dragon.mp4')
+american_dragon.file.attach(io: american_dragon_file, filename: 'american-dragon-mp4')
+
 # COSMOS
 cosmos = Video.create!(
   title: "Cosmos",
@@ -132,6 +135,9 @@ cosmos.thumbnail.attach(io: cosmos_thumbnail, filename: 'cosmos.jpeg')
 
 cosmos_bg = open('https://destinyplus-seeds.s3.amazonaws.com/cosmos_bg.jpg')
 cosmos.background.attach(io: cosmos_bg, filename: 'cosmos_bg.jpg')
+
+cosmos_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/cosmos.mp4')
+cosmos.file.attach(io: comos_file, filename: 'cosmos.mp4')
 
 # AVENGERS
 avengers = Video.create!(
