@@ -49,7 +49,6 @@ export default class VideoDescription extends Component {
           type="video/mp4"
           className="hidden"
           id="myvideo"
-          // autoPlay
         >
         </video>
 
