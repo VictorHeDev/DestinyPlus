@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import NavBarContainer from '../navbar/navbar_container'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 export default class VideoDescription extends Component {
 
   componentDidMount() {
@@ -18,16 +20,18 @@ export default class VideoDescription extends Component {
           backgroundImage: `url(${backgroundUrl})`
         }}
       >
+        <div className="video-desc-gradient">
+
+        </div>
         <header>
           <NavBarContainer />
         </header>
         <div className="video-desc-main-content">
-          {/* <img src={ backgroundUrl } alt="" /> */}
-          {/* <h1>{ title }</h1> */}
-          {/* <div className="video-description">
-            <p>{ description }</p>
-          </div> */}
           <div className="video-info" >
+            <div className="video-desc-buttons">
+              <button>PLAY</button>
+              <FontAwesomeIcon className="plus-icon" icon={ faPlusCircle } size="3x"/>
+            </div>
             <ul>
               <li>
                 <p>

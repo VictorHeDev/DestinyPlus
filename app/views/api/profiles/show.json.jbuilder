@@ -4,7 +4,6 @@ json.profile do
 end
 
 json.watchlist do
-  # debugger
   @profile.watchlists.each do |watchlist_item|
     # debugger
     json.set! watchlist_item.id do

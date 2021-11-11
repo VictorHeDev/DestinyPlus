@@ -15,10 +15,10 @@ const receiveProfiles = (profiles) => {
   };
 };
 
-const receiveProfile = (profile) => {
+const receiveProfile = (res) => {
   return {
     type: RECEIVE_PROFILE,
-    profile,
+    res,
   };
 };
 
@@ -67,9 +67,14 @@ export const createProfile = (profile) => (dispatch) => {
   );
 };
 
+// export const updateProfile = (profile) => (dispatch) => {
+//   return ProfileApiUtil.updateProfile(profile).then((profile) =>
+//     dispatch(receiveProfile(profile))
+//   );
+// };
 export const updateProfile = (profile) => (dispatch) => {
-  return ProfileApiUtil.updateProfile(profile).then((profile) =>
-    dispatch(receiveProfile(profile))
+  return ProfileApiUtil.updateProfile(profile).then((res) =>
+    dispatch(receiveProfile(res))
   );
 };
 

@@ -15,6 +15,12 @@ export default class SelectProfiles extends Component {
     this.props.requestProfiles()
   }
 
+  // componentDidUpdate(prevProps) {
+  //   if (this.props.profiles !== prevProps.profiles) {
+  //     this.props.requestProfiles()
+  //   }
+  // }
+
   handleEditClick(e) {
     e.preventDefault()
     this.props.history.push('/profiles/edit')
@@ -33,10 +39,6 @@ export default class SelectProfiles extends Component {
     e.preventDefault()
     this.props.history.push('/profiles/new')
   }
-  // Profile(props) {
-  //   return <li>{ props.value }</li>
-  // }
-
 
   render() {
     const { profiles } = this.props;

@@ -3,23 +3,55 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  // background: rgb(0, 0, 0);
+  position: relative;
+}
+
+.video-desc-gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
   background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.35057773109243695) 0%,
-    rgba(0, 0, 0, 0.7483368347338936) 100%
+    rgba(0, 0, 0, 0.07746848739495793) 0%,
+    rgba(0, 0, 0, 0.562062324929972) 53%,
+    rgba(0, 0, 0, 0.9066001400560224) 97%
   );
-  position: relative;
 }
 
 .video-desc-main-content {
   position: absolute;
   height: 70%;
-  width: 60%;
-  padding-top: 400px;
+  width: 55%;
+  padding-top: 300px;
+}
+
+.video-desc-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  button {
+    background-color: #f9f8f8;
+    color: black;
+    font-size: 18px;
+
+    &:hover {
+      background-color: #c6c6c6;
+      transition: all 0.2s ease-in;
+    }
+  }
 }
 
 .video-info {
   padding: 50px;
+
+  li {
+    color: #f9f8f8;
+
+    p {
+      color: #f9f8f8;
+    }
+  }
 }

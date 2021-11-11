@@ -38,6 +38,7 @@ export default class CreateProfileForm extends Component {
 
     return (
       <div className="main-profile-form-container">
+        <h3>Create Your Own Profile</h3>
         <div className="sub-profile-form-container">
           <section className="choose-avatar">
             <h3>Choose your Avatar!</h3>
