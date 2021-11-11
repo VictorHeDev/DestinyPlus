@@ -265,7 +265,7 @@ goofy.file.attach(io: goofy_file, filename: 'goofy.mp4')
 
 # RAYA AND THE LAST DRAGON
 # TODO: FIX RAVA -> RAYA SPELLING ON AWS
-rava = Video.create!(
+raya = Video.create!(
   title: "Raya and The Last Dragon",
   description: "Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. However, when sinister monsters known as the Druun threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, those same monsters have returned, and it's up to a lone warrior to track down the last dragon and stop the Druun for good.",
   year: "2021",
@@ -721,8 +721,8 @@ VideoGenre.create!(
 your_name_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/your-name.jpg')
 your_name.thumbnail.attach(io: your_name_thumbnail, filename: 'your-name.jpg')
 
-your_name = open('https://destinyplus-seeds.s3.amazonaws.com/videos/your-name.mp4')
-your_name.file.attach(io: your_name, filename: 'your-name.mp4')
+your_name_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/your-name.mp4')
+your_name.file.attach(io: your_name_file, filename: 'your-name.mp4')
 
 # FULLMETAL ALCHEMIST
 fma = Video.create!(
