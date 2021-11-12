@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // bootstrapping so store is not cleared after refresh
   if (window.currentUser) {
     const preloadedState = {
-      session: { id: window.currentUser.id },
+      session: {
+        id: window.currentUser.id,
+        currentProfile: JSON.parse(localStorage.getItem('currentProfile')).currentProfile
+      },
       entities: {
         users: { [window.currentUser.id]: window.currentUser }
       }
@@ -23,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
+
+  store.subscribe(() => {
+    localStorage.setItem(
+      "currentProfile", JSON.stringify(store.getState()['session'])
+    )
+  })
 
   // window.login = login
   // window.signup = signup

@@ -11,6 +11,7 @@ import SelectProfiles from './select_profiles';
 const mSTP = (state, ownProps) => {
   return {
     profiles: Object.values(state.entities.profiles),
+    allUserProfiles: state.entities.profiles,
   };
 };
 
@@ -18,7 +19,6 @@ const mDTP = (dispatch, ownProps) => {
   return {
     requestProfiles: () => dispatch(requestProfiles()),
     requestProfile: (profileId) => dispatch(requestProfile(profileId)),
-    reformatProfiles: (profileId) => dispatch(reformatProfiles(profileId)),
     receiveCurrentProfile: (profileId) =>
       dispatch(receiveCurrentProfile(profileId)),
   };

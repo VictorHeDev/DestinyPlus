@@ -12,9 +12,9 @@ export default class Browse extends Component {
     this.props.requestGenres()
     this.props.requestVideos()
 
-    if (!this.props.currentProfile) {
-      this.props.history.push('/profiles')
-    }
+    // if (!this.props.currentProfile) {
+    //   this.props.history.push('/profiles')
+    // }
   }
 
   render() {

@@ -23,9 +23,10 @@ export default class SelectProfiles extends Component {
   handleClickProfile(e, profileId) {
     e.preventDefault()
 
+    const selectedProfile = this.props.allUserProfiles[profileId]
+
     this.props.requestProfile(profileId)
-    this.props.receiveCurrentProfile(profileId)
-    // this.props.reformatProfiles(this.props.profiles[profileId])
+    this.props.receiveCurrentProfile(selectedProfile)
     this.props.history.push('/browse')
   }
 
