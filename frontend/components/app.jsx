@@ -23,16 +23,10 @@ import BrowseContainer from './browse/browse_container'
 import VideoDescriptionContainer from './video_description/video_description_container'
 
 const App = () => (
-  <div>
-      {/* <Link to="/" className="header-link">
-        <h1>Welcome to Destiny+</h1>
-      </Link> */}
+  <div className="app-container">
     <header>
       {/* <NavBarContainer /> */}
     </header>
-    {/* <Splash /> */}
-    {/* look into switch statement */}
-    {/* moved NavBarContainer into Splash */}
 
     <Switch>
       <AuthRoute exact path="/" component={Splash} />
