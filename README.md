@@ -1,5 +1,8 @@
 # WELCOME TO DESTINY PLUS
 
+[Check out the Live Site!](https://destinyplus.herokuapp.com/#/)
+
+
 Destiny Plus is a clone of the Disney Plus website at the time of creation. I was inspired by their fantastic styling and great UI design. The technologies used in this project include:
 
 - React

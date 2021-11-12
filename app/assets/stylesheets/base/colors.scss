@@ -6,4 +6,12 @@ body {
 $color-blue: #0163e4;
 $color-light-blue: #016cf9;
 $color-light-grey: #c0c0c0;
-$color-grey: #4A4F5A
+$color-grey: #4a4f5a;
+
+.add-underline {
+  &:hover {
+    border-bottom: 1px solid white;
+    transition: 0.35s ease-in;
+    cursor: pointer;
+  }
+}
