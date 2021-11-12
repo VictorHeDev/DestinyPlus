@@ -16,6 +16,7 @@
 
   h3 {
     text-align: center;
+    cursor: default;
   }
   img {
     width: 180px;
@@ -35,13 +36,22 @@
       color: rgb(150, 150, 150);
     }
   }
+}
 
-  button {
-    background-color: #0163e4;
-    text-align: center;
-    width: 30%;
-    padding: 20px 5px;
-    border-radius: 5px;
+.signup-or-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  p {
+    padding: 10px 5px;
+  }
+}
+
+.add-underline {
+  &:hover {
+    border-bottom: 1px solid white;
+    transition: 0.35s ease-in;
   }
 }
 

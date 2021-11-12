@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 import { AuthRoute, ProtectedRoute } from '../util/route_util'
-import NavBarContainer from './navbar/navbar_container'
+// import NavBarContainer from './navbar/navbar_container'
 
 import SignupFormContainer from './session_form/signup_form_container'
 import LoginFormContainer from './session_form/login_form_container'
@@ -40,8 +40,6 @@ const App = () => (
       <ProtectedRoute exact path="/browse" component={ BrowseContainer } />
       <ProtectedRoute path="/browse/:videoId" component={ VideoDescriptionContainer } />
 
-
-      {/* <ProtectedRoute path="/browse" component={  }/> */}
     </Switch>
 
     {/* <ProtectedRoute exact path="/browse" /> */}
@@ -51,5 +49,4 @@ const App = () => (
 )
 
 // decide on whether we want redirect to splash greeting or not
-
 export default App

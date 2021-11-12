@@ -62,16 +62,10 @@ export default class SessionForm extends React.Component {
     const { email, password } = this.state;
     const { formType, navLink } = this.props;
 
-    // const altLink = formType === 'Login' ? (
-    //   <Link to='/signup'>Sign Up</Link>
-    // ) : (
-    //   <Link to="/login">Login</Link>
-    // )
-
     const demoLogin = (formType === 'Login') ? (
       <p>Just here to look? &nbsp;
           <span
-            className="demo-user"
+            className="add-underline"
             onClick={ this.demoUser }>Demo User
           </span>
       </p>
@@ -114,9 +108,11 @@ export default class SessionForm extends React.Component {
           {/* { errorMessages }
           { altLink } */}
           <button>{ formType }</button>
+          <div className="signup-or-login">
+            <p>Please { formType } or <span className="add-underline">{ navLink }</span> </p>
+          </div>
+          { demoLogin }
         </form>
-        <p>Please { formType } or { navLink } </p>
-        { demoLogin }
       </div>
     )
   }
