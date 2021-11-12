@@ -20,7 +20,6 @@ export default class NavBar extends React.Component {
           </div>
         </nav>
         <AccountContainer currentUser={ this.props.currentUser }/>
-
       </header>
     )
   }

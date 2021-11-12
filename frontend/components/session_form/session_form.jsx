@@ -105,8 +105,7 @@ export default class SessionForm extends React.Component {
               </label>
             </div>
           </div>
-          {/* { errorMessages }
-          { altLink } */}
+          {/* { errorMessages */}
           <button>{ formType }</button>
           <div className="signup-or-login">
             <p>Please { formType } or <span className="add-underline">{ navLink }</span> </p>
