@@ -38,6 +38,7 @@ Check out the Wiki page for a deeper look on the planning that went into creatin
 - Yehuda
 - Pasan
 - Al
+- Hank
 ### Licensing
 Please note that none of these assets are mine. I do not claim any of the images nor videos featured on Destiny Plus and I do not gain any monetary value from this application.
 
