@@ -536,6 +536,184 @@ shangchi.background.attach(io: shangchi_bg, filename: 'shangchi_bg.jpg')
 shangchi_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/shangchi.mp4')
 shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
+# BLACK WIDOW
+# black_widow = Video.create!(
+#   title: "Black Widow",
+#   description: "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursed by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationship left in her wake long before she became an Avenger.",
+#   year: "2021",
+#   runtime: "135 minutes",
+#   mediatype: "movie"
+# )
+
+# VideoGenre.create!(
+#   video_id: black_widow.id,
+#   genre_id: action.id
+# )
+# VideoGenre.create!(
+#   video_id: black_widow.id,
+#   genre_id: fantasy.id
+# )
+# black_widow_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+# black_widow.thumbnail.attach(io: black_widow_thumbnail, filename: 'shang-chi.jepg')
+
+# black_widow_bg = open('https://destinyplus-seeds.s3.amazonaws.com/black_widow_bg.jpg')
+# black_widow.background.attach(io: black_widow_bg, filename: 'shangchi_bg.jpg')
+
+# shangchi_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+# black_widow.file.attach(io: shangchi_file, filename: 'black-widow.mp4')
+
+# MULAN
+# mulan = Video.create!(
+#   title: "Mulan",
+#   description: "Disguised as a male soldier, a young girl bravely takes her father's place in the Imperial Army",
+#   year: "1998",
+#   runtime: "95 minutes",
+#   mediatype: "movie"
+# )
+
+# VideoGenre.create!(
+#   video_id: mulan.id,
+#   genre_id: action.id
+# )
+# VideoGenre.create!(
+#   video_id: mulan.id,
+#   genre_id: fantasy.id
+# )
+# VideoGenre.create!(
+#   video_id: mulan.id,
+#   genre_id: animation.id
+# )
+
+# mulan_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+# mulan.thumbnail.attach(io: mulan_thumbnail, filename: 'shang-chi.jepg')
+
+# mulan_bg = open('https://destinyplus-seeds.s3.amazonaws.com/mulan_bg.jpg')
+# mulan.background.attach(io: mulan_bg, filename: 'shangchi_bg.jpg')
+
+# mulan_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+# mulan.file.attach(io: mulan_file, filename: 'black-widow.mp4')
+
+
+# TEN THINGS I HATE ABOUT YOU
+# ten_things = Video.create!(
+#   title: "10 Things I Hate About You",
+#   description: "On the first day at his new school, Cameron instantly falls for Bianca, the gorgeous girl of his dreams, but she is forbidden from dating until her ill-tempered, completely un-datable older sister Kat goes out, too",
+#   year: "1999",
+#   runtime: "98 minutes",
+#   mediatype: "movie"
+# )
+
+# VideoGenre.create!(
+#   video_id: ten_things.id,
+#   genre_id: comedy.id
+# )
+# VideoGenre.create!(
+#   video_id: ten_things.id,
+#   genre_id: drama.id
+# )
+
+# ten_things_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+# ten_things.thumbnail.attach(io: ten_things_thumbnail, filename: 'shang-chi.jepg')
+
+# ten_things_bg = open('https://destinyplus-seeds.s3.amazonaws.com/ten_things_bg.jpg')
+# ten_things.background.attach(io: ten_things_bg, filename: 'shangchi_bg.jpg')
+
+# ten_things_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+# ten_things.file.attach(io: ten_things_file, filename: 'black-widow.mp4')
+
+# AROUND THE WORLD IN 80 DAYS
+# eighty_days = Video.create!(
+#   title: "Around the World in 80 Days",
+#   description: "After being forced into a bet by the Royal Academy's Minister of Science, Phileas Fogg, Lau Xing and Monique La Roche dare to do what no one has done before--beat the click in a race around the world. Traveling the globe by land, sea, air, and even in-line skates, Fogg must complete his trip around the world in 80 days, or he will never be allowed to invent again.",
+#   year: "2004",
+#   runtime: "120 minutes",
+#   mediatype: "movie"
+# )
+
+# VideoGenre.create!(
+#   video_id: eighty_days.id,
+#   genre_id: comedy.id
+# )
+# VideoGenre.create!(
+#   video_id: eighty_days.id,
+#   genre_id: drama.id
+# )
+# VideoGenre.create!(
+#   video_id: eighty_days.id,
+#   genre_id: action.id
+# )
+
+# eighty_days_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+# eighty_days.thumbnail.attach(io: eighty_days_thumbnail, filename: 'shang-chi.jepg')
+
+# eighty_days_bg = open('https://destinyplus-seeds.s3.amazonaws.com/eighty_days_bg.jpg')
+# eighty_days.background.attach(io: eighty_days_bg, filename: 'shangchi_bg.jpg')
+
+# eighty_days_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+# eighty_days.file.attach(io: eighty_days_file, filename: 'black-widow.mp4')
+
+# ATLANTIS THE LOST EMPIRE
+# atlantis = Video.create!(
+#   title: "Atlantis The Lost Empire",
+#   description: "A crew of archeologists and explorers, led by historian Milo Thatch, board an incredible submarine and head deep into the mysteries of the sea in search of the legendary kingdom of Atlantis. The underwater expedition takes an unexpected turn when the team's mission must shift from exploring the submerged kingdom to protecting it from the mystical powers that be.",
+#   year: "2001",
+#   runtime: "98 minutes",
+#   mediatype: "movie"
+# )
+
+# VideoGenre.create!(
+#   video_id: atlantis.id,
+#   genre_id: comedy.id
+# )
+# VideoGenre.create!(
+#   video_id: atlantis.id,
+#   genre_id: drama.id
+# )
+# VideoGenre.create!(
+#   video_id: atlantis.id,
+#   genre_id: action.id
+# )
+
+# atlantis_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+# atlantis.thumbnail.attach(io: atlantis_thumbnail, filename: 'shang-chi.jepg')
+
+# atlantis_bg = open('https://destinyplus-seeds.s3.amazonaws.com/atlantis_bg.jpg')
+# eighty_days.background.attach(io: atlantis_bg, filename: 'shangchi_bg.jpg')
+
+# atlantis_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+# eighty_days.file.attach(io: atlantis_file, filename: 'black-widow.mp4')
+
+# HIGH SCHOOL MUSICAL
+hsm = Video.create!(
+  title: "High School Musical",
+  description: "East High is taken by storm when Troy, the star captain of the school's basketball team, and Gabriella, a brainy new student, connect on a level that's more than a school crush. When the two discover they might have a real passion for singing, they take their place in the spotlight, setting off a chain of events that puts all of East High into a musical frenzy.",
+  year: "2006",
+  runtime: "100 minutes",
+  mediatype: "movie"
+)
+
+VideoGenre.create!(
+  video_id: hsm.id,
+  genre_id: comedy.id
+)
+VideoGenre.create!(
+  video_id: hsm.id,
+  genre_id: drama.id
+)
+VideoGenre.create!(
+  video_id: hsm.id,
+  genre_id: family.id
+)
+
+hsm_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+hsm.thumbnail.attach(io: hsm_thumbnail, filename: 'shang-chi.jepg')
+
+hsm_bg = open('https://destinyplus-seeds.s3.amazonaws.com/hsm_bg.jpg')
+hsm.background.attach(io: hsm_bg, filename: 'shangchi_bg.jpg')
+
+hsm_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+hsm.file.attach(io: hsm_file, filename: 'black-widow.mp4')
+
 # ISLE OF DOGS
 isle_of_dogs = Video.create!(
   title: "Isle of Dogs",
