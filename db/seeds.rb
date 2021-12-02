@@ -684,35 +684,76 @@ shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 # eighty_days.file.attach(io: atlantis_file, filename: 'black-widow.mp4')
 
 # HIGH SCHOOL MUSICAL
-hsm = Video.create!(
-  title: "High School Musical",
-  description: "East High is taken by storm when Troy, the star captain of the school's basketball team, and Gabriella, a brainy new student, connect on a level that's more than a school crush. When the two discover they might have a real passion for singing, they take their place in the spotlight, setting off a chain of events that puts all of East High into a musical frenzy.",
-  year: "2006",
-  runtime: "100 minutes",
+# hsm = Video.create!(
+#   title: "High School Musical",
+#   description: "East High is taken by storm when Troy, the star captain of the school's basketball team, and Gabriella, a brainy new student, connect on a level that's more than a school crush. When the two discover they might have a real passion for singing, they take their place in the spotlight, setting off a chain of events that puts all of East High into a musical frenzy.",
+#   year: "2006",
+#   runtime: "100 minutes",
+#   mediatype: "movie"
+# )
+
+# VideoGenre.create!(
+#   video_id: hsm.id,
+#   genre_id: comedy.id
+# )
+# VideoGenre.create!(
+#   video_id: hsm.id,
+#   genre_id: drama.id
+# )
+# VideoGenre.create!(
+#   video_id: hsm.id,
+#   genre_id: family.id
+# )
+
+# hsm_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+# hsm.thumbnail.attach(io: hsm_thumbnail, filename: 'shang-chi.jepg')
+
+# hsm_bg = open('https://destinyplus-seeds.s3.amazonaws.com/hsm_bg.jpg')
+# hsm.background.attach(io: hsm_bg, filename: 'shangchi_bg.jpg')
+
+# hsm_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+# hsm.file.attach(io: hsm_file, filename: 'black-widow.mp4')
+
+# TOY STORY
+toy_story = Video.create!(
+  title: "Toy Story",
+  description: "WElcome to an astonishing world where toys play while their owners are away. Meet Woody, Buzz, and all their friends in an adventure filled with humor, heart, and friendship.",
+  year: "1995",
+  runtime: "83 minutes",
   mediatype: "movie"
 )
 
 VideoGenre.create!(
-  video_id: hsm.id,
+  video_id: toy_story.id,
   genre_id: comedy.id
 )
 VideoGenre.create!(
-  video_id: hsm.id,
+  video_id: toy_story.id,
   genre_id: drama.id
 )
 VideoGenre.create!(
-  video_id: hsm.id,
+  video_id: toy_story.id,
   genre_id: family.id
+)
+VideoGenre.create!(
+  video_id: toy_story.id,
+  genre_id: animation.id
+)
+VideoGenre.create!(
+  video_id: toy_story.id,
+  genre_id: classic.id
 )
 
 hsm_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-hsm.thumbnail.attach(io: hsm_thumbnail, filename: 'shang-chi.jepg')
+toy_story.thumbnail.attach(io: hsm_thumbnail, filename: 'shang-chi.jepg')
 
 hsm_bg = open('https://destinyplus-seeds.s3.amazonaws.com/hsm_bg.jpg')
-hsm.background.attach(io: hsm_bg, filename: 'shangchi_bg.jpg')
+toy_story.background.attach(io: hsm_bg, filename: 'shangchi_bg.jpg')
 
 hsm_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-hsm.file.attach(io: hsm_file, filename: 'black-widow.mp4')
+toy_story.file.attach(io: hsm_file, filename: 'black-widow.mp4')
+
+
 
 # ISLE OF DOGS
 isle_of_dogs = Video.create!(
