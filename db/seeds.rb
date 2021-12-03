@@ -84,7 +84,7 @@ classic = Genre.create!(name: "Classic")
 # VIDEOS
 # AMERICAN DRAGON JAKE LONG
 american_dragon = Video.create!(
-  title: "American Dragon Jake Long",
+  title: "american dragon jake long",
   description: "Jake Long is a skateboarding teenager who secretly is a fire-breathing dragon and the magical protector from New York City. He uses his duties as a dragon to help defend the underground magical world of New York City, while continuing his training.",
   year: "2005",
   runtime: "2 seasons",
@@ -115,7 +115,7 @@ american_dragon.file.attach(io: american_dragon_file, filename: 'american-dragon
 
 # COSMOS
 cosmos = Video.create!(
-  title: "Cosmos",
+  title: "cosmos",
   description: "Following the wildly successful Cosmos: A Spacetime Odyssey, Neil deGrasse Tyson returns as host to translate more revelations of science into a lavish transporting experience, taking audiences on a series of spiritual voyages of exploration. The show reveals previously uncharted realms, including lost worlds, worlds yet to come, and the worlds that humans may one day inhabit.",
   year: "2020",
   runtime: "1 season",
@@ -141,7 +141,7 @@ cosmos.file.attach(io: cosmos_file, filename: 'cosmos.mp4')
 
 # AVENGERS
 avengers = Video.create!(
-  title: "Avengers",
+  title: "avengers",
   description: "Loki, the adopted brother of Thor, teams-up with the Chitauri Army and uses the Tesseract's power to travel from Asgard to Midgard to plot the invasion of Earth and become a king. The director of the agency S.H.I.E.L.D., Nick Fury, sets in motion project Avengers, joining Tony Stark a.k.a. the Iron Man; Steve Rogers, a.k.a. Captain America; Bruce Banner, a.k.a. The Hulk; Thor; Natasha Romanoff, a.k.a. Black Widow; and Clint Barton, a.k.a. Hawkeye, to save the world from the powerful Loki and the alien invasion.",
   year: "2012",
   runtime: "143 minutes",
@@ -172,7 +172,7 @@ avengers.file.attach(io: avengers_file, filename: 'avengers.mp4')
 
 
 bh6 = Video.create!(
-  title: "Big Hero 6",
+  title: "big hero 6",
   description: 'When a devastating event befalls the city of San Fransokyo and catapults Hiro into the midst of danger, he turns to Baymax and his close friends adrenaline junkie Go Go Tomago, neatnik Wasabi, chemistry whiz Honey Lemon and fanboy Fred. Determined to uncover the mystery, Hiro transforms his friends into a band of high-tech heroes called "Big Hero 6."',
   year: "2014",
   runtime: "102 minutes",
@@ -203,7 +203,7 @@ bh6.file.attach(io: bh6_file, filename: 'bh6.mp4')
 
 # THE SUITE LIFE OF ZACK AND CODY
 suitelife = Video.create!(
-  title: "The Suite Life of Zack and Cody",
+  title: "the suite life of zack and cody",
   description: "The Suite Life of Zack and Cody stars identical twin brothers Dylan and Cole Sprouse, as Zack and Cody, whose lives change when their mother Carey (Kim Rhodes), ends up landing a job at one of Boston's finest hotels, the Tipton Hotel. As part of Carey's contractual deal, the twins and her get to live in an upper floor suite of the hotel. Ashley Michelle Tisdale stars as Maddie Fitzpatrick, who plays the role of the hotel candy counter girl and part-time babysitter, that tends to having to put an end to Zack and Cody's antics. Brenda Song stars as the rich and spoiled hotel heiress, London Tipton; while Phill Lewis plays the role of Mr. Moseby, the Tipton Hotel Manager.",
   year: "2005",
   runtime: "3 seasons",
@@ -234,7 +234,7 @@ suitelife.file.attach(io: suitelife_file, filename: 'suitelife.mp4')
 
 # A GOOFY MOVIE
 goofy = Video.create!(
-  title: "A Goofy Movie",
+  title: "a goofy movie",
   description: "Though Goofy always means well, his amiable cluelessness and klutzy pratfalls regularly embarrass his awkward adolescent son, Max. When Max's lighthearted prank on his high-school principal finally gets his longtime crush, Roxanne, to notice him, he asks her on a date. Max's trouble at school convinces Goofy that he and the boy need to bond over a cross-country fishing trip like the one he took with his dad when he was Max's age, which throws a kink in his son's plans to impress Roxanne.",
   year: "1995",
   runtime: "81 minutes",
@@ -266,7 +266,7 @@ goofy.file.attach(io: goofy_file, filename: 'goofy.mp4')
 # RAYA AND THE LAST DRAGON
 # TODO: FIX RAVA -> RAYA SPELLING ON AWS
 raya = Video.create!(
-  title: "Raya and The Last Dragon",
+  title: "raya and the last dragon",
   description: "Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. However, when sinister monsters known as the Druun threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, those same monsters have returned, and it's up to a lone warrior to track down the last dragon and stop the Druun for good.",
   year: "2021",
   runtime: "107 minutes",
@@ -300,7 +300,7 @@ raya.file.attach(io: raya_file, filename: 'raya.mp4')
 
 # FREE SOLO
 freesolo = Video.create!(
-  title: "Free Solo",
+  title: "free solo",
   description: "Free Solo a stunning, intimate and unflinching portrait of free soloist climber Alex Honnold, as he prepares to achieve his lifelong dream: climbing the face of the world’s most famous rock ... the 3,200-foot El Capitan in Yosemite National Park … without a rope.",
   year: "2018",
   runtime: "100 minutes",
@@ -322,7 +322,7 @@ freesolo.file.attach(io: freesolo_file, filename: 'freesolo.mp4')
 
 # WENDY WU
 wendywu = Video.create!(
-  title: "Wendy Wu: Homecoming Warrior",
+  title: "wendy wu homecoming warrior",
   description: "Wendy Wu is a teenager who seems to have the perfect life: she's beautiful, popular and one of the two candidates to be voted Homecoming Queen. However, her life is changed when Shen, a monk from China, imparts to her the shocking truth about herself- she is a reincarnated Yin Warrior, whose destiny is to battle the evil Yan Lo.",
   year: "2006",
   runtime: "91 minutes",
@@ -337,6 +337,10 @@ VideoGenre.create!(
   video_id: wendywu.id,
   genre_id: drama.id
 )
+VideoGenre.create!(
+  video_id: wendywu.id,
+  genre_id: action.id
+)
 wendywu_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/wendy-wu.jpeg')
 wendywu.thumbnail.attach(io: wendywu_thumbnail, filename: 'wendy-wu.jpeg')
 
@@ -348,7 +352,7 @@ wendywu.file.attach(io: wendywu_file, filename: 'wendywu.mp4')
 
 # LILO & STITCH THE MOVIE
 liloandstitch = Video.create!(
-  title: "Lilo & Stitch",
+  title: "lilo and stitch",
   description: "A tale of a young girl's close encounter with the galaxy's most wanted extraterrestrial. Lilo is a lonely Hawaiian girl who adopts a small ugly 'dog', whom she names Stitch. Stitch would be the perfect pet if he weren't in reality a genetic experiment who has escaped from an alien planet and crash-landed on Earth. Through her love, faith and unwavering belief in ohana, the Hawaiian concept of family, Lilo helps unlock Stitch's heart and gives him the ability to care for someone else.",
   year: "2002",
   runtime: "92 minutes",
@@ -382,7 +386,7 @@ liloandstitch.file.attach(io: liloandstitch_file, filename: 'liloandstitch.mp4')
 
 # WOLFGANG
 wolfgang = Video.create!(
-  title: "Wolfgang",
+  title: "wolfgang",
   description: "The true story of Wolfgang Puck, a man who survived a troubled childhood filled with a series of challenging obstacles and whose perseverance led him to become a prolific and celebrated chef.",
   year: "2021",
   runtime: "78 minutes",
@@ -434,7 +438,7 @@ mandalorian.file.attach(io: mandalorian_file, filename: 'mandalorian.mp4')
 
 # BRAIN GAMES
 braingames = Video.create!(
-  title: "Brain Games",
+  title: "brain games",
   description: "Brain Games investigates every piece of the memory puzzle, from how we recognize faces to how we can move memories from short-term to long-term storage.",
   year: "2011",
   runtime: "6 seasons",
@@ -456,7 +460,7 @@ braingames.file.attach(io: braingames_file, filename: 'braingames.mp4')
 
 # THE SIMPSONS
 simpsons = Video.create!(
-  title: "The Simpsons",
+  title: "the simpsons",
   description: "This is an animated sitcom about the antics of a dysfunctional family. Homer is the oafish unhealthy beer loving father, Marge is the hardworking homemaker wife, Bart is the perpetual ten-year-old underachiever (and proud of it), Lisa is the unappreciated eight-year-old genius, and Maggie is the cute, pacifier loving silent infant.",
   year: "1989",
   runtime: "34 seasons",
@@ -486,7 +490,7 @@ simpsons.file.attach(io: simpsons_file, filename: 'simpsons.mp4')
 
 # JOHNNY KAPAHALA
 johnny_kapahala = Video.create!(
-  title: "Johnny Kapahala Back on Board",
+  title: "johnny kapahala back on board",
   description: "Johnny Kapahala, a teen snowboarding champion from Vermont, returns to Oahu, Hawaii for the wedding of his hero--his grandfather, local surf legend Johnny Tsunami--and to catch a few famous Kauai waves. When Johnny arrives, he meets his new family including Uncle Chris, his new stepgrandmother's 12-year-old son, who resents the upcoming marriage and whose only interest is to join a mountain-boarding crew led by a teenage bully. When Johnny's grandfather and his new wife open a surf shop that also caters to mountain boarders, they are soon embroiled in a turf war with a rival shop-owner who wants to shut down their business.",
   year: "2008",
   runtime: "90 minutes",
@@ -512,7 +516,7 @@ johnny_kapahala.file.attach(io: johnny_kapahala_file, filename: 'johnny_tsunami.
 
 # SHANGCHI AND THE LEGEND OF THE TEN RINGS
 shangchi = Video.create!(
-  title: "Shang Chi and the Legend of the Ten Rings",
+  title: "shang chi and the legend of the ten rings",
   description: "Shang-Chi, the master of weaponry-based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization.",
   year: "2021",
   runtime: "90 minutes",
