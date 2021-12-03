@@ -408,7 +408,7 @@ wolfgang.file.attach(io: wolfgang_file, filename: 'wolfgang.mp4')
 
 # THE MANDALORIAN
 mandalorian = Video.create!(
-  title: "The Mandalorian",
+  title: "the mandalorian",
   description: "After the stories of Jango and Boba Fett, another warrior emerges in the Star Wars universe. The Mandalorian is set after the fall of the Empire and before the emergence of the First Order. We follow the travails of a lone gunfighter in the outer reaches of the galaxy far from the authority of the New Republic.",
   year: "2019",
   runtime: "2 seasons",
@@ -542,7 +542,7 @@ shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # BLACK WIDOW
 # black_widow = Video.create!(
-#   title: "Black Widow",
+#   title: "black widow",
 #   description: "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursed by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationship left in her wake long before she became an Avenger.",
 #   year: "2021",
 #   runtime: "135 minutes",
@@ -568,7 +568,7 @@ shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # MULAN
 # mulan = Video.create!(
-#   title: "Mulan",
+#   title: "mulan",
 #   description: "Disguised as a male soldier, a young girl bravely takes her father's place in the Imperial Army",
 #   year: "1998",
 #   runtime: "95 minutes",
@@ -600,7 +600,7 @@ shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # TEN THINGS I HATE ABOUT YOU
 # ten_things = Video.create!(
-#   title: "10 Things I Hate About You",
+#   title: "ten things I hate about you",
 #   description: "On the first day at his new school, Cameron instantly falls for Bianca, the gorgeous girl of his dreams, but she is forbidden from dating until her ill-tempered, completely un-datable older sister Kat goes out, too",
 #   year: "1999",
 #   runtime: "98 minutes",
@@ -627,7 +627,7 @@ shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # AROUND THE WORLD IN 80 DAYS
 # eighty_days = Video.create!(
-#   title: "Around the World in 80 Days",
+#   title: "around the world in eighty days",
 #   description: "After being forced into a bet by the Royal Academy's Minister of Science, Phileas Fogg, Lau Xing and Monique La Roche dare to do what no one has done before--beat the click in a race around the world. Traveling the globe by land, sea, air, and even in-line skates, Fogg must complete his trip around the world in 80 days, or he will never be allowed to invent again.",
 #   year: "2004",
 #   runtime: "120 minutes",
@@ -658,7 +658,7 @@ shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # ATLANTIS THE LOST EMPIRE
 # atlantis = Video.create!(
-#   title: "Atlantis The Lost Empire",
+#   title: "atlantis the lost empire",
 #   description: "A crew of archeologists and explorers, led by historian Milo Thatch, board an incredible submarine and head deep into the mysteries of the sea in search of the legendary kingdom of Atlantis. The underwater expedition takes an unexpected turn when the team's mission must shift from exploring the submerged kingdom to protecting it from the mystical powers that be.",
 #   year: "2001",
 #   runtime: "98 minutes",
@@ -689,7 +689,7 @@ shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # HIGH SCHOOL MUSICAL
 # hsm = Video.create!(
-#   title: "High School Musical",
+#   title: "high school musical",
 #   description: "East High is taken by storm when Troy, the star captain of the school's basketball team, and Gabriella, a brainy new student, connect on a level that's more than a school crush. When the two discover they might have a real passion for singing, they take their place in the spotlight, setting off a chain of events that puts all of East High into a musical frenzy.",
 #   year: "2006",
 #   runtime: "100 minutes",
@@ -720,7 +720,7 @@ shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # TOY STORY
 toy_story = Video.create!(
-  title: "Toy Story",
+  title: "toy story",
   description: "WElcome to an astonishing world where toys play while their owners are away. Meet Woody, Buzz, and all their friends in an adventure filled with humor, heart, and friendship.",
   year: "1995",
   runtime: "83 minutes",
@@ -761,7 +761,7 @@ toy_story.file.attach(io: hsm_file, filename: 'black-widow.mp4')
 
 # ISLE OF DOGS
 isle_of_dogs = Video.create!(
-  title: "Isle of Dogs",
+  title: "isle of dogs",
   description: "Set in Japan, Isle of Dogs follows a boy's odyssey in search of his lost dog. ... After an outbreak of snout fever, all the dogs in Japan are sent to Trash Island and live in exile and eventually die.",
   year: "2018",
   runtime: "91 minutes",
@@ -815,7 +815,7 @@ parts_unknown.file.attach(io: parts_unknown_file, filename: 'parts-unknown.mp4')
 
 # JIRO DREAMS OF SUSHI
 jiro = Video.create!(
-  title: "Jiro Dreams of Sushi",
+  title: "jiro dreams of sushi",
   description: "In the basement of a Tokyo office building, 85 year old sushi master Jiro Ono works tirelessly in his world renowned restaurant, Sukiyabashi Jiro. As his son Yoshikazu faces the pressures of stepping into his father's shoes and taking over the legendary restaurant, Jiro relentlessly pursues his lifelong quest to create the perfect piece of sushi.",
   year: "2011",
   runtime: "86 mins",
@@ -834,7 +834,7 @@ jiro.file.attach(io: joro_file, filename: 'jiro.mp4')
 
 # THE LAST DANCE
 last_dance = Video.create!(
-  title: "The Last Dance",
+  title: "the last dance",
   description: "The Last Dance is a 2020 American sports documentary miniseries co-produced by ESPN Films and Netflix. Directed by Jason Hehir, the series revolves around the career of Michael Jordan, with particular focus on his final season with the Chicago Bulls.",
   year: "2020",
   runtime: "1 season",
@@ -854,7 +854,7 @@ last_dance.file.attach(io: last_dance_file, filename: 'last-dance.mp4')
 # SALT ACID FAT HEAT
 # TODO: ADD SAFH VIDEO
 safh = Video.create!(
-  title: "Salt Acid Fat Heat",
+  title: "salt acid fat heat",
   description: "Docuseries, based on the award-winning book by Samin Nosrat, explores the essence of cooking and the vital ingredients at the heart of a great dish.",
   year: "2018",
   runtime: "1 season",
@@ -873,7 +873,7 @@ safh.file.attach(io: safh_file, filename: 'safh.mp4')
 
 # COWBOY BEBOP
 bebop = Video.create!(
-  title: "Cowboy Bebop",
+  title: "cowboy bebop",
   description: "Spike Spiegel is a bounty hunter in the far future with an easy going attitude and some deadly skill at martial arts. Together with his partners, Jet Black, and later Faye Valentine as well, they go from job to job across the galaxy looking for the high priced fugitives to bag.",
   year: "1998",
   runtime: "1 season",
@@ -892,7 +892,7 @@ bebop.file.attach(io: bebop_file, filename: 'bebop.mp4')
 
 # SPIRITED AWAY
 spirited_away = Video.create!(
-  title: "Spirited Away",
+  title: "spirited away",
   description: "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
   year: "2001",
   runtime: "125 mins",
@@ -911,7 +911,7 @@ spirited_away.file.attach(io: spirited_away_file, filename: 'spirited-away.mp4')
 
 # PRINCESS MONONOKE
 mononoke = Video.create!(
-  title: "Princess Mononoke",
+  title: "princess mononoke",
   description: "While protecting his village from rampaging boar-god/demon, a confident young warrior, Ashitaka, is stricken by a deadly curse. To save his life, he must journey to the forests of the west. Once there, he's embroiled in a fierce campaign that humans were waging on the forest. The ambitious Lady Eboshi and her loyal clan use their guns against the gods of the forest and a brave young woman, Princess Mononoke, who was raised by a wolf-god. Ashitaka sees the good in both sides and tries to stem the flood of blood. This is met by animosity by both sides as they each see him as supporting the enemy.",
   year: "1997",
   runtime: "134 mins",
@@ -930,7 +930,7 @@ mononoke.file.attach(io: mononoke_file, filename: 'mononoke.mp4')
 
 # YOUR NAME
 your_name = Video.create!(
-  title: "Your Name",
+  title: "your name",
   description: "Mitsuha is the daughter of the mayor of a small mountain town. She's a straightforward high school girl who lives with her sister and her grandmother and has no qualms about letting it be known that she's uninterested in Shinto rituals or helping her father's electoral campaign. Instead she dreams of leaving the boring town and trying her luck in Tokyo. Taki is a high school boy in Tokyo who works part-time in an Italian restaurant and aspires to become an architect or an artist. Every night he has a strange dream where he becomes...a high school girl in a small mountain town.",
   year: "2016",
   runtime: "106 mins",
@@ -949,7 +949,7 @@ your_name.file.attach(io: your_name_file, filename: 'your-name.mp4')
 
 # FULLMETAL ALCHEMIST
 fma = Video.create!(
-  title: "Fullmetal Alchemist: Brotherhood",
+  title: "fullmetal alchemist brotherhood",
   description: "Two brothers lose their mother to an incurable disease. With the power of 'alchemy', they use taboo knowledge to resurrect her. The process fails, and as a toll for using this type of alchemy, the older brother, Edward Elric loses his left leg while the younger brother, Alphonse Elric loses his entire body. To save his brother, Edward sacrifices his right arm and is able to affix his brother's soul to a suit of armor. With the help of a family friend, Edward receives metal limbs - 'automail' - to replace his lost ones. With that, Edward vows to search for the Philosopher's Stone to return the brothers to their original bodies, even if it means becoming a 'State Alchemist', one who uses his/her alchemy for the military.",
   year: "2009",
   runtime: "2 seasons",
@@ -968,7 +968,7 @@ fma.file.attach(io: fma_file, filename: 'fma.mp4')
 
 # ONE PIECE
 op = Video.create!(
-  title: "One Piece",
+  title: "one piece",
   description: "There once lived a pirate named Gol D. Roger. He obtained wealth, fame, and power to earn the title of Pirate King. When he was captured and about to be executed, he revealed that his treasure called One Piece was hidden somewhere at the Grand Line. This made all people set out to search and uncover the One Piece treasure, but no one ever found the location of Gol D. Roger's treasure, and the Grand Line was too dangerous a place to overcome. Twenty-two years after Gol D. Roger's death, a boy named Monkey D. Luffy decided to become a pirate and search for Gol D. Roger's treasure to become the next Pirate King.",
   year: "1999",
   runtime: "40 seasons",
@@ -987,7 +987,7 @@ op.file.attach(io: op_file, filename: 'op.mp4')
 
 # NARUTO SHIPPUDEN
 shippuden = Video.create!(
-  title: "Naruto Shippuden",
+  title: "naruto shippuden",
   description: "Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.",
   year: "2007",
   runtime: "10 seasons",
@@ -1006,7 +1006,7 @@ shippuden.file.attach(io: shippuden_file, filename: 'shippuden.mp4')
 
 # MY HERO ACADEMIA
 mha = Video.create!(
-  title: "My Hero Academia",
+  title: "my hero academia",
   description: "In a world populated with superhumans, the superhero-loving Izuku Midoriya is without power. However, after the Quirkless dreamer Izuku inherits the powers of the world's best superhero, All Might, his hopes of becoming the top hero are now possible. Once enrolled in the high school for heroes, U.A., Izuku soon discovers being a hero is much more complicated than it appears.",
   year: "2016",
   runtime: "6 seasons",
@@ -1025,7 +1025,7 @@ mha.file.attach(io: mha_file, filename: 'mha.mp4')
 
 # DEMON SLAYER
 demon_slayer = Video.create!(
-  title: "Demon Slayer",
+  title: "demon slayer",
   description: "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
   year: "2019",
   runtime: "2 seasons",
