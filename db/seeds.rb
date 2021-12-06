@@ -457,7 +457,7 @@ VideoGenre.create!(
   genre_id: education.id
 )
 braingames_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/brain-games.jpg')
-braingames.thumbnail.attach(io: braingames_thumbnail, filename: 'mandalorian.jpeg')
+braingames.thumbnail.attach(io: braingames_thumbnail, filename: 'brain-games.jpg')
 
 braingames_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/braingames_bg.jpg')
 braingames.background.attach(io: braingames_bg, filename: 'braingames_bg.jpg')
@@ -512,10 +512,10 @@ VideoGenre.create!(
   video_id: johnny_kapahala.id,
   genre_id: family.id
 )
-johnny_kapahala_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/johnny-kapahala.jpeg')
-johnny_kapahala.thumbnail.attach(io: johnny_kapahala_thumbnail, filename: 'johnny-kapahala.jepg')
+johnny_kapahala_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/johnny-kapahala.jpeg')
+johnny_kapahala.thumbnail.attach(io: johnny_kapahala_thumbnail, filename: 'johnny-kapahala.jpeg')
 
-johnny_kapahala_bg = open('https://destinyplus-seeds.s3.amazonaws.com/johnny_kapahala_bg.jpg')
+johnny_kapahala_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/johnny_kapahala_bg.jpg')
 johnny_kapahala.background.attach(io: johnny_kapahala_bg, filename: 'johnny_kapahala_bg.jpg')
 
 johnny_kapahala_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/johnny_tsunami.mp4')
@@ -538,40 +538,40 @@ VideoGenre.create!(
   video_id: shangchi.id,
   genre_id: fantasy.id
 )
-shangchi_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-shangchi.thumbnail.attach(io: shangchi_thumbnail, filename: 'shang-chi.jepg')
+shangchi_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/shang-chi.jpeg')
+shangchi.thumbnail.attach(io: shangchi_thumbnail, filename: 'shang-chi.jpeg')
 
-shangchi_bg = open('https://destinyplus-seeds.s3.amazonaws.com/shangchi_bg.jpg')
+shangchi_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/shangchi_bg.jpg')
 shangchi.background.attach(io: shangchi_bg, filename: 'shangchi_bg.jpg')
 
 shangchi_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/shangchi.mp4')
 shangchi.file.attach(io: shangchi_file, filename: 'shangchi.mp4')
 
 # BLACK WIDOW
-# black_widow = Video.create!(
-#   title: "black widow",
-#   description: "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursed by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationship left in her wake long before she became an Avenger.",
-#   year: "2021",
-#   runtime: "135 minutes",
-#   mediatype: "movie"
-# )
+black_widow = Video.create!(
+  title: "black widow",
+  description: "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursed by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationship left in her wake long before she became an Avenger.",
+  year: "2021",
+  runtime: "135 minutes",
+  mediatype: "movie"
+)
 
-# VideoGenre.create!(
-#   video_id: black_widow.id,
-#   genre_id: action.id
-# )
-# VideoGenre.create!(
-#   video_id: black_widow.id,
-#   genre_id: fantasy.id
-# )
-# black_widow_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-# black_widow.thumbnail.attach(io: black_widow_thumbnail, filename: 'shang-chi.jepg')
+VideoGenre.create!(
+  video_id: black_widow.id,
+  genre_id: action.id
+)
+VideoGenre.create!(
+  video_id: black_widow.id,
+  genre_id: fantasy.id
+)
+black_widow_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/black-widow.jpeg')
+black_widow.thumbnail.attach(io: black_widow_thumbnail, filename: 'black-widow.jpeg')
 
-# black_widow_bg = open('https://destinyplus-seeds.s3.amazonaws.com/black_widow_bg.jpg')
-# black_widow.background.attach(io: black_widow_bg, filename: 'shangchi_bg.jpg')
+black_widow_bg = open('https://destinyplus-seeds.s3.amazonaws.com/black_widow_bg.jpg')
+black_widow.background.attach(io: black_widow_bg, filename: 'shangchi_bg.jpg')
 
-# shangchi_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-# black_widow.file.attach(io: shangchi_file, filename: 'black-widow.mp4')
+shangchi_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+black_widow.file.attach(io: shangchi_file, filename: 'black-widow.mp4')
 
 # MULAN
 # mulan = Video.create!(
