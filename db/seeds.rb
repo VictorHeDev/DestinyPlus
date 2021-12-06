@@ -268,7 +268,6 @@ goofy_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/goofy.mp4')
 goofy.file.attach(io: goofy_file, filename: 'goofy.mp4')
 
 # RAYA AND THE LAST DRAGON
-# TODO: FIX RAVA -> RAYA SPELLING ON AWS
 raya = Video.create!(
   title: "raya and the last dragon",
   description: "Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. However, when sinister monsters known as the Druun threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, those same monsters have returned, and it's up to a lone warrior to track down the last dragon and stop the Druun for good.",
@@ -293,11 +292,11 @@ VideoGenre.create!(
   video_id: raya.id,
   genre_id: comedy.id
 )
-raya_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/rava.jpeg')
-raya.thumbnail.attach(io: raya_thumbnail, filename: 'rava.jpeg')
+raya_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/raya.jpeg')
+raya.thumbnail.attach(io: raya_thumbnail, filename: 'raya.jpeg')
 
-raya_bg = open('https://destinyplus-seeds.s3.amazonaws.com/rava_bg.jpg')
-raya.background.attach(io: raya_bg, filename: 'rava_bg.jpg')
+raya_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/raya_bg.jpg')
+raya.background.attach(io: raya_bg, filename: 'raya_bg.jpg')
 
 raya_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/raya.mp4')
 raya.file.attach(io: raya_file, filename: 'raya.mp4')
