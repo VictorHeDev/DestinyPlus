@@ -456,10 +456,10 @@ VideoGenre.create!(
   video_id: braingames.id,
   genre_id: education.id
 )
-braingames_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/brain-games.jpg')
+braingames_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/brain-games.jpg')
 braingames.thumbnail.attach(io: braingames_thumbnail, filename: 'mandalorian.jpeg')
 
-braingames_bg = open('https://destinyplus-seeds.s3.amazonaws.com/braingames_bg.jpg')
+braingames_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/braingames_bg.jpg')
 braingames.background.attach(io: braingames_bg, filename: 'braingames_bg.jpg')
 
 braingames_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/braingames.mp4')
@@ -486,10 +486,10 @@ VideoGenre.create!(
   video_id: simpsons.id,
   genre_id: animation.id
 )
-simpsons_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/simpsons.jpg')
+simpsons_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/simpsons.jpg')
 simpsons.thumbnail.attach(io: simpsons_thumbnail, filename: 'simpsons.jpg')
 
-simpsons_bg = open('https://destinyplus-seeds.s3.amazonaws.com/simpsons_bg.jpg')
+simpsons_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/simpsons_bg.jpg')
 simpsons.background.attach(io: simpsons_bg, filename: 'simpsons_bg.jpg')
 
 simpsons_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/simpsons.mp4')
@@ -498,7 +498,7 @@ simpsons.file.attach(io: simpsons_file, filename: 'simpsons.mp4')
 # JOHNNY KAPAHALA
 johnny_kapahala = Video.create!(
   title: "johnny kapahala back on board",
-  description: "Johnny Kapahala, a teen snowboarding champion from Vermont, returns to Oahu, Hawaii for the wedding of his hero--his grandfather, local surf legend Johnny Tsunami--and to catch a few famous Kauai waves. When Johnny arrives, he meets his new family including Uncle Chris, his new stepgrandmother's 12-year-old son, who resents the upcoming marriage and whose only interest is to join a mountain-boarding crew led by a teenage bully. When Johnny's grandfather and his new wife open a surf shop that also caters to mountain boarders, they are soon embroiled in a turf war with a rival shop-owner who wants to shut down their business.",
+  description: "Johnny Kapahala is back in Hawaii, hoping to catch some surf and also attend the wedding of his grandfather, the legendary surfing hero. All he really wants to do is get on the mountain boarding team, but life quickly gets complicated for Johnny as he meets his 12-year-old uncle (his step-grandmother's son), and gets involved in a turf war between rival boarding shops.",
   year: "2008",
   runtime: "90 minutes",
   mediatype: "movie"
