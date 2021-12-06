@@ -638,8 +638,8 @@ ten_things.thumbnail.attach(io: ten_things_thumbnail, filename: 'ten-things-i-ha
 ten_things_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/ten-things-bg.jpg')
 ten_things.background.attach(io: ten_things_bg, filename: 'ten-things-bg.jpg')
 
-ten_things_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-ten_things.file.attach(io: ten_things_file, filename: 'black-widow.mp4')
+ten_things_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/ten-things.mp4')
+ten_things.file.attach(io: ten_things_file, filename: 'ten-things.mp4')
 
 # AROUND THE WORLD IN 80 DAYS
 eighty_days = Video.create!(
@@ -669,70 +669,82 @@ eighty_days.thumbnail.attach(io: eighty_days_thumbnail, filename: 'around-the-wo
 eighty_days_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/eighty-days-bg.jpg')
 eighty_days.background.attach(io: eighty_days_bg, filename: 'eighty-days-bg.jpg')
 
-eighty_days_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/ten-things.mp4')
-eighty_days.file.attach(io: eighty_days_file, filename: 'ten-things.mp4')
+eighty_days_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/eighty-days.mp4')
+eighty_days.file.attach(io: eighty_days_file, filename: 'eighty-days.mp4')
 
 # ATLANTIS THE LOST EMPIRE
-# atlantis = Video.create!(
-#   title: "atlantis the lost empire",
-#   description: "A crew of archeologists and explorers, led by historian Milo Thatch, board an incredible submarine and head deep into the mysteries of the sea in search of the legendary kingdom of Atlantis. The underwater expedition takes an unexpected turn when the team's mission must shift from exploring the submerged kingdom to protecting it from the mystical powers that be.",
-#   year: "2001",
-#   runtime: "98 minutes",
-#   mediatype: "movie"
-# )
+atlantis = Video.create!(
+  title: "atlantis the lost empire",
+  description: "A crew of archeologists and explorers, led by historian Milo Thatch, board an incredible submarine and head deep into the mysteries of the sea in search of the legendary kingdom of Atlantis. The underwater expedition takes an unexpected turn when the team's mission must shift from exploring the submerged kingdom to protecting it from the mystical powers that be.",
+  year: "2001",
+  runtime: "98 minutes",
+  mediatype: "movie"
+)
 
-# VideoGenre.create!(
-#   video_id: atlantis.id,
-#   genre_id: comedy.id
-# )
-# VideoGenre.create!(
-#   video_id: atlantis.id,
-#   genre_id: drama.id
-# )
-# VideoGenre.create!(
-#   video_id: atlantis.id,
-#   genre_id: action.id
-# )
+VideoGenre.create!(
+  video_id: atlantis.id,
+  genre_id: comedy.id
+)
+VideoGenre.create!(
+  video_id: atlantis.id,
+  genre_id: fantasy.id
+)
+VideoGenre.create!(
+  video_id: atlantis.id,
+  genre_id: action.id
+)
+VideoGenre.create!(
+  video_id: atlantis.id,
+  genre_id: animation.id
+)
+VideoGenre.create!(
+  video_id: atlantis.id,
+  genre_id: classic.id
+)
 
-# atlantis_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-# atlantis.thumbnail.attach(io: atlantis_thumbnail, filename: 'shang-chi.jepg')
+atlantis_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/atlantis.jpg')
+atlantis.thumbnail.attach(io: atlantis_thumbnail, filename: 'atlantis.jpg')
 
-# atlantis_bg = open('https://destinyplus-seeds.s3.amazonaws.com/atlantis_bg.jpg')
-# eighty_days.background.attach(io: atlantis_bg, filename: 'shangchi_bg.jpg')
+atlantis_bg = open('https://destinyplus-seeds.s3.amazonaws.com/atlantis_bg.jpg')
+eighty_days.background.attach(io: atlantis_bg, filename: 'shangchi_bg.jpg')
 
-# atlantis_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-# eighty_days.file.attach(io: atlantis_file, filename: 'black-widow.mp4')
+atlantis_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/atlantis.mp4')
+eighty_days.file.attach(io: atlantis_file, filename: 'atlantis.mp4')
 
 # HIGH SCHOOL MUSICAL
-# hsm = Video.create!(
-#   title: "high school musical",
-#   description: "East High is taken by storm when Troy, the star captain of the school's basketball team, and Gabriella, a brainy new student, connect on a level that's more than a school crush. When the two discover they might have a real passion for singing, they take their place in the spotlight, setting off a chain of events that puts all of East High into a musical frenzy.",
-#   year: "2006",
-#   runtime: "100 minutes",
-#   mediatype: "movie"
-# )
+hsm = Video.create!(
+  title: "high school musical",
+  description: "East High is taken by storm when Troy, the star captain of the school's basketball team, and Gabriella, a brainy new student, connect on a level that's more than a school crush. When the two discover they might have a real passion for singing, they take their place in the spotlight, setting off a chain of events that puts all of East High into a musical frenzy.",
+  year: "2006",
+  runtime: "100 minutes",
+  mediatype: "movie"
+)
 
-# VideoGenre.create!(
-#   video_id: hsm.id,
-#   genre_id: comedy.id
-# )
-# VideoGenre.create!(
-#   video_id: hsm.id,
-#   genre_id: drama.id
-# )
-# VideoGenre.create!(
-#   video_id: hsm.id,
-#   genre_id: family.id
-# )
+VideoGenre.create!(
+  video_id: hsm.id,
+  genre_id: comedy.id
+)
+VideoGenre.create!(
+  video_id: hsm.id,
+  genre_id: drama.id
+)
+VideoGenre.create!(
+  video_id: hsm.id,
+  genre_id: family.id
+)
+VideoGenre.create!(
+  video_id: hsm.id,
+  genre_id: classic.id
+)
 
-# hsm_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-# hsm.thumbnail.attach(io: hsm_thumbnail, filename: 'shang-chi.jepg')
+hsm_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/high-school-musical.jpeg')
+hsm.thumbnail.attach(io: hsm_thumbnail, filename: 'high-school-musical.jpeg')
 
-# hsm_bg = open('https://destinyplus-seeds.s3.amazonaws.com/hsm_bg.jpg')
-# hsm.background.attach(io: hsm_bg, filename: 'shangchi_bg.jpg')
+hsm_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/hsm-bg.jpg')
+hsm.background.attach(io: hsm_bg, filename: 'hsm-bg.jpg')
 
-# hsm_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-# hsm.file.attach(io: hsm_file, filename: 'black-widow.mp4')
+hsm_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/hsm.mp4')
+hsm.file.attach(io: hsm_file, filename: 'hsm.mp4')
 
 # TOY STORY
 toy_story = Video.create!(
@@ -764,7 +776,7 @@ VideoGenre.create!(
   genre_id: classic.id
 )
 
-hsm_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+hsm_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/toy-story.jpeg')
 toy_story.thumbnail.attach(io: hsm_thumbnail, filename: 'shang-chi.jepg')
 
 hsm_bg = open('https://destinyplus-seeds.s3.amazonaws.com/hsm_bg.jpg')
