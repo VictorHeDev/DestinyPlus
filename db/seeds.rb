@@ -706,10 +706,10 @@ atlantis_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails
 atlantis.thumbnail.attach(io: atlantis_thumbnail, filename: 'atlantis.jpg')
 
 atlantis_bg = open('https://destinyplus-seeds.s3.amazonaws.com/atlantis_bg.jpg')
-eighty_days.background.attach(io: atlantis_bg, filename: 'shangchi_bg.jpg')
+atlantis.background.attach(io: atlantis_bg, filename: 'atlantis_bg.jpg')
 
 atlantis_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/atlantis.mp4')
-eighty_days.file.attach(io: atlantis_file, filename: 'atlantis.mp4')
+atlantis.file.attach(io: atlantis_file, filename: 'atlantis.mp4')
 
 # HIGH SCHOOL MUSICAL
 hsm = Video.create!(
@@ -786,7 +786,6 @@ toy_story_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/toy-sto
 toy_story.file.attach(io: toy_story_file, filename: 'toy-story.mp4')
 
 
-
 # ISLE OF DOGS
 isle_of_dogs = Video.create!(
   title: "isle of dogs",
@@ -808,10 +807,10 @@ VideoGenre.create!(
   video_id: isle_of_dogs.id,
   genre_id: comedy.id
 )
-isle_of_dogs_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/isle-of-dogs.jpeg')
+isle_of_dogs_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/isle-of-dogs.jpeg')
 isle_of_dogs.thumbnail.attach(io: isle_of_dogs_thumbnail, filename: 'isle-of-dogs.jepg')
 
-isle_of_dogs_bg = open('https://destinyplus-seeds.s3.amazonaws.com/isle_of_dogs_bg.jpg')
+isle_of_dogs_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/isle_of_dogs_bg.jpg')
 isle_of_dogs.background.attach(io: isle_of_dogs_bg, filename: 'isle_of_dogs_bg.jpg')
 
 isle_of_dogs_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/isle-of-dogs.mp4')
@@ -835,7 +834,7 @@ VideoGenre.create!(
   video_id: parts_unknown.id,
   genre_id: family.id
 )
-parts_unknown_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/parts-unknown.jpg')
+parts_unknown_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/parts-unknown.jpg')
 parts_unknown.thumbnail.attach(io: parts_unknown_thumbnail, filename: 'parts-unknown.jpg')
 
 parts_unknown_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/parts-unknown.mp4')
@@ -854,7 +853,7 @@ VideoGenre.create!(
   video_id: jiro.id,
   genre_id: education.id
 )
-jiro_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/jiro.jpg')
+jiro_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/jiro.jpg')
 jiro.thumbnail.attach(io: jiro_thumbnail, filename: 'jiro.jpg')
 
 joro_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/jiro.mp4')
@@ -873,7 +872,7 @@ VideoGenre.create!(
   video_id: last_dance.id,
   genre_id: education.id
 )
-last_dance_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/last-dance.jpg')
+last_dance_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/last-dance.jpg')
 last_dance.thumbnail.attach(io: last_dance_thumbnail, filename: 'last-dance-jpg')
 
 last_dance_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/last-dance.mp4')
@@ -893,7 +892,7 @@ VideoGenre.create!(
   video_id: safh.id,
   genre_id: education.id
 )
-safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/safh.jpg')
+safh_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/safh.jpg')
 safh.thumbnail.attach(io: safh_thumbnail, filename: 'safh.jpg')
 
 safh_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/safh.mp4')
@@ -912,7 +911,7 @@ VideoGenre.create!(
   video_id: bebop.id,
   genre_id: anime.id
 )
-bebop_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/cowboy-bebop.jpg')
+bebop_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/cowboy-bebop.jpg')
 bebop.thumbnail.attach(io: bebop_thumbnail, filename: 'cowboy-bebop.jpg')
 
 bebop_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/bebop.mp4')
@@ -931,7 +930,7 @@ VideoGenre.create!(
   video_id: spirited_away.id,
   genre_id: anime.id
 )
-spirited_away_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/spirited-away.jpg')
+spirited_away_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/spirited-away.jpg')
 spirited_away.thumbnail.attach(io: spirited_away_thumbnail, filename: 'spirited-away.jpg')
 
 spirited_away_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/spirited-away.mp4')
@@ -950,7 +949,7 @@ VideoGenre.create!(
   video_id: mononoke.id,
   genre_id: anime.id
 )
-mononoke_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/princess-mononoke.jpg')
+mononoke_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/princess-mononoke.jpg')
 mononoke.thumbnail.attach(io: mononoke_thumbnail, filename: 'princess-mononoke.jpg')
 
 mononoke_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/mononoke.mp4')
@@ -969,7 +968,7 @@ VideoGenre.create!(
   video_id: your_name.id,
   genre_id: anime.id
 )
-your_name_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/your-name.jpg')
+your_name_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/your-name.jpg')
 your_name.thumbnail.attach(io: your_name_thumbnail, filename: 'your-name.jpg')
 
 your_name_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/your-name.mp4')
@@ -988,7 +987,7 @@ VideoGenre.create!(
   video_id: fma.id,
   genre_id: anime.id
 )
-fma_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/fma.jpg')
+fma_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/fma.jpg')
 fma.thumbnail.attach(io: fma_thumbnail, filename: 'fma.jpg')
 
 fma_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/fma.mp4')
@@ -1007,7 +1006,7 @@ VideoGenre.create!(
   video_id: op.id,
   genre_id: anime.id
 )
-op_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/op.jpg')
+op_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/op.jpg')
 op.thumbnail.attach(io: op_thumbnail, filename: 'op.jpg')
 
 op_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/op.mp4')
@@ -1026,7 +1025,7 @@ VideoGenre.create!(
   video_id: shippuden.id,
   genre_id: anime.id
 )
-shippuden_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shippuden.jpg')
+shippuden_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/shippuden.jpg')
 shippuden.thumbnail.attach(io: shippuden_thumbnail, filename: 'shippuden.jpg')
 
 shippuden_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/shippuden.mp4')
@@ -1045,7 +1044,7 @@ VideoGenre.create!(
   video_id: mha.id,
   genre_id: anime.id
 )
-mha_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/mha.jpg')
+mha_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/mha.jpg')
 mha.thumbnail.attach(io: mha_thumbnail, filename: 'mha.jpg')
 
 mha_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/mha.mp4')
@@ -1064,7 +1063,7 @@ VideoGenre.create!(
   video_id: demon_slayer.id,
   genre_id: anime.id
 )
-demon_slayer_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/demon-slayer.jpg')
+demon_slayer_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/demon-slayer.jpg')
 demon_slayer.thumbnail.attach(io: demon_slayer_thumbnail, filename: 'demon-slayer.jpg')
 
 demon_slayer_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/demon-slayer.mp4')
