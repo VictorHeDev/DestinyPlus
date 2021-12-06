@@ -165,10 +165,10 @@ VideoGenre.create!(
   genre_id: drama.id
 )
 
-avengers_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/avengers.jpeg')
+avengers_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/avengers.jpeg')
 avengers.thumbnail.attach(io: avengers_thumbnail, filename: 'avengers.jpeg')
 
-avengers_bg = open('https://destinyplus-seeds.s3.amazonaws.com/avengers_bg.jpg')
+avengers_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/avengers_bg.jpg')
 avengers.background.attach(io: avengers_bg, filename: 'avengers_bg.jpg')
 
 avengers_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/avengers.mp4')
@@ -176,7 +176,7 @@ avengers.file.attach(io: avengers_file, filename: 'avengers.mp4')
 
 
 bh6 = Video.create!(
-  title: "big hero 6",
+  title: "big hero six",
   description: 'When a devastating event befalls the city of San Fransokyo and catapults Hiro into the midst of danger, he turns to Baymax and his close friends adrenaline junkie Go Go Tomago, neatnik Wasabi, chemistry whiz Honey Lemon and fanboy Fred. Determined to uncover the mystery, Hiro transforms his friends into a band of high-tech heroes called "Big Hero 6."',
   year: "2014",
   runtime: "102 minutes",
@@ -196,10 +196,10 @@ VideoGenre.create!(
   genre_id: comedy.id
 )
 
-bh6_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/bh6.jpeg')
+bh6_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/bh6.jpeg')
 bh6.thumbnail.attach(io: bh6_thumbnail, filename: 'bh6.jpeg')
 
-bg6_bg = open('https://destinyplus-seeds.s3.amazonaws.com/bh6_bg.jpg')
+bg6_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/bh6_bg.jpg')
 bh6.background.attach(io: bg6_bg, filename: 'bg6_bg.jpg')
 
 bh6_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/bh6.mp4')
@@ -227,10 +227,10 @@ VideoGenre.create!(
   genre_id: drama.id
 )
 
-suitelife_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/suite-life.jpeg')
+suitelife_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/suite-life.jpeg')
 suitelife.thumbnail.attach(io: suitelife_thumbnail, filename: 'suite-life.jpeg')
 
-suitelife_bg = open('https://destinyplus-seeds.s3.amazonaws.com/suitelife_bg.jpg')
+suitelife_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/suitelife_bg.jpg')
 suitelife.background.attach(io: suitelife_bg, filename: 'suitelife_bg.jpg')
 
 suitelife_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/suitelife.mp4')
@@ -258,10 +258,10 @@ VideoGenre.create!(
   genre_id: comedy.id
 )
 
-goofy_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/goofy-movie.jpeg')
+goofy_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/goofy-movie.jpeg')
 goofy.thumbnail.attach(io: goofy_thumbnail, filename: 'goofy-movie.jpeg')
 
-goofy_bg = open('https://destinyplus-seeds.s3.amazonaws.com/goofy_bg.jpg')
+goofy_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/goofy_bg.jpg')
 goofy.background.attach(io: goofy_bg, filename: 'goofy_bg.jpg')
 
 goofy_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/goofy.mp4')
