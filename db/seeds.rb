@@ -348,10 +348,10 @@ VideoGenre.create!(
   video_id: wendywu.id,
   genre_id: action.id
 )
-wendywu_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/wendy-wu.jpeg')
+wendywu_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/wendy-wu.jpeg')
 wendywu.thumbnail.attach(io: wendywu_thumbnail, filename: 'wendy-wu.jpeg')
 
-wendywu_bg = open('https://destinyplus-seeds.s3.amazonaws.com/wendywu_bg.jpg')
+wendywu_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/wendywu_bg.jpg')
 wendywu.background.attach(io: wendywu_bg, filename: 'wendywu_bg.jpg')
 
 wendywu_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/wendywu.mp4')
@@ -382,10 +382,10 @@ VideoGenre.create!(
   video_id: liloandstitch.id,
   genre_id: comedy.id
 )
-liloandstitch_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/lilo-and-stitch.jpeg')
+liloandstitch_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/lilo-and-stitch.jpeg')
 liloandstitch.thumbnail.attach(io: liloandstitch_thumbnail, filename: 'lilo-and-stitch.jpeg')
 
-liloandstitch_bg = open('https://destinyplus-seeds.s3.amazonaws.com/liloandstitch_bg.jpg')
+liloandstitch_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/liloandstitch_bg.jpg')
 liloandstitch.background.attach(io: liloandstitch_bg, filename: 'liloandstitch_bg.jpg')
 
 liloandstitch_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/liloandstitch.mp4')
@@ -404,10 +404,10 @@ VideoGenre.create!(
   video_id: wolfgang.id,
   genre_id: education.id
 )
-wolfgang_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/wolfgang.jpeg')
+wolfgang_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/wolfgang.jpeg')
 wolfgang.thumbnail.attach(io: wolfgang_thumbnail, filename: 'wolfgang.jpeg')
 
-wolfgang_bg = open('https://destinyplus-seeds.s3.amazonaws.com/wolfgang_bg.jpg')
+wolfgang_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/wolfgang_bg.jpg')
 wolfgang.background.attach(io: wolfgang_bg, filename: 'wolfgang_bg.jpg')
 
 wolfgang_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/wolfgang.mp4')
@@ -434,10 +434,10 @@ VideoGenre.create!(
   video_id: mandalorian.id,
   genre_id: drama.id
 )
-mandalorian_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/mandalorian.jpeg')
+mandalorian_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/mandalorian.jpeg')
 mandalorian.thumbnail.attach(io: mandalorian_thumbnail, filename: 'mandalorian.jpeg')
 
-mandalorian_bg = open('https://destinyplus-seeds.s3.amazonaws.com/mandalorian_bg.jpg')
+mandalorian_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/mandalorian_bg.jpg')
 mandalorian.background.attach(io: mandalorian_bg, filename: 'mandalorian_bg.jpg')
 
 mandalorian_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/mandalorian.mp4')
