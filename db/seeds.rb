@@ -103,12 +103,16 @@ VideoGenre.create!(
   video_id: american_dragon.id,
   genre_id: fantasy.id
 )
+VideoGenre.create!(
+  video_id: american_dragon.id,
+  genre_id: drama.id
+)
 
-american_dragon_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/jake-long.jpeg')
-american_dragon.thumbnail.attach(io: american_dragon_thumbnail, filename: 'jake-long.jpeg')
+american_dragon_thumbnail = open('hhttps://destinyplus-seeds.s3.amazonaws.com/thumbnails/american-dragon.jpeg')
+american_dragon.thumbnail.attach(io: american_dragon_thumbnail, filename: 'american-dragon.jpeg')
 
-american_dragon_bg = open('https://destinyplus-seeds.s3.amazonaws.com/american_dragon_bg.jpg')
-american_dragon.background.attach(io: american_dragon_bg, filename: 'american_dragon_bg.jpg')
+american_dragon_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/american-dragon-bg.jpg')
+american_dragon.background.attach(io: american_dragon_bg, filename: 'american-dragon-bg.jpg')
 
 american_dragon_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/american-dragon.mp4')
 american_dragon.file.attach(io: american_dragon_file, filename: 'american-dragon-mp4')
