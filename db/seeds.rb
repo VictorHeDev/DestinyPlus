@@ -611,62 +611,66 @@ mulan.file.attach(io: mulan_file, filename: 'mulan.mp4')
 
 
 # TEN THINGS I HATE ABOUT YOU
-# ten_things = Video.create!(
-#   title: "ten things I hate about you",
-#   description: "On the first day at his new school, Cameron instantly falls for Bianca, the gorgeous girl of his dreams, but she is forbidden from dating until her ill-tempered, completely un-datable older sister Kat goes out, too",
-#   year: "1999",
-#   runtime: "98 minutes",
-#   mediatype: "movie"
-# )
+ten_things = Video.create!(
+  title: "ten things I hate about you",
+  description: "On the first day at his new school, Cameron instantly falls for Bianca, the gorgeous girl of his dreams, but she is forbidden from dating until her ill-tempered, completely un-datable older sister Kat goes out, too",
+  year: "1999",
+  runtime: "98 minutes",
+  mediatype: "movie"
+)
 
-# VideoGenre.create!(
-#   video_id: ten_things.id,
-#   genre_id: comedy.id
-# )
-# VideoGenre.create!(
-#   video_id: ten_things.id,
-#   genre_id: drama.id
-# )
+VideoGenre.create!(
+  video_id: ten_things.id,
+  genre_id: comedy.id
+)
+VideoGenre.create!(
+  video_id: ten_things.id,
+  genre_id: drama.id
+)
+VideoGenre.create!(
+  video_id: ten_things.id,
+  genre_id: classic.id
+)
 
-# ten_things_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-# ten_things.thumbnail.attach(io: ten_things_thumbnail, filename: 'shang-chi.jepg')
+ten_things_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/ten-things-i-hate-about-you.jpeg')
+ten_things.thumbnail.attach(io: ten_things_thumbnail, filename: 'ten-things-i-hate-about-you.jepg')
 
-# ten_things_bg = open('https://destinyplus-seeds.s3.amazonaws.com/ten_things_bg.jpg')
-# ten_things.background.attach(io: ten_things_bg, filename: 'shangchi_bg.jpg')
+ten_things_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/ten-things-bg.jpg')
+ten_things.background.attach(io: ten_things_bg, filename: 'ten-things-bg.jpg')
 
-# ten_things_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-# ten_things.file.attach(io: ten_things_file, filename: 'black-widow.mp4')
+ten_things_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+ten_things.file.attach(io: ten_things_file, filename: 'black-widow.mp4')
 
 # AROUND THE WORLD IN 80 DAYS
-# eighty_days = Video.create!(
-#   title: "around the world in eighty days",
-#   description: "After being forced into a bet by the Royal Academy's Minister of Science, Phileas Fogg, Lau Xing and Monique La Roche dare to do what no one has done before--beat the click in a race around the world. Traveling the globe by land, sea, air, and even in-line skates, Fogg must complete his trip around the world in 80 days, or he will never be allowed to invent again.",
-#   year: "2004",
-#   runtime: "120 minutes",
-#   mediatype: "movie"
-# )
+eighty_days = Video.create!(
+  title: "around the world in eighty days",
+  description: "After being forced into a bet by the Royal Academy's Minister of Science, Phileas Fogg, Lau Xing and Monique La Roche dare to do what no one has done before--beat the click in a race around the world. Traveling the globe by land, sea, air, and even in-line skates, Fogg must complete his trip around the world in 80 days, or he will never be allowed to invent again.",
+  year: "2004",
+  runtime: "120 minutes",
+  mediatype: "movie"
+)
 
-# VideoGenre.create!(
-#   video_id: eighty_days.id,
-#   genre_id: comedy.id
-# )
-# VideoGenre.create!(
-#   video_id: eighty_days.id,
-#   genre_id: drama.id
-# )
-# VideoGenre.create!(
-#   video_id: eighty_days.id,
-#   genre_id: action.id
-# )
+VideoGenre.create!(
+  video_id: eighty_days.id,
+  genre_id: comedy.id
+)
+VideoGenre.create!(
+  video_id: eighty_days.id,
+  genre_id: drama.id
+)
+VideoGenre.create!(
+  video_id: eighty_days.id,
+  genre_id: action.id
+)
 
-# eighty_days_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-# eighty_days.thumbnail.attach(io: eighty_days_thumbnail, filename: 'shang-chi.jepg')
+eighty_days_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/around-the-world.jpg')
+eighty_days.thumbnail.attach(io: eighty_days_thumbnail, filename: 'around-the-world.jepg')
 
-# eighty_days_bg = open('https://destinyplus-seeds.s3.amazonaws.com/eighty_days_bg.jpg')
-# eighty_days.background.attach(io: eighty_days_bg, filename: 'shangchi_bg.jpg')
+eighty_days_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/eighty-days-bg.jpg')
+eighty_days.background.attach(io: eighty_days_bg, filename: 'eighty-days-bg.jpg')
 
-# eighty_days_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-# eighty_days.file.attach(io: eighty_days_file, filename: 'black-widow.mp4')
+eighty_days_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/ten-things.mp4')
+eighty_days.file.attach(io: eighty_days_file, filename: 'ten-things.mp4')
 
 # ATLANTIS THE LOST EMPIRE
 # atlantis = Video.create!(
