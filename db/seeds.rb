@@ -600,14 +600,14 @@ VideoGenre.create!(
   genre_id: classic.id
 )
 
-mulan_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-mulan.thumbnail.attach(io: mulan_thumbnail, filename: 'shang-chi.jepg')
+mulan_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/mulan.jpeg')
+mulan.thumbnail.attach(io: mulan_thumbnail, filename: 'mulan.jpeg')
 
-mulan_bg = open('https://destinyplus-seeds.s3.amazonaws.com/mulan_bg.jpg')
-mulan.background.attach(io: mulan_bg, filename: 'shangchi_bg.jpg')
+mulan_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/mulan-bg.jpg')
+mulan.background.attach(io: mulan_bg, filename: 'mulan-bg.jpg')
 
-mulan_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-mulan.file.attach(io: mulan_file, filename: 'black-widow.mp4')
+mulan_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/mulan.mp4')
+mulan.file.attach(io: mulan_file, filename: 'mulan.mp4')
 
 
 # TEN THINGS I HATE ABOUT YOU
