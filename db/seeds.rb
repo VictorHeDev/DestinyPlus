@@ -134,10 +134,10 @@ VideoGenre.create!(
   video_id: cosmos.id,
   genre_id: family.id
 )
-cosmos_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/cosmos.jpeg')
+cosmos_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/cosmos.jpeg')
 cosmos.thumbnail.attach(io: cosmos_thumbnail, filename: 'cosmos.jpeg')
 
-cosmos_bg = open('https://destinyplus-seeds.s3.amazonaws.com/cosmos_bg.jpg')
+cosmos_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/cosmos_bg.jpg')
 cosmos.background.attach(io: cosmos_bg, filename: 'cosmos_bg.jpg')
 
 cosmos_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/cosmos.mp4')
