@@ -567,42 +567,47 @@ VideoGenre.create!(
 black_widow_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/black-widow.jpeg')
 black_widow.thumbnail.attach(io: black_widow_thumbnail, filename: 'black-widow.jpeg')
 
-black_widow_bg = open('https://destinyplus-seeds.s3.amazonaws.com/black_widow_bg.jpg')
-black_widow.background.attach(io: black_widow_bg, filename: 'shangchi_bg.jpg')
+black_widow_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/black-widow-bg.jpg')
+black_widow.background.attach(io: black_widow_bg, filename: 'back-widow-bg.jpg')
 
-shangchi_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-black_widow.file.attach(io: shangchi_file, filename: 'black-widow.mp4')
+black_widow_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+black_widow.file.attach(io: black_widow_file, filename: 'black-widow.mp4')
 
 # MULAN
-# mulan = Video.create!(
-#   title: "mulan",
-#   description: "Disguised as a male soldier, a young girl bravely takes her father's place in the Imperial Army",
-#   year: "1998",
-#   runtime: "95 minutes",
-#   mediatype: "movie"
-# )
+mulan = Video.create!(
+  title: "mulan",
+  description: "Fearful that her ailing father will be drafted into the Chinese military, Mulan (Ming-Na Wen) takes his spot -- though, as a girl living under a patriarchal regime, she is technically unqualified to serve. She cleverly impersonates a man and goes off to train with fellow recruits. Accompanied by her dragon, Mushu (Eddie Murphy), she uses her smarts to help ward off a Hun invasion, falling in love with a dashing captain along the way.
+",
+  year: "1998",
+  runtime: "95 minutes",
+  mediatype: "movie"
+)
 
-# VideoGenre.create!(
-#   video_id: mulan.id,
-#   genre_id: action.id
-# )
-# VideoGenre.create!(
-#   video_id: mulan.id,
-#   genre_id: fantasy.id
-# )
-# VideoGenre.create!(
-#   video_id: mulan.id,
-#   genre_id: animation.id
-# )
+VideoGenre.create!(
+  video_id: mulan.id,
+  genre_id: action.id
+)
+VideoGenre.create!(
+  video_id: mulan.id,
+  genre_id: fantasy.id
+)
+VideoGenre.create!(
+  video_id: mulan.id,
+  genre_id: animation.id
+)
+VideoGenre.create!(
+  video_id: mulan.id,
+  genre_id: classic.id
+)
 
-# mulan_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
-# mulan.thumbnail.attach(io: mulan_thumbnail, filename: 'shang-chi.jepg')
+mulan_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/shang-chi.jpeg')
+mulan.thumbnail.attach(io: mulan_thumbnail, filename: 'shang-chi.jepg')
 
-# mulan_bg = open('https://destinyplus-seeds.s3.amazonaws.com/mulan_bg.jpg')
-# mulan.background.attach(io: mulan_bg, filename: 'shangchi_bg.jpg')
+mulan_bg = open('https://destinyplus-seeds.s3.amazonaws.com/mulan_bg.jpg')
+mulan.background.attach(io: mulan_bg, filename: 'shangchi_bg.jpg')
 
-# mulan_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-# mulan.file.attach(io: mulan_file, filename: 'black-widow.mp4')
+mulan_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
+mulan.file.attach(io: mulan_file, filename: 'black-widow.mp4')
 
 
 # TEN THINGS I HATE ABOUT YOU
