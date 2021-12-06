@@ -776,14 +776,14 @@ VideoGenre.create!(
   genre_id: classic.id
 )
 
-hsm_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/toy-story.jpeg')
-toy_story.thumbnail.attach(io: hsm_thumbnail, filename: 'shang-chi.jepg')
+toy_story_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/toy-story.jpeg')
+toy_story.thumbnail.attach(io: toy_story_thumbnail, filename: 'toy-story.jepg')
 
-hsm_bg = open('https://destinyplus-seeds.s3.amazonaws.com/hsm_bg.jpg')
-toy_story.background.attach(io: hsm_bg, filename: 'shangchi_bg.jpg')
+toy_story_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/toy-story-bg.jpg')
+toy_story.background.attach(io: toy_story_bg, filename: 'toy-story-bg.jpg')
 
-hsm_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/black-widow.mp4')
-toy_story.file.attach(io: hsm_file, filename: 'black-widow.mp4')
+toy_story_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/toy-story.mp4')
+toy_story.file.attach(io: toy_story_file, filename: 'toy-story.mp4')
 
 
 
