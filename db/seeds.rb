@@ -208,7 +208,7 @@ bh6.file.attach(io: bh6_file, filename: 'bh6.mp4')
 # THE SUITE LIFE OF ZACK AND CODY
 suitelife = Video.create!(
   title: "the suite life of zack and cody",
-  description: "The Suite Life of Zack and Cody stars identical twin brothers Dylan and Cole Sprouse, as Zack and Cody, whose lives change when their mother Carey (Kim Rhodes), ends up landing a job at one of Boston's finest hotels, the Tipton Hotel. As part of Carey's contractual deal, the twins and her get to live in an upper floor suite of the hotel. Ashley Michelle Tisdale stars as Maddie Fitzpatrick, who plays the role of the hotel candy counter girl and part-time babysitter, that tends to having to put an end to Zack and Cody's antics. Brenda Song stars as the rich and spoiled hotel heiress, London Tipton; while Phill Lewis plays the role of Mr. Moseby, the Tipton Hotel Manager.",
+  description: "The Suite Life of Zack and Cody stars identical twin brothers Dylan and Cole Sprouse, as Zack and Cody, whose lives change when their mother, ends up landing a job at one of Boston's finest hotels, the Tipton Hotel. Ashley Michelle Tisdale stars as Maddie Fitzpatrick, who plays the role of the hotel candy counter girl and part-time babysitter. Brenda Song stars as the rich and spoiled hotel heiress, London Tipton; while Phill Lewis plays the role of Mr. Moseby, the Tipton Hotel Manager.",
   year: "2005",
   runtime: "3 seasons",
   mediatype: "tv"
@@ -256,6 +256,10 @@ VideoGenre.create!(
 VideoGenre.create!(
   video_id: goofy.id,
   genre_id: comedy.id
+)
+VideoGenre.create!(
+  video_id: goofy.id,
+  genre_id: animation.id
 )
 
 goofy_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/goofy-movie.jpeg')
@@ -314,10 +318,10 @@ VideoGenre.create!(
   video_id: freesolo.id,
   genre_id: education.id
 )
-freesolo_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/free-solo.jpeg')
+freesolo_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/free-solo.jpeg')
 freesolo.thumbnail.attach(io: freesolo_thumbnail, filename: 'free-solo.jpeg')
 
-freesolo_bg = open('https://destinyplus-seeds.s3.amazonaws.com/freesolo_bg.jpg')
+freesolo_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/freesolo_bg.jpg')
 freesolo.background.attach(io: freesolo_bg, filename: 'freesolo_bg.jpg')
 
 freesolo_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/freesolo.mp4')
