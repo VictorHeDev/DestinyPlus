@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { requestGenres } from '../../actions/genre_actions';
 import { requestVideo, requestVideos } from '../../actions/video_actions';
-import Browse from './browse';
+import Browse from './Browse';
 import { withRouter } from 'react-router';
 
 const mSTP = (state, ownProps) => {

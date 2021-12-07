@@ -1,36 +1,34 @@
-import React, { Component } from 'react'
-import NavBarContainer from '../navbar/navbar_container'
-import GenresContainer from './genres_container'
-import Carousel from './carousel'
-export default class Browse extends Component {
-  constructor(props) {
-    super(props)
-    // this.state = this.props
-  }
+import React, { Component, useEffect, useState } from 'react';
+import NavBarContainer from '../navbar/navbar_container';
+import GenresContainer from './genres_container';
+import Carousel from './carousel';
 
-  componentDidMount() {
-    this.props.requestGenres()
-    this.props.requestVideos()
+const Browse = ({
+  genres,
+  videos,
+  currentProfile,
+  requestGenres,
+  requestVideos,
+  history,
+}) => {
+  useEffect(() => {
+    requestGenres();
+    requestVideos();
 
-    if (!this.props.currentProfile) {
-      this.props.history.push('/profiles')
+    if (!currentProfile) {
+      history.push('./profiles');
     }
-  }
+  }, []);
 
-  render() {
-    const { genres, videos } = this.props
-
-    return (
-      <div className="browse-container">
-        <NavBarContainer />
-        <div className="main-browse-content">
+  return (
+    <div className='browse-container'>
+      <NavBarContainer />
+      <div className='main-browse-content'>
         <Carousel />
-          <GenresContainer
-            genres={genres}
-            videos={videos}
-          />
-        </div>
+        <GenresContainer genres={genres} videos={videos} />
       </div>
-    )
-  }
-}
+    </div>
+  );
+};
+
+export default Browse;

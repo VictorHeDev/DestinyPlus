@@ -3,12 +3,16 @@ import Slider from 'react-slick';
 
 export default function Carousel() {
   let settings = {
+    arrows: true,
     dots: true,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    pauseOnDotsHover: true,
+    pauseOnHover: true,
   };
   return (
     <div className='main-carousel'>
@@ -35,11 +39,3 @@ export default function Carousel() {
     </div>
   );
 }
-
-// export default function Carousel() {
-//   return (
-//     <div className="main-carousel">
-//       <img src={window.shangchiCarouselURL} alt="" />
-//     </div>
-//   )
-// }
