@@ -11,6 +11,13 @@ nav {
   z-index: 5;
 }
 
+.nav-bar-active {
+  background-color: transparent;
+  position: fixed;
+  height: 80px;
+  z-index: 5;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
