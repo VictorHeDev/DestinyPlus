@@ -1,33 +1,53 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 // import { selectVideosFromGenre } from '../../reducers/selectors'
-import VideoContainer from './video_container'
-export default class Videos extends Component {
-  constructor(props) {
-    super(props)
+import VideoContainer from './video_container';
 
-    // this.rerouteToVideoDescriptionPage = this.rerouteToVideoDescriptionPage.bind(this)
-  }
+const Videos = ({ genre, videos }) => {
+  return (
+    <div className='genre-item'>
+      {videos.map((video, idx) => {
+        return (
+          <VideoContainer
+            // reroute = {  this.rerouteToVideoDescriptionPage(video.id) }
+            video={video}
+            key={idx}
+            genre={genre}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
-  // rerouteToVideoDescriptionPage() {
-    // this.props.history.push(`/browse/${video.id}`)
-  // }
+export default Videos;
 
-  render() {
-    const { genre, videos } = this.props
-    // const selectedVideos = selectVideosFromGenre(genre, videos)
+// export default class Videos extends Component {
+//   constructor(props) {
+//     super(props)
 
-    return (
-      <div className="genre-item">
-        {videos.map((video, idx) => {
-            return (
-            <VideoContainer
-              // reroute = {  this.rerouteToVideoDescriptionPage(video.id) }
-              video={video}
-              key={idx}
-              genre={genre}
-            />
-        )})}
-      </div>
-    )
-  }
-}
+//     // this.rerouteToVideoDescriptionPage = this.rerouteToVideoDescriptionPage.bind(this)
+//   }
+
+//   // rerouteToVideoDescriptionPage() {
+//     // this.props.history.push(`/browse/${video.id}`)
+//   // }
+
+//   render() {
+//     const { genre, videos } = this.props
+//     // const selectedVideos = selectVideosFromGenre(genre, videos)
+
+//     return (
+//       <div className="genre-item">
+//         {videos.map((video, idx) => {
+//             return (
+//             <VideoContainer
+//               // reroute = {  this.rerouteToVideoDescriptionPage(video.id) }
+//               video={video}
+//               key={idx}
+//               genre={genre}
+//             />
+//         )})}
+//       </div>
+//     )
+//   }
+// }
