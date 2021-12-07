@@ -108,16 +108,16 @@ VideoGenre.create!(
   genre_id: drama.id
 )
 
-american_dragon_thumbnail = open('hhttps://destinyplus-seeds.s3.amazonaws.com/thumbnails/american-dragon.jpeg')
+american_dragon_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/american-dragon.jpeg')
 american_dragon.thumbnail.attach(io: american_dragon_thumbnail, filename: 'american-dragon.jpeg')
 
 american_dragon_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/american-dragon-bg.jpg')
 american_dragon.background.attach(io: american_dragon_bg, filename: 'american-dragon-bg.jpg')
 
 american_dragon_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/american-dragon.mp4')
-american_dragon.file.attach(io: american_dragon_file, filename: 'american-dragon-mp4')
+american_dragon.file.attach(io: american_dragon_file, filename: 'american-dragon.mp4')
 
-# COSMOS
+# # COSMOS
 cosmos = Video.create!(
   title: "cosmos",
   description: "Following the wildly successful Cosmos: A Spacetime Odyssey, Neil deGrasse Tyson returns as host to translate more revelations of science into a lavish transporting experience, taking audiences on a series of spiritual voyages of exploration. The show reveals previously uncharted realms, including lost worlds, worlds yet to come, and the worlds that humans may one day inhabit.",
@@ -134,16 +134,17 @@ VideoGenre.create!(
   video_id: cosmos.id,
   genre_id: family.id
 )
-cosmos_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/cosmos.jpeg')
-cosmos.thumbnail.attach(io: cosmos_thumbnail, filename: 'cosmos.jpeg')
+# cosmos_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/cosmos.jpeg')
+# cosmos_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/cosmos_bg.jpg')
+# cosmos_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/cosmos.mp4')
 
-cosmos_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/cosmos_bg.jpg')
-cosmos.background.attach(io: cosmos_bg, filename: 'cosmos_bg.jpg')
+cosmos.thumbnail.attach(io: URI.open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/cosmos.jpeg'), filename: 'cosmos.jpeg')
 
-cosmos_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/cosmos.mp4')
-cosmos.file.attach(io: cosmos_file, filename: 'cosmos.mp4')
+cosmos.background.attach(io: URI.open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/cosmos_bg.jpg'), filename: 'cosmos_bg.jpg')
 
-# AVENGERS
+cosmos.file.attach(io: URI.open('https://destinyplus-seeds.s3.amazonaws.com/videos/cosmos.mp4'), filename: 'cosmos.mp4')
+
+# # AVENGERS
 avengers = Video.create!(
   title: "avengers",
   description: "Loki, the adopted brother of Thor, teams-up with the Chitauri Army and uses the Tesseract's power to travel from Asgard to Midgard to plot the invasion of Earth and become a king. The director of the agency S.H.I.E.L.D., Nick Fury, sets in motion project Avengers, joining Tony Stark a.k.a. the Iron Man; Steve Rogers, a.k.a. Captain America; Bruce Banner, a.k.a. The Hulk; Thor; Natasha Romanoff, a.k.a. Black Widow; and Clint Barton, a.k.a. Hawkeye, to save the world from the powerful Loki and the alien invasion.",
@@ -174,7 +175,7 @@ avengers.background.attach(io: avengers_bg, filename: 'avengers_bg.jpg')
 avengers_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/avengers.mp4')
 avengers.file.attach(io: avengers_file, filename: 'avengers.mp4')
 
-
+# BIG HERO 6
 bh6 = Video.create!(
   title: "big hero six",
   description: 'When a devastating event befalls the city of San Fransokyo and catapults Hiro into the midst of danger, he turns to Baymax and his close friends adrenaline junkie Go Go Tomago, neatnik Wasabi, chemistry whiz Honey Lemon and fanboy Fred. Determined to uncover the mystery, Hiro transforms his friends into a band of high-tech heroes called "Big Hero 6."',
@@ -705,7 +706,7 @@ VideoGenre.create!(
 atlantis_thumbnail = open('https://destinyplus-seeds.s3.amazonaws.com/thumbnails/atlantis.jpg')
 atlantis.thumbnail.attach(io: atlantis_thumbnail, filename: 'atlantis.jpg')
 
-atlantis_bg = open('https://destinyplus-seeds.s3.amazonaws.com/atlantis_bg.jpg')
+atlantis_bg = open('https://destinyplus-seeds.s3.amazonaws.com/backgrounds/atlantis.jpg')
 atlantis.background.attach(io: atlantis_bg, filename: 'atlantis_bg.jpg')
 
 atlantis_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/atlantis.mp4')
@@ -1070,7 +1071,7 @@ demon_slayer_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/demo
 demon_slayer.file.attach(io: demon_slayer_file, filename: 'demon-slayer.mp4')
 
 
-# WATCHLIST
+WATCHLIST
 demoUserWatchlist1 = Watchlist.create!(
   profile_id: demoUserProfile1.id,
   video_id: american_dragon.id
