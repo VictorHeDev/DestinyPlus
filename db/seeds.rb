@@ -1071,7 +1071,7 @@ demon_slayer_file = open('https://destinyplus-seeds.s3.amazonaws.com/videos/demo
 demon_slayer.file.attach(io: demon_slayer_file, filename: 'demon-slayer.mp4')
 
 
-WATCHLIST
+# WATCHLIST
 demoUserWatchlist1 = Watchlist.create!(
   profile_id: demoUserProfile1.id,
   video_id: american_dragon.id
