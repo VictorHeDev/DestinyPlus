@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import configureStore from './store/store'
-import Root from './components/root'
+import configureStore from './store/store';
+import Root from './components/root';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { signup, login, logout } from './actions/session_actions'
+import { signup, login, logout } from './actions/session_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementById('root')
+  const root = document.getElementById('root');
   let store;
 
   // bootstrapping so store is not cleared after refresh
@@ -14,11 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloadedState = {
       session: {
         id: window.currentUser.id,
-        currentProfile: JSON.parse(localStorage.getItem('currentProfile')).currentProfile
+        currentProfile: JSON.parse(localStorage.getItem('currentProfile'))
+          .currentProfile,
       },
       entities: {
-        users: { [window.currentUser.id]: window.currentUser }
-      }
+        users: { [window.currentUser.id]: window.currentUser },
+      },
     };
 
     store = configureStore(preloadedState);
@@ -29,21 +31,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   store.subscribe(() => {
     localStorage.setItem(
-      "currentProfile", JSON.stringify(store.getState()['session'])
-    )
-  })
+      'currentProfile',
+      JSON.stringify(store.getState()['session'])
+    );
+  });
 
   // window.login = login
   // window.signup = signup
-  window.logout = logout
+  window.logout = logout;
 
-  window.store = store
+  window.store = store;
   // store.dispatch(logout())
 
-  ReactDOM.render(
-    <Root store={store} />,
-    root
-  )
-})
+  ReactDOM.render(<Root store={store} />, root);
+});
 
 // add current profile to preloaded state using local storage
