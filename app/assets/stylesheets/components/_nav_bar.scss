@@ -36,6 +36,15 @@ nav {
   }
 }
 
+.navbar-link {
+  border-bottom: 2px solid transparent;
+  transition: 0.25s ease-in;
+
+  &:hover {
+    border-bottom: 2px solid white;
+  }
+}
+
 .nav-icon {
   padding: 0px 5px;
 }

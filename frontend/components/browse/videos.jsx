@@ -1,20 +1,29 @@
 import React, { Component } from 'react';
 // import { selectVideosFromGenre } from '../../reducers/selectors'
 import VideoContainer from './video_container';
+import Slider from 'react-slick';
 
 const Videos = ({ genre, videos }) => {
+  const settings = {
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 4,
+  };
+
   return (
     <div className='genre-item'>
-      {videos.map((video, idx) => {
-        return (
-          <VideoContainer
-            // reroute = {  this.rerouteToVideoDescriptionPage(video.id) }
-            video={video}
-            key={idx}
-            genre={genre}
-          />
-        );
-      })}
+      <Slider {...settings}>
+        {videos.map((video, idx) => {
+          return (
+            <VideoContainer
+              // reroute = {  this.rerouteToVideoDescriptionPage(video.id) }
+              video={video}
+              key={idx}
+              genre={genre}
+            />
+          );
+        })}
+      </Slider>
     </div>
   );
 };
