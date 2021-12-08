@@ -39,7 +39,7 @@ const App = () => (
       <ProtectedRoute path="/profiles/new" component={ CreateProfileFormContainer } />
       <ProtectedRoute exact path="/browse" component={ BrowseContainer } />
       <ProtectedRoute path="/browse/:videoId" component={ VideoDescriptionContainer } />
-
+      <ProtectedRoute exact path="/series" component
     </Switch>
 
     {/* <ProtectedRoute exact path="/browse" /> */}
