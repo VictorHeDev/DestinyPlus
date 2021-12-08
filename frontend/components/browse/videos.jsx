@@ -8,6 +8,7 @@ const Videos = ({ genre, videos }) => {
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
+    slidesToScroll: 4,
   };
 
   return (

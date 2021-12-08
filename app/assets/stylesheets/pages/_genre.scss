@@ -7,8 +7,34 @@
 }
 
 .genre-container {
-  display: flex;
-  flex-direction: column;
+  height: 13rem;
+
+  ul li button {
+    &:before {
+      font-size: 10px;
+      color: grey;
+    }
+  }
+
+  li.slick-active button:before {
+    color: white;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  button {
+    z-index: 5;
+    opacity: 0;
+    transition: 0.35s ease-in;
+    height: 100%;
+    width: 5vw;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 // .genre-item {
