@@ -12,6 +12,14 @@ export const selectVideosFromGenre = (genre, videos) => {
   return selectedVideos;
 };
 
+export const selectVideosByMediatype = (mediatype, videos) => {
+  const filteredVideos = Object.values(videos).filter((video) => {
+    return video.mediatype === mediatype;
+  });
+
+  return filteredVideos;
+};
+
 // export an array of all movies/tv shows in a particular genre
 // use Object.values
 

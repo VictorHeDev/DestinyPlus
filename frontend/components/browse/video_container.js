@@ -4,10 +4,10 @@ import Video from './Video';
 // import { requestVideo } from '../../actions/video_actions';
 
 const mSTP = (state, ownProps) => {
-  const videos = selectVideosFromGenre(ownProps.genre, state.entities.videos);
+  const series = selectVideosFromGenre(ownProps.genre, state.entities.videos);
 
   return {
-    videos: videos,
+    series: series,
   };
 };
 
