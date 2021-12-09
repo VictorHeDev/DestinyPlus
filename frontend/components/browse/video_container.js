@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-import Video from './Video';
+import Video from './video';
 // import { requestVideo } from '../../actions/video_actions';
 
 const mSTP = (state, ownProps) => {
