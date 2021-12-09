@@ -4,6 +4,7 @@ import * as ProfileApiUtil from '../util/profile_api_util';
 export const RECEIVE_ALL_PROFILES = 'RECEIVE_ALL_PROFILES';
 export const RECEIVE_PROFILE = 'RECEIVE_PROFILE';
 export const REMOVE_PROFILE = 'REMOVE_PROFILE';
+export const REFORMAT_PROFILE = 'REFORMAT_PROFILE';
 export const RECEIVE_CURRENT_PROFILE = 'RECEIVE_CURRENT_PROFILE';
 
 // action creators
@@ -64,6 +65,12 @@ export const createProfile = (profile) => (dispatch) => {
     dispatch(receiveProfile(profile))
   );
 };
+
+// export const updateProfile = (profile) => (dispatch) => {
+//   return ProfileApiUtil.updateProfile(profile).then((profile) =>
+//     dispatch(receiveProfile(profile))
+//   );
+// };
 
 export const updateProfile = (profile) => (dispatch) => {
   return ProfileApiUtil.updateProfile(profile).then((res) =>

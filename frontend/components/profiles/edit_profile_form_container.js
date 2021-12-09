@@ -10,7 +10,6 @@ import EditProfileForm from './edit_profiles_form';
 const mSTP = (state, ownProps) => {
   return {
     profile: state.entities.profiles[ownProps.match.params.profileId],
-    // profile: state.entities.profiles.id,
     formType: 'Update Profile',
   };
 };

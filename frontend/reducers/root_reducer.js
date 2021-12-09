@@ -9,7 +9,7 @@ const rootReducer = combineReducers({
   entities: entitiesReducer,
   session: sessionErrorsReducer,
   errors: errorsReducer,
-  // profile: have separate profile reducer to check if there is a current profile ... initially null -> return string representing profile 
+  // profile: have separate profile reducer to check if there is a current profile ... initially null -> return string representing profile
   // boolean value to check if there is a current profile
   // ui,
 });
