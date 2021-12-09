@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Videos from './Videos';
+import Videos from './videos';
 import { selectVideosFromGenre } from '../../reducers/selectors';
 import { withRouter } from 'react-router';
 
