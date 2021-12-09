@@ -3,6 +3,53 @@
   cursor: pointer;
   border-radius: 5px;
 
+  .video-placeholder {
+    text-align: center;
+    width: 266px;
+    height: 150px;
+    border-radius: 5px;
+    transition: transform 0.35s;
+    border: 1px solid white;
+
+    &:hover {
+      transform: scale(1.1);
+      outline: 2px solid white;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    transition: transform 0.35s;
+    // add box shadow here
+
+    &:hover {
+      transform: scale(1.1);
+      outline: 2px solid white;
+    }
+  }
+}
+
+// SERIES & MOVIES
+.main-series-movies-container {
+  background-color: #121521;
+  overflow-x: hidden;
+  min-height: 80vh;
+}
+
+.series-movie-videos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  // width: 90%;
+}
+
+.series-movie-video-container {
+  width: 266px;
+  height: 150px;
+
   img {
     width: 100%;
     height: 100%;

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import NavBar from '../navbar/navbar';
 import { Link } from 'react-router-dom';
 
-const Series = ({ requestVideos, series }) => {
+const Movies = ({ requestVideos, movies }) => {
   useEffect(() => {
     requestVideos();
   }, []);
@@ -13,9 +13,9 @@ const Series = ({ requestVideos, series }) => {
     <div className='main-series-movies-container'>
       <NavBar />
       <div className='main-browse-content'>
-        <h3>Series</h3>
+        <h3>Movies</h3>
         <div className='series-movie-videos-container'>
-          {series.map((video) => {
+          {movies.map((video) => {
             return (
               <Link to={`/browse/${video.id}`}>
                 <div className='video-container' key={video.id}>
@@ -36,4 +36,4 @@ const Series = ({ requestVideos, series }) => {
   );
 };
 
-export default Series;
+export default Movies;
