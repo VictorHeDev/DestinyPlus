@@ -17,8 +17,8 @@ const Movies = ({ requestVideos, movies }) => {
         <div className='series-movie-videos-container'>
           {movies.map((video) => {
             return (
-              <Link to={`/browse/${video.id}`}>
-                <div className='video-container' key={video.id}>
+              <Link to={`/browse/${video.id}`} key={video.id}>
+                <div className='video-container'>
                   {video.thumbnailUrl ? (
                     <div className='series-movie-video-container'>
                       <img src={video.thumbnailUrl} />

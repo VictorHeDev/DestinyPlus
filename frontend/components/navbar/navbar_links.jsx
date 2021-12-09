@@ -33,8 +33,10 @@ export default function NavBarLinks() {
           <span className='navbar-link'>WATCHLIST</span>
         </li>
         <li>
-          <FontAwesomeIcon icon={faFilm} size='lg' className='nav-icon' />{' '}
-          <span className='navbar-link'>MOVIES</span>
+          <Link to='/movies'>
+            <FontAwesomeIcon icon={faFilm} size='lg' className='nav-icon' />{' '}
+            <span className='navbar-link'>MOVIES</span>
+          </Link>
         </li>
         <li>
           <Link to='/series'>

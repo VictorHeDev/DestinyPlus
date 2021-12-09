@@ -16,7 +16,7 @@ import CreateProfileFormContainer from './profiles/create_profile_form_container
 import BrowseContainer from './browse/browse_container';
 import VideoDescriptionContainer from './video_description/video_description_container';
 import SeriesContainer from './series/SeriesContainer';
-import Series from './series/Series';
+import MoviesContainer from './movies/MoviesContainer';
 
 const App = () => (
   <div className='app-container'>
@@ -50,6 +50,7 @@ const App = () => (
         component={VideoDescriptionContainer}
       />
       <ProtectedRoute exact path='/series' component={SeriesContainer} />
+      <ProtectedRoute exact path='/movies' component={MoviesContainer} />
     </Switch>
 
     {/* <ProtectedRoute exact path="/browse" /> */}
