@@ -70,12 +70,21 @@ export default class SelectProfiles extends Component {
                   </li>
                 );
               })}
-              <FontAwesomeIcon
-                onClick={(e) => this.handleNewProfileClick(e)}
-                className='new-profile-icon'
-                icon={faPlusCircle}
-                size='6x'
-              />
+              {profiles.length < 5 ? (
+                <FontAwesomeIcon
+                  onClick={(e) => this.handleNewProfileClick(e)}
+                  className='new-profile-icon'
+                  icon={faPlusCircle}
+                  size='6x'
+                />
+              ) : null}
+
+              {/* // <FontAwesomeIcon
+              //   onClick={(e) => this.handleNewProfileClick(e)}
+              //   className='new-profile-icon'
+              //   icon={faPlusCircle}
+              //   size='6x'
+              // /> */}
             </ul>
           </section>
         </div>
