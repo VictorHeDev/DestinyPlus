@@ -74,19 +74,16 @@ nav {
 
 .account-info {
   z-index: 10;
-  // position: absolute;
   position: fixed;
   right: 0;
   display: flex;
   flex-direction: column;
-  // align-items: center;
   padding: 12px 20px;
   width: 300px;
+  border: 1px solid transparent;
 
   &:hover {
-    // background-color: black;
     background-color: black;
-    // border: 1px solid $color-grey;
     border-left: 1px solid $color-grey;
     border-bottom: 1px solid $color-grey;
     border-right: 1px solid $color-grey;

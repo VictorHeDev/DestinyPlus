@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavBarContainer from '../navbar/navbar_container';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faMinus, faPlay } from '@fortawesome/free-solid-svg-icons';
 // import VideoPlayer from './video_player'
 export default class VideoDescription extends Component {
   constructor(props) {
@@ -64,17 +64,34 @@ export default class VideoDescription extends Component {
         <div className='video-desc-main-content'>
           <div className='video-info'>
             <div className='video-desc-buttons'>
-              <button onClick={(e) => this.handleClickPlay(e)}>
+              <button
+                className='video-play-btn'
+                onClick={(e) => this.handleClickPlay(e)}
+              >
                 <FontAwesomeIcon
                   className='play-icon'
                   icon={faPlay}
-                  size='lg'
+                  size='2x'
                 />
-                PLAY
+                <div>PLAY</div>
               </button>
-              <div className='plus radius'></div>
+              {/* <div className='plus radius'></div> */}
 
-              {/* <FontAwesomeIcon className="plus-icon" icon={ faPlusCircle } size="3x"/> */}
+              <button className='watchlist-add-btn'>
+                <FontAwesomeIcon
+                  className='plus-icon'
+                  icon={faPlus}
+                  size='2x'
+                />
+              </button>
+
+              <button className='watchlist-minus-btn'>
+                <FontAwesomeIcon
+                  className='plus-icon'
+                  icon={faMinus}
+                  size='2x'
+                />
+              </button>
             </div>
             <ul>
               <li>

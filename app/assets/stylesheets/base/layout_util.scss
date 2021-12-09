@@ -13,6 +13,11 @@ body {
   flex-direction: column;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .app-container {
   min-height: 100vh;
   display: flex;
@@ -28,4 +33,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.add-underline {
+  transition: 0.35s ease-in;
+
+  &:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
 }

@@ -78,13 +78,6 @@ export default class SelectProfiles extends Component {
                   size='6x'
                 />
               ) : null}
-
-              {/* // <FontAwesomeIcon
-              //   onClick={(e) => this.handleNewProfileClick(e)}
-              //   className='new-profile-icon'
-              //   icon={faPlusCircle}
-              //   size='6x'
-              // /> */}
             </ul>
           </section>
         </div>

@@ -31,10 +31,13 @@
   justify-content: flex-start;
   align-items: center;
 
-  button {
+  .video-play-btn {
     background-color: #f9f8f8;
     color: black;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       background-color: #c6c6c6;
@@ -76,6 +79,34 @@
 
 .radius {
   border-radius: 50%;
+}
+
+.watchlist-add-btn {
+  text-align: center;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: black;
+  outline: 2px solid white;
+  transition: 0.25s ease-in;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.watchlist-minus-btn {
+  text-align: center;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: black;
+  outline: 2px solid white;
+  transition: 0.25s ease-in;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
 }
 
 .video-info {

@@ -2,6 +2,8 @@
   margin: 15px;
   cursor: pointer;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 15px 11px rgba(0, 0, 0, 0.69);
+  box-shadow: 0px 10px 15px 11px rgba(0, 0, 0, 0.69);
 
   .video-placeholder {
     text-align: center;
@@ -23,7 +25,6 @@
     margin: auto;
     border-radius: 5px;
     transition: transform 0.35s;
-    // add box shadow here
 
     &:hover {
       transform: scale(1.1);
@@ -49,6 +50,8 @@
 .series-movie-video-container {
   width: 266px;
   height: 150px;
+  -webkit-box-shadow: 0px 10px 15px 11px rgba(0, 0, 0, 0.69);
+  box-shadow: 0px 10px 15px 11px rgba(0, 0, 0, 0.69);
 
   img {
     width: 100%;
