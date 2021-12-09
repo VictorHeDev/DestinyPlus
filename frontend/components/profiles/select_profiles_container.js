@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import {
   requestProfile,
   requestProfiles,
-  reformatProfiles,
   receiveCurrentProfile,
 } from '../../actions/profile_actions';
 import { withRouter } from 'react-router';

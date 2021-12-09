@@ -11,7 +11,6 @@
   display: flex;
   width: 90%;
   height: 100%;
-  // border: 1px solid red;
 }
 
 .choose-avatar {
@@ -19,9 +18,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   height: 100%;
-  // border: 1px solid blue;
 
   h3 {
     font-size: 24px;
@@ -55,7 +53,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 40%;
   height: 80%;
 }
 
@@ -120,6 +118,10 @@
   color: white;
   font-size: 20px;
   border-radius: 5px;
+
+  &:hover {
+    background-color: $color-red;
+  }
 }
 
 .cancel-btn {
@@ -129,4 +131,8 @@
   color: white;
   font-size: 20px;
   border-radius: 5px;
+
+  &:hover {
+    background-color: $color-grey;
+  }
 }

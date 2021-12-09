@@ -19,7 +19,6 @@ export default class EditProfileForm extends Component {
   }
 
   handleSubmit(e) {
-    // debugger;
     e.preventDefault();
     this.props
       .action(this.state)
@@ -149,7 +148,6 @@ export default class EditProfileForm extends Component {
                     type='text'
                     value={this.state.name}
                     onChange={this.update('name')}
-                    // placeholder={ name } use a componentDidMount?
                     autoFocus
                   />
                 </label>

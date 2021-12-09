@@ -24,10 +24,11 @@ export default class SelectProfiles extends Component {
 
     const selectedProfile = this.props.allUserProfiles[profileId];
 
+    this.props.receiveCurrentProfile(selectedProfile);
     this.props
       .requestProfile(profileId)
       .then(() => this.props.history.push('/browse'));
-    // this.props.receiveCurrentProfile(selectedProfile);
+    // this.props.history.push('/browse');
   }
 
   handleNewProfileClick(e) {
