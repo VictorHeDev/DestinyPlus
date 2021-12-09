@@ -7,7 +7,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 import SignupFormContainer from './session_form/signup_form_container';
 import LoginFormContainer from './session_form/login_form_container';
-import Splash from './splash/splash';
+import Splash from './splash/Splash';
 import Footer from './footer/footer';
 import ProfilesContainer from './profiles/select_profiles_container';
 import EditProfilesContainer from './profiles/edit_profiles_container';
