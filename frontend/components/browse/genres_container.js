@@ -1,5 +1,5 @@
 // import { connect } from 'react-redux';
-import Genre from './Genres';
+// import Genre from './Genres'; // ! what is this
 // import { selectVideosFromGenre } from '../../reducers/selectors';
 
 // // undefined value
