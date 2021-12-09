@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
-import Series from './Series';
+import Movies from './Movies';
 import { withRouter } from 'react-router';
 import { requestVideos } from '../../actions/video_actions';
 import { selectVideosByMediatype } from '../../reducers/selectors';
 
 const mSTP = (state, ownProps) => {
-  const series = selectVideosByMediatype('tv', state.entities.videos);
+  const series = selectVideosByMediatype('movie', state.entities.videos);
 
   return {
-    series: series,
+    movies: movies,
   };
 };
 
@@ -16,4 +16,4 @@ const mDTP = (dispatch) => ({
   requestVideos: () => dispatch(requestVideos()),
 });
 
-export default withRouter(connect(mSTP, mDTP)(Series));
+export default withRouter(connect(mSTP, mDTP)(Movies));

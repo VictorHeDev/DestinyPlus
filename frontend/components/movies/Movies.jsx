@@ -7,7 +7,7 @@ const Movies = ({ requestVideos, movies }) => {
     requestVideos();
   }, []);
 
-  // console.log(series);
+  // console.log(movies);
 
   return (
     <div className='main-series-movies-container'>
