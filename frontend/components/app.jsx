@@ -14,8 +14,8 @@ import EditProfileFormContainer from './profiles/edit_profile_form_container';
 import CreateProfileFormContainer from './profiles/create_profile_form_container';
 import BrowseContainer from './browse/browse_container';
 import VideoDescriptionContainer from './video_description/video_description_container';
-import SeriesContainer from './series/SeriesContainer';
-import MoviesContainer from './movies/MoviesContainer';
+import SeriesContainer from './series/series_container';
+import MoviesContainer from './movies/movies_container';
 
 const App = () => (
   <div className='app-container'>

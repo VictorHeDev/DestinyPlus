@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from 'react';
 import NavBarContainer from '../navbar/navbar_container';
 import GenresContainer from './genres_container';
-import Carousel from './Carousel';
+import Carousel from './carousel';
 
 const Browse = ({
   genres,

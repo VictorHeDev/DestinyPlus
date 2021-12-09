@@ -5,7 +5,7 @@ import { faLaptop } from '@fortawesome/free-solid-svg-icons';
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
-import SplashNavbar from './SplashNavbar';
+import SplashNavbar from './splash_navbar';
 
 export default function Splash() {
   return (
