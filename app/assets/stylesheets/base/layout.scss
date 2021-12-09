@@ -22,3 +22,10 @@ body {
 .hidden {
   display: none;
 }
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

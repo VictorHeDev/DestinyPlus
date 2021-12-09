@@ -4,8 +4,8 @@ import * as ProfileApiUtil from '../util/profile_api_util';
 export const RECEIVE_ALL_PROFILES = 'RECEIVE_ALL_PROFILES';
 export const RECEIVE_PROFILE = 'RECEIVE_PROFILE';
 export const REMOVE_PROFILE = 'REMOVE_PROFILE';
-export const REFORMAT_PROFILE = 'REFORMAT_PROFILE';
-export const RECEIVE_CURRENT_PROFILE = 'RECEIVE_CURRENT_PROFILE';
+// export const REFORMAT_PROFILE = 'REFORMAT_PROFILE';
+// export const RECEIVE_CURRENT_PROFILE = 'RECEIVE_CURRENT_PROFILE';
 
 // action creators
 const receiveProfiles = (profiles) => {
@@ -29,23 +29,23 @@ const removeProfile = (profileId) => {
   };
 };
 
-export const receiveCurrentProfile = (profileId) => {
-  return {
-    type: RECEIVE_CURRENT_PROFILE,
-    profileId,
-  };
-};
+// export const receiveCurrentProfile = (profileId) => {
+//   return {
+//     type: RECEIVE_CURRENT_PROFILE,
+//     profileId,
+//   };
+// };
 
-const reformatProfile = (profileId) => {
-  return {
-    type: REFORMAT_PROFILE,
-    profileId,
-  };
-};
+// const reformatProfile = (profileId) => {
+//   return {
+//     type: REFORMAT_PROFILE,
+//     profileId,
+//   };
+// };
 
-export const reformatProfiles = (profileId) => (dispatch) => {
-  dispatch(reformatProfile(profileId));
-};
+// export const reformatProfiles = (profileId) => (dispatch) => {
+//   dispatch(reformatProfile(profileId));
+// };
 
 // thunk action creators
 export const requestProfiles = () => (dispatch) => {
@@ -65,12 +65,6 @@ export const createProfile = (profile) => (dispatch) => {
     dispatch(receiveProfile(profile))
   );
 };
-
-// export const updateProfile = (profile) => (dispatch) => {
-//   return ProfileApiUtil.updateProfile(profile).then((profile) =>
-//     dispatch(receiveProfile(profile))
-//   );
-// };
 
 export const updateProfile = (profile) => (dispatch) => {
   return ProfileApiUtil.updateProfile(profile).then((res) =>

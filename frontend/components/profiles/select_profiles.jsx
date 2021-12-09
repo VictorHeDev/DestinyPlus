@@ -14,10 +14,6 @@ export default class SelectProfiles extends Component {
     this.props.requestProfiles();
   }
 
-  // componentDidUpdate(prevProps) {
-  //   if (prevProps !== this.props) this.props.requestProfiles();
-  // }
-
   handleEditClick(e) {
     e.preventDefault();
     this.props.history.push('/profiles/edit');
@@ -28,9 +24,10 @@ export default class SelectProfiles extends Component {
 
     const selectedProfile = this.props.allUserProfiles[profileId];
 
-    this.props.requestProfile(profileId);
-    this.props.receiveCurrentProfile(selectedProfile);
-    this.props.history.push('/browse');
+    this.props
+      .requestProfile(profileId)
+      .then(() => this.props.history.push('/browse'));
+    // this.props.receiveCurrentProfile(selectedProfile);
   }
 
   handleNewProfileClick(e) {

@@ -12,14 +12,13 @@ const ProfilesReducer = (oldState = {}, action) => {
   let nextState = { ...oldState };
 
   switch (action.type) {
-    // case RECEIVE_CURRENT_USER:
-    //   return action.currentUser.profiles;
     case RECEIVE_ALL_PROFILES:
       return action.profiles;
     case RECEIVE_PROFILE:
-      // nextState[action.profile.id] = action.profile;
-      // return action.profile;
-      return { ...nextState, [action.payload.profile.id]: action.payload.profile };
+      return {
+        ...nextState,
+        [action.payload.profile.id]: action.payload.profile,
+      };
     case REMOVE_PROFILE:
       delete nextState[action.profileId];
       return nextState;

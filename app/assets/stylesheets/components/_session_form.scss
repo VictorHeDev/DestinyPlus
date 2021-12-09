@@ -48,16 +48,10 @@
   }
 }
 
-
-.demo-user {
-  cursor: pointer;
-}
-
-.credentials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.error-message {
+  color: red;
+  font-size: 14px;
+  line-height: 0px;
 }
 
 .email-container,
