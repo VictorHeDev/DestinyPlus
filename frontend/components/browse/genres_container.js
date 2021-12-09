@@ -18,7 +18,7 @@ import Genre from './Genres';
 // export default connect(mSTP, mDTP)(Genre);
 
 import { connect } from 'react-redux';
-import Genres from './Genres';
+import Genres from './genres';
 import { withRouter } from 'react-router';
 
 const mSTP = (state, ownProps) => {
