@@ -1,7 +1,7 @@
 export const fetchWatchlistItems = () => {
   return $.ajax({
     method: 'GET',
-    url: '/api/watchlists',
+    url: `/api/watchlists/`,
   });
 };
 

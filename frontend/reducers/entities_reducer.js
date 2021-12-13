@@ -11,7 +11,7 @@ const entitiesReducer = combineReducers({
   profiles,
   genres,
   videos,
-  // watchlists,
+  watchlists,
 });
 
 export default entitiesReducer;

@@ -3,6 +3,7 @@
 # end
 
 @watchlists.each do |watchlist|
+  # debugger
   json.set! watchlist.id do
     json.extract! watchlist, :id, :profile_id,:video_id
   end

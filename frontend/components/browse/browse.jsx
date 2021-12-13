@@ -10,10 +10,12 @@ const Browse = ({
   requestGenres,
   requestVideos,
   history,
+  requestWatchlistItems,
 }) => {
   useEffect(() => {
     requestGenres();
     requestVideos();
+    requestWatchlistItems();
 
     if (!currentProfile) {
       history.push('./profiles');

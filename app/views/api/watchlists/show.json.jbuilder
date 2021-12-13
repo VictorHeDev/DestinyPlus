@@ -1,2 +1,2 @@
-json.extract! @watchlist, :profile_id, :video_id
+json.extract! @watchlist, :id, :profile_id, :video_id
 

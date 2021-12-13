@@ -2,7 +2,13 @@ class Api::WatchlistsController < ApplicationController
   before_action :require_logged_in, only: [:index, :create, :destroy]
 
   def index
-    @watchlists = Watchlist.all
+    # @watchlists = Watchlist.all
+    # render :index
+    @watchlists = [];
+    current_user.profiles.includes(:videos).each do |profile|
+      @watchlists += profile.watchlists
+    end
+    # debugger
     render :index
   end
 
@@ -18,10 +24,11 @@ class Api::WatchlistsController < ApplicationController
 
   def create
     @watchlist = Watchlist.new(watchlist_params)
+    # debugger
 
     if @watchlist.save
       # may change this later
-      render :index
+      render :show
     else
       render json: ['Watchlist item cannot be added!'], status: 422
     end
@@ -34,7 +41,7 @@ class Api::WatchlistsController < ApplicationController
 
     if @watchlist
       @watchlist.destroy
-      # render :index
+      render :show
     else
       render json: ['Watchlist cannot be deleted'], status: 422
     end

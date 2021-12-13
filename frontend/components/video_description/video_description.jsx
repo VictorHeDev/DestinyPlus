@@ -12,6 +12,8 @@ export default class VideoDescription extends Component {
     };
 
     this.handleClickPlay = this.handleClickPlay.bind(this);
+    this.handleAddToWatchlist = this.handleAddToWatchlist.bind(this);
+    this.handleDeleteFromWatchlist = this.handleDeleteFromWatchlist.bind(this);
   }
 
   componentDidMount() {
@@ -25,6 +27,32 @@ export default class VideoDescription extends Component {
       .requestFullscreen()
       .then(() => myVideo.classList.remove('hidden'))
       .then(() => myVideo.play());
+  }
+
+  handleAddToWatchlist(e) {
+    e.preventDefault();
+    let watchlist = {};
+    watchlist.profile_id = this.props.currentProfileId;
+    watchlist.video_id = this.props.video.id;
+
+    this.props.createWatchlistItem(watchlist);
+  }
+
+  handleDeleteFromWatchlist(e) {
+    e.preventDefault();
+    // debugger;
+    let videoId = this.props.match.params.videoId;
+    let watchlistItemArr = this.props.watchlists.filter((watchlist) => {
+      // debugger;
+      return watchlist.videoId === parseInt(videoId);
+    });
+
+    console.log(watchlistItemArr);
+    let firstWatchlistItem = watchlistItemArr[0];
+
+    // debugger;
+    // this.props.deleteWatchlistItem(this.props.watchlists.id);
+    this.props.deleteWatchlistItem(firstWatchlistItem.id);
   }
 
   render() {
@@ -77,7 +105,10 @@ export default class VideoDescription extends Component {
               </button>
               {/* <div className='plus radius'></div> */}
 
-              <button className='watchlist-add-btn'>
+              <button
+                className='watchlist-add-btn'
+                onClick={(e) => this.handleAddToWatchlist(e)}
+              >
                 <FontAwesomeIcon
                   className='plus-icon'
                   icon={faPlus}
@@ -85,7 +116,10 @@ export default class VideoDescription extends Component {
                 />
               </button>
 
-              <button className='watchlist-minus-btn'>
+              <button
+                className='watchlist-minus-btn'
+                onClick={(e) => this.handleDeleteFromWatchlist(e)}
+              >
                 <FontAwesomeIcon
                   className='plus-icon'
                   icon={faMinus}

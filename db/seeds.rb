@@ -44,7 +44,7 @@ demoUserProfile2 = Profile.create!(
   user_id: 1
 )
 
-demoUserProfile1 = Profile.create!(
+demoUserProfile3 = Profile.create!(
   name: 'Jon!',
   user_id: 1
 )
@@ -1082,6 +1082,30 @@ demoUserWatchlist2 = Watchlist.create!(
 )
 demoUserWatchlist3 = Watchlist.create!(
   profile_id: demoUserProfile1.id,
+  video_id: avengers.id
+)
+demoUserWatchlist4 = Watchlist.create!(
+  profile_id: demoUserProfile2.id,
+  video_id: american_dragon.id
+)
+demoUserWatchlist5 = Watchlist.create!(
+  profile_id: demoUserProfile2.id,
+  video_id: cosmos.id
+)
+demoUserWatchlist6 = Watchlist.create!(
+  profile_id: demoUserProfile2.id,
+  video_id: avengers.id
+)
+demoUserWatchlist7= Watchlist.create!(
+  profile_id: demoUserProfile3.id,
+  video_id: american_dragon.id
+)
+demoUserWatchlist8 = Watchlist.create!(
+  profile_id: demoUserProfile3.id,
+  video_id: cosmos.id
+)
+demoUserWatchlist9 = Watchlist.create!(
+  profile_id: demoUserProfile3.id,
   video_id: avengers.id
 )
 
