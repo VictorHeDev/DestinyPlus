@@ -20,7 +20,26 @@ export const selectVideosByMediatype = (mediatype, videos) => {
   return filteredVideos;
 };
 
+export const selectWatchlistItems = (
+  currentProfileId,
+  watchlists,
+  videos
+) => {
+  let filteredWatchlistVideos = [];
+  // change the watchlists Obj into an arr
+  const watchlistItemsArr = Object.values(watchlists);
+  // filter through the watchlistsArr and take only the items that match curentProfileId
+  const currentProfileWatchlistItems = watchlistItemsArr.filter(watchlistItem => watchlistItem.profileId === currentProfileId);
+  // now that we have the filtered watchlist items, loop through them
+  // and return an arr with all the videos that match
+  currentProfileWatchlistItems.forEach(watchlistItem => {
+    if (videos[watchlistItem.videoId]) {
+      filteredWatchlistVideos.push(videos[watchlistItem.videoId])
+    }
+  })
 
+  return filteredWatchlistVideos;
+};
 
 // export an array of all movies/tv shows in a particular genre
 // use Object.values
