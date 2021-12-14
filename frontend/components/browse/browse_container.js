@@ -4,6 +4,7 @@ import { requestVideo, requestVideos } from '../../actions/video_actions';
 import Browse from './browse';
 import { withRouter } from 'react-router';
 import { requestWatchlistItems } from '../../actions/watchlist_actions';
+
 const mSTP = (state, ownProps) => {
   return {
     genres: Object.values(state.entities.genres),
