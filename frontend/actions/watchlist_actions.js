@@ -47,7 +47,7 @@ export const createWatchlistItem = (watchlistItem) => (dispatch) => {
 };
 
 export const deleteWatchlistItem = (watchlistItemId) => (dispatch) => {
-  return WatchlistApiUtil.deleteWatchlistItem(watchlistItemId).then(
-    (watchlistItem) => dispatch(removeWatchlistItem(watchlistItem))
+  return WatchlistApiUtil.deleteWatchlistItem(watchlistItemId).then(() =>
+    dispatch(removeWatchlistItem(watchlistItemId))
   );
 };

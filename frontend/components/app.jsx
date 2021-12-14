@@ -16,6 +16,7 @@ import BrowseContainer from './browse/browse_container';
 import VideoDescriptionContainer from './video_description/video_description_container';
 import SeriesContainer from './series/series_container';
 import MoviesContainer from './movies/movies_container';
+import WatchlistContainer from './watchlist/watchlist_container';
 
 const App = () => (
   <div className='app-container'>
@@ -50,6 +51,7 @@ const App = () => (
       />
       <ProtectedRoute exact path='/series' component={SeriesContainer} />
       <ProtectedRoute exact path='/movies' component={MoviesContainer} />
+      <ProtectedRoute exact path='/watchlist' component={WatchlistContainer} />
     </Switch>
 
     {/* <ProtectedRoute exact path="/browse" /> */}

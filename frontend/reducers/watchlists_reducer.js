@@ -16,7 +16,7 @@ const watchlistItemsReducer = (oldState = {}, action) => {
       // return nextState;
       return { ...nextState, [action.watchlistItem.id]: action.watchlistItem };
     case REMOVE_WATCHLIST_ITEM:
-      delete nextState[action.watchlistId];
+      delete nextState[action.watchlistItemId];
       return nextState;
     default:
       return oldState;

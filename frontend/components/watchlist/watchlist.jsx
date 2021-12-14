@@ -10,7 +10,7 @@ const Watchlist = ({
   useEffect(() => {
     requestVideos();
     requestWatchlistItems();
-  });
+  }, []);
 
   return (
     <div className='main-series-movies-container'>
@@ -38,6 +38,5 @@ const Watchlist = ({
     </div>
   );
 };
-
 
 export default Watchlist;

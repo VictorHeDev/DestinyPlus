@@ -9,9 +9,13 @@ const mSTP = (state) => {
   const currentProfileId = state.session.currentProfile.id;
   const watchlists = state.entities.watchlists;
   const videos = state.entities.videos;
-  const watchlistVideos = selectWatchlistItems(currentProfileId, watchlists, videos)
+  const watchlistVideos = selectWatchlistItems(
+    currentProfileId,
+    watchlists,
+    videos
+  );
   return {
-    watchlistVideos: watchlistVideos;
+    watchlistVideos: watchlistVideos,
   };
 };
 

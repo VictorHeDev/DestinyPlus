@@ -24,7 +24,7 @@ const mDTP = (dispatch) => {
       dispatch(createWatchlistItem(watchlistItem)),
     deleteWatchlistItem: (watchlistItemId) =>
       dispatch(deleteWatchlistItem(watchlistItemId)),
-    requestWatchlistItems: () => dispatch(requestWatchlistItems),
+    requestWatchlistItems: () => dispatch(requestWatchlistItems()),
   };
 };
 

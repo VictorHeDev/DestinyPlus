@@ -8,7 +8,9 @@ const Video = ({ video, history }) => {
     const placeholder = video.thumbnailUrl ? (
       <img src={video.thumbnailUrl} />
     ) : (
-      <p>{video.title}</p>
+      <div className='video-placeholder'>
+        <p>{video.title}</p>
+      </div>
     );
     return (
       <div onClick={() => handleRerouteOnClick()} className='video-container'>
