@@ -4,6 +4,7 @@ import { receiveVideo, requestVideo } from '../../actions/video_actions';
 import {
   createWatchlistItem,
   deleteWatchlistItem,
+  requestWatchlistItems,
 } from '../../actions/watchlist_actions';
 import VideoDescription from './video_description';
 import React from 'react';
@@ -23,6 +24,7 @@ const mDTP = (dispatch) => {
       dispatch(createWatchlistItem(watchlistItem)),
     deleteWatchlistItem: (watchlistItemId) =>
       dispatch(deleteWatchlistItem(watchlistItemId)),
+    requestWatchlistItems: () => dispatch(requestWatchlistItems),
   };
 };
 

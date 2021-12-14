@@ -3,6 +3,7 @@ import NavBarContainer from '../navbar/navbar_container';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus, faPlay } from '@fortawesome/free-solid-svg-icons';
+// import { requestWatchlistItems } from '../../actions/watchlist_actions';
 // import VideoPlayer from './video_player'
 
 const VideoDescription = ({
@@ -13,11 +14,14 @@ const VideoDescription = ({
   createWatchlistItem,
   deleteWatchlistItem,
   match,
+  requestWatchlistItems,
 }) => {
   const [muted, setMuted] = useState(true);
+  const [addBtn, setAddBtn] = useState(true);
 
   useEffect(() => {
     requestVideo(match.params.videoId);
+    requestWatchlistItems();
   }, []);
 
   const handleClickPlay = (e) => {
@@ -28,6 +32,7 @@ const VideoDescription = ({
       .then(() => myVideo.classList.remove('hidden'))
       .then(() => myVideo.play());
   };
+
   const handleAddToWatchlist = (e) => {
     e.preventDefault();
     let watchlist = {};
@@ -39,19 +44,23 @@ const VideoDescription = ({
 
   const handleDeleteFromWatchlist = (e) => {
     e.preventDefault();
-    // debugger;
     let videoId = match.params.videoId;
     let watchlistItemArr = watchlists.filter((watchlist) => {
-      // debugger;
       return watchlist.videoId === parseInt(videoId);
     });
 
     console.log(watchlistItemArr);
-    let firstWatchlistItem = watchlistItemArr[0];
+    // let firstWatchlistItem = watchlistItemArr[0];
 
-    // debugger;
-    // this.props.deleteWatchlistItem(this.props.watchlists.id);
-    deleteWatchlistItem(firstWatchlistItem.id);
+    // deleteWatchlistItem(firstWatchlistItem.id);
+    watchlistItemArr.forEach((item) => deleteWatchlistItem(item.id));
+  };
+
+  const checkForWatchlistItem = () => {
+    debugger;
+    return watchlists.some((watchlist) => {
+      return watchlist.videoId === parseInt(videoId);
+    });
   };
 
   if (!video) return null;
@@ -98,6 +107,32 @@ const VideoDescription = ({
               <div>PLAY</div>
             </button>
             {/* <div className='plus radius'></div> */}
+
+            {/* {() =>
+              checkForWatchlistItem() ? (
+                <button
+                  className='watchlist-add-btn'
+                  onClick={(e) => handleAddToWatchlist(e)}
+                >
+                  <FontAwesomeIcon
+                    className='plus-icon'
+                    icon={faPlus}
+                    size='2x'
+                  />
+                </button>
+              ) : (
+                <button
+                  className='watchlist-minus-btn'
+                  onClick={(e) => handleDeleteFromWatchlist(e)}
+                >
+                  <FontAwesomeIcon
+                    className='plus-icon'
+                    icon={faMinus}
+                    size='2x'
+                  />
+                </button>
+              )
+            } */}
 
             <button
               className='watchlist-add-btn'
