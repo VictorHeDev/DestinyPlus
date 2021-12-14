@@ -12,8 +12,6 @@ const watchlistItemsReducer = (oldState = {}, action) => {
     case RECEIVE_WATCHLIST_ITEMS:
       return action.watchlistItems;
     case RECEIVE_WATCHLIST_ITEM:
-      // nextState[action.watchlistItem.id] = action.watchlistItem;
-      // return nextState;
       return { ...nextState, [action.watchlistItem.id]: action.watchlistItem };
     case REMOVE_WATCHLIST_ITEM:
       delete nextState[action.watchlistItemId];

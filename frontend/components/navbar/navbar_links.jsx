@@ -25,8 +25,10 @@ export default function NavBarLinks() {
           </Link>
         </li>
         <li>
-          <FontAwesomeIcon icon={faSearch} size='lg' className='nav-icon' />{' '}
-          <span className='navbar-link'>SEARCH</span>
+          <Link to='/search'>
+            <FontAwesomeIcon icon={faSearch} size='lg' className='nav-icon' />{' '}
+            <span className='navbar-link'>SEARCH</span>
+          </Link>
         </li>
         <li>
           <Link to='/watchlist'>
