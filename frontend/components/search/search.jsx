@@ -26,14 +26,14 @@ const Search = ({ requestVideos, videos }) => {
   return (
     <div className='main-series-movies-container'>
       <NavBar />
-      <form className='search-form-container'>
-        <input
-          type='text'
-          placeholder='Search by title'
-          onChange={(e) => handleQueryChange(e)}
-        />
-      </form>
       <div className='main-browse-content'>
+        <form className='search-form-container'>
+          <input
+            type='text'
+            placeholder='Search by title'
+            onChange={(e) => handleQueryChange(e)}
+          />
+        </form>
         {/* <h3>Search</h3> */}
         <div className='series-movie-videos-container'>
           {!searchVideos.length
