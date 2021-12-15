@@ -10,19 +10,23 @@ const Search = ({ requestVideos, videos }) => {
     requestVideos();
   }, []);
 
-  // console.log(series);
-
-  const handleQueryChange = (e) => {
-    let newQuery = e.target.value;
-    setQuery(newQuery);
-
+  useEffect(() => {
+    // update on searchVideos
+    // console.log('Search message inside useEffect: ', query);
     let searchResultsArr = videos
       .filter((video) => {
-        return video.title.includes(query.toLowerCase());
+        return video.title.toLowerCase().includes(query.toLowerCase());
       })
       .slice(0, 25);
 
     setSearchVideos([...searchResultsArr]);
+  }, [query, setSearchVideos]);
+
+  const handleQueryChange = (e) => {
+    let newQuery = e.target.value;
+    // console.log(e.target.value);
+    setQuery(newQuery);
+    // console.log(query);
   };
 
   return (
@@ -33,10 +37,11 @@ const Search = ({ requestVideos, videos }) => {
           <input
             type='text'
             placeholder='Search by title ...'
+            value={query}
             onChange={(e) => handleQueryChange(e)}
           />
         </form>
-        {/* <h3>Search</h3> */}
+
         <div className='series-movie-videos-container'>
           {query
             ? searchVideos.map((video) => {
