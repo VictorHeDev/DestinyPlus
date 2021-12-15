@@ -30,7 +30,7 @@ const Search = ({ requestVideos, videos }) => {
         <form className='search-form-container'>
           <input
             type='text'
-            placeholder='Search by title'
+            placeholder='Search by title ...'
             onChange={(e) => handleQueryChange(e)}
           />
         </form>

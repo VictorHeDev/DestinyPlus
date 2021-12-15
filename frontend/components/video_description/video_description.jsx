@@ -3,7 +3,6 @@ import NavBarContainer from '../navbar/navbar_container';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus, faPlay } from '@fortawesome/free-solid-svg-icons';
-// import VideoPlayer from './video_player'
 
 const VideoDescription = ({
   video,
@@ -30,6 +29,7 @@ const VideoDescription = ({
       .then(() => myVideo.classList.remove('hidden'))
       .then(() => myVideo.play());
   };
+
 
   const handleAddToWatchlist = (e) => {
     e.preventDefault();
@@ -61,8 +61,6 @@ const VideoDescription = ({
   };
 
   const checkForWatchlistItem = () => {
-    // debugger;
-
     return watchlists.some((watchlist) => {
       return (
         watchlist.videoId === parseInt(video.id) &&

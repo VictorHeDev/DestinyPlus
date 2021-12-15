@@ -120,3 +120,17 @@
     }
   }
 }
+
+.search-form-container {
+  height: 5rem;
+  width: 100%;
+  background-color: $color-grey;
+  display: flex;
+  justify-content: center;
+
+  input {
+    height: 100%;
+    width: 90%;
+    font-size: 3rem;
+  }
+}
