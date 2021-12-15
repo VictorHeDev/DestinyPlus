@@ -16,9 +16,11 @@ const Search = ({ requestVideos, videos }) => {
     let newQuery = e.target.value;
     setQuery(newQuery);
 
-    let searchResultsArr = videos.filter((video) => {
-      return video.title.includes(query);
-    });
+    let searchResultsArr = videos
+      .filter((video) => {
+        return video.title.includes(query.toLowerCase());
+      })
+      .slice(0, 25);
 
     setSearchVideos([...searchResultsArr]);
   };
@@ -36,9 +38,8 @@ const Search = ({ requestVideos, videos }) => {
         </form>
         {/* <h3>Search</h3> */}
         <div className='series-movie-videos-container'>
-          {!searchVideos.length
-            ? null
-            : searchVideos.map((video) => {
+          {query
+            ? searchVideos.map((video) => {
                 return (
                   <Link to={`/browse/${video.id}`} key={video.id}>
                     <div className='video-container'>
@@ -52,7 +53,8 @@ const Search = ({ requestVideos, videos }) => {
                     </div>
                   </Link>
                 );
-              })}
+              })
+            : null}
         </div>
       </div>
     </div>

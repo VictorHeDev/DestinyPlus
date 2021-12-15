@@ -122,6 +122,7 @@
 }
 
 .search-form-container {
+  margin-bottom: 1rem;
   height: 5rem;
   width: 100%;
   background-color: $color-grey;
@@ -130,7 +131,8 @@
 
   input {
     height: 100%;
-    width: 90%;
+    width: 85%;
     font-size: 3rem;
+    outline: none;
   }
 }

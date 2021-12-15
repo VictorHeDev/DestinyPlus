@@ -820,7 +820,7 @@ isle_of_dogs.file.attach(io: isle_of_dogs_file, filename: 'isle-of-dogs.mp4')
 
 # ANTHONY BOURDAIN: PARTS UNKNOWN
 parts_unknown = Video.create!(
-  title: "Anthony Bourdain: Parts Unknown",
+  title: "anthony bourdain parts unknown",
   description: "Anthony Bourdain visits countries, delving into their political issues as well as indigenous food and culture.",
   year: "2013",
   runtime: "12 seasons",
