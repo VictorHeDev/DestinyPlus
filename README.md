@@ -73,8 +73,6 @@ I was initially having an issue with persisting the User's current selected prof
 ```ruby
 # watchlists_controller.rb
   def index
-    # @watchlists = Watchlist.all
-    # render :index
     @watchlists = [];
     current_user.profiles.includes(:videos).each do |profile|
       @watchlists += profile.watchlists
@@ -108,9 +106,7 @@ const Search = ({ requestVideos, videos }) => {
 
   const handleQueryChange = (e) => {
     let newQuery = e.target.value;
-    // console.log(e.target.value);
     setQuery(newQuery);
-    // console.log(query);
   };
 };
 ```
