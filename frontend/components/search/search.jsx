@@ -11,7 +11,6 @@ const Search = ({ requestVideos, videos }) => {
   }, []);
 
   useEffect(() => {
-    // update on searchVideos
     // console.log('Search message inside useEffect: ', query);
     let searchResultsArr = videos
       .filter((video) => {

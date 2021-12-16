@@ -125,7 +125,14 @@
   margin-bottom: 1rem;
   height: 5rem;
   width: 100%;
-  background-color: $color-grey;
+  // background-color: $color-grey;
+  background: rgb(55, 55, 55);
+  background: linear-gradient(
+    212deg,
+    rgba(55, 55, 55, 1) 16%,
+    rgba(94, 94, 94, 1) 50%,
+    rgba(55, 55, 55, 1) 84%
+  );
   display: flex;
   justify-content: center;
 
