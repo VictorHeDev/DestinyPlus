@@ -8,7 +8,7 @@ class Api::WatchlistsController < ApplicationController
     current_user.profiles.includes(:videos).each do |profile|
       @watchlists += profile.watchlists
     end
-    # debugger
+
     render :index
   end
 
@@ -24,10 +24,8 @@ class Api::WatchlistsController < ApplicationController
 
   def create
     @watchlist = Watchlist.new(watchlist_params)
-    # debugger
 
     if @watchlist.save
-      # may change this later
       render :show
     else
       render json: ['Watchlist item cannot be added!'], status: 422
@@ -36,8 +34,6 @@ class Api::WatchlistsController < ApplicationController
 
   def destroy
     @watchlist = Watchlist.find(params[:id])
-    # @watchlist = Watchlist.find_by(video_id: watchlist_params[:video_id], profile_id: watchlist_params[:profile_id])
-    # @watchlist = current_profile.watchlists.find_by(video_id: params[:id])
 
     if @watchlist
       @watchlist.destroy

@@ -62,5 +62,4 @@ const App = () => (
   </div>
 );
 
-// decide on whether we want redirect to splash greeting or not
 export default App;
